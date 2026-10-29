@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "video": "/workspace/mine-story-engine/productions/sincronia_preview/video_preview.mp4",
+  "status": "technical_pass",
+  "issues": [],
+  "scope": "Technical gates on decoded media and supplied timing data; semantic or artistic approval is not automated",
+  "unverified": [
+    "semantic match between narration and visible events",
+    "vanilla Minecraft fidelity",
+    "caption legibility, actual burned-in word highlight and exact display timing",
+    "actual occlusion, unsampled object/character cropping, continuity and acting quality"
+  ],
+  "thresholds": {
+    "black_pixel_value": 8,
+    "black_pixel_fraction": 0.985,
+    "static_sample_mean_difference": 0.12,
+    "static_warning_seconds": 5.0,
+    "narration_duration_tolerance_seconds": 0.12
+  },
+  "media": {
+    "duration": 8.333333,
+    "container_duration": 8.344,
+    "width": 360,
+    "height": 640,
+    "fps": 30.0,
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_duration": 8.344
+  },
+  "narration_duration_error_seconds": 0.010975,
+  "render_measurements": [
+    {
+      "scene": "scene_001",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/806d3b5c97ac1fcfb58dcd873fda0707fdf0f300775d59cad8612c1aff1ee73e/frames/render_metadata.json",
+      "projection_samples": 20,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    }
+  ],
+  "frame_analysis": {
+    "sample_count": 8,
+    "sample_fps": 1.0,
+    "black_spans": [],
+    "static_spans": [],
+    "mean_scene_frame_difference": 2.78828,
+    "coverage": "Periodic decoded frames; sub-sample glitches can be missed"
+  },
+  "affected_scenes": [],
+  "contact_sheet": "/workspace/mine-story-engine/productions/sincronia_preview/qc/contact_sheet.jpg",
+  "editorial_notice": "Audio shorter than 60 seconds may not meet TikTok Creator Rewards duration requirements; narration was not extended",
+  "technical_gates_passed": true
+}

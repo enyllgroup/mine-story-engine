@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "source": "/workspace/mine-story-engine/examples/audio/sincronia_SINTETICO.wav",
+  "audio_sha256": "c4252f24ad2c87d14c8c541dc5aa83ab4b265ef56f84e278e002a3b67a23c87b",
+  "language": "pt-BR",
+  "duration": 10.25034,
+  "text": "um bloco caiu no chão. Agora um explorador encontrou uma carta. O sol desapadeceu e o céu ficou mescudo.",
+  "words": [
+    {
+      "word": "um",
+      "start": 0.0,
+      "end": 0.18,
+      "probability": 0.30181
+    },
+    {
+      "word": "bloco",
+      "start": 0.18,
+      "end": 0.52,
+      "probability": 0.95405
+    },
+    {
+      "word": "caiu",
+      "start": 0.52,
+      "end": 0.94,
+      "probability": 0.98049
+    },
+    {
+      "word": "no",
+      "start": 0.94,
+      "end": 1.06,
+      "probability": 0.93364
+    },
+    {
+      "word": "chão.",
+      "start": 1.06,
+      "end": 2.12,
+      "probability": 0.99066
+    },
+    {
+      "word": "Agora",
+      "start": 2.44,
+      "end": 2.84,
+      "probability": 0.22464
+    },
+    {
+      "word": "um",
+      "start": 2.84,
+      "end": 3.12,
+      "probability": 0.21072
+    },
+    {
+      "word": "explorador",
+      "start": 3.12,
+      "end": 3.72,
+      "probability": 0.7286
+    },
+    {
+      "word": "encontrou",
+      "start": 3.72,
+      "end": 4.48,
+      "probability": 0.98167
+    },
+    {
+      "word": "uma",
+      "start": 4.48,
+      "end": 4.74,
+      "probability": 0.6575
+    },
+    {
+      "word": "carta.",
+      "start": 4.74,
+      "end": 5.16,
+      "probability": 0.23036
+    },
+    {
+      "word": "O",
+      "start": 6.38,
+      "end": 6.54,
+      "probability": 0.96016
+    },
+    {
+      "word": "sol",
+      "start": 6.54,
+      "end": 6.74,
+      "probability": 0.92207
+    },
+    {
+      "word": "desapadeceu",
+      "start": 6.74,
+      "end": 7.66,
+      "probability": 0.57902
+    },
+    {
+      "word": "e",
+      "start": 7.66,
+      "end": 7.82,
+      "probability": 0.94677
+    },
+    {
+      "word": "o",
+      "start": 7.82,
+      "end": 7.9,
+      "probability": 0.98486
+    },
+    {
+      "word": "céu",
+      "start": 7.9,
+      "end": 8.08,
+      "probability": 0.3948
+    },
+    {
+      "word": "ficou",
+      "start": 8.08,
+      "end": 8.44,
+      "probability": 0.97002
+    },
+    {
+      "word": "mescudo.",
+      "start": 8.44,
+      "end": 9.02,
+      "probability": 0.643
+    }
+  ],
+  "segments": [
+    {
+      "text": "um bloco caiu no chão.",
+      "start": 0.0,
+      "end": 2.12,
+      "avg_logprob": -0.5224
+    },
+    {
+      "text": "Agora um explorador encontrou uma carta.",
+      "start": 2.44,
+      "end": 5.16,
+      "avg_logprob": -0.5224
+    },
+    {
+      "text": "O sol desapadeceu e o céu ficou mescudo.",
+      "start": 6.38,
+      "end": 9.02,
+      "avg_logprob": -0.5224
+    }
+  ],
+  "pauses": [
+    {
+      "start": 1.4132,
+      "end": 2.5844
+    },
+    {
+      "start": 5.2702,
+      "end": 6.4404
+    },
+    {
+      "start": 9.08,
+      "end": 10.2503
+    }
+  ],
+  "audio": {
+    "duration": 10.25034,
+    "sample_rate": 22050,
+    "channels": 1,
+    "codec": "pcm_s16le",
+    "path": "/workspace/mine-story-engine/examples/audio/sincronia_SINTETICO.wav"
+  },
+  "transcription": {
+    "schema": 1,
+    "backend": "faster-whisper-1.2.1",
+    "model": "small",
+    "language": "pt",
+    "beam_size": 5,
+    "compute_type": "int8",
+    "cpu_threads": 2,
+    "alignment": "whisper-word-timestamps",
+    "forced_alignment": false,
+    "language_probability": 1.0,
+    "elapsed_seconds": 5.915
+  },
+  "cache_hit": false,
+  "warnings": [
+    "Timestamps estimados pelo Whisper; não são forced alignment independente.",
+    "Áudio com menos de 60 segundos: pode não cumprir a duração exigida pelo Programa de Recompensas do TikTok. A narração foi preservada.",
+    "Mais de 15% das palavras têm baixa confiança; confira a transcrição antes de publicar."
+  ]
+}

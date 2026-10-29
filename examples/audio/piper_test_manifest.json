@@ -1,0 +1,23 @@
+{
+  "synthetic_test_only": true,
+  "not_user_narration": true,
+  "engine": "Piper 1.8.0",
+  "voice": "pt_BR-faber-medium",
+  "dataset_license": "CC0",
+  "model_sha256": "858555e3a064209c57088fe6bd70c4c3dc54d03eaa00c45d5ecaf43a33f95aa7",
+  "audio": [
+    {
+      "path": "/workspace/mine-story-engine/examples/audio/demo_cartas_PIPER_SINTETICO.wav",
+      "duration": 70.46095238095238,
+      "text_sha256": "9885312b894ceaeab0856f9ed8b6bdce4797a6944a1edaaa7cd1d5c20fd3a35a",
+      "audio_sha256": "7686f68fe53386d7a0b891f3342ffed1cfa25db390c02484651fc42bbd3940c7"
+    },
+    {
+      "path": "/workspace/mine-story-engine/examples/audio/demo_sol_PIPER_SINTETICO.wav",
+      "duration": 42.79437641723356,
+      "text_sha256": "6c8ed1fed17727f7b89393d2e8e73811229d386160e0f0c446a6e6a71d9463d6",
+      "audio_sha256": "1b8889a592f6fd6fd199753676ee869a1b9882c7d8681367dcf9bc228fdcded5"
+    }
+  ],
+  "generation_elapsed_seconds": 4.523845190999964
+}

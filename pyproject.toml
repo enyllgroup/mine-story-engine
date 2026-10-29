@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minestory"
+version = "0.1.0"
+description = "Pipeline gratuita de narração para animação em blocos"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["numpy>=1.24,<3", "Pillow>=10,<13", "faster-whisper==1.2.1", "av==16.1.0", "jsonschema>=4.23,<5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+minestory = "minestory.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["minestory*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

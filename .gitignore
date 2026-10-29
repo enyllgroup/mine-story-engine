@@ -1,0 +1,15 @@
+.venv/
+.tools/
+.models/
+.cache/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+productions/
+library/
+*.blend1
+*.log
+examples/generated/
+scratch/
+.director-probe/

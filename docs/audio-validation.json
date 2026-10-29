@@ -1,0 +1,254 @@
+{
+  "synthetic_test_only": true,
+  "method": "Levenshtein WER; casefold, punctuation removed, numeric 8/20 verbal equivalents; accents retained",
+  "limitations": [
+    "Reference is the intended synthetic script, not independently annotated actual speech.",
+    "Small and turbo use the exact same Piper WAV files for each comparison.",
+    "Timing checked against exact inserted gaps and audio silencedetect boundaries, not manually annotated phoneme boundaries.",
+    "These fixtures do not establish zero errors on new human recordings."
+  ],
+  "comparisons": [
+    {
+      "subject": "cartas",
+      "model": "small",
+      "source": "/workspace/mine-story-engine/examples/audio/demo_cartas_PIPER_SINTETICO.wav",
+      "source_sha256": "7686f68fe53386d7a0b891f3342ffed1cfa25db390c02484651fc42bbd3940c7",
+      "duration": 70.460952,
+      "inference_seconds": 36.193,
+      "saved_result_reused": true,
+      "real_time_factor": 0.5136603888065548,
+      "reference_words": 204,
+      "recognized_words": 204,
+      "errors": 18,
+      "wer": 0.08823529411764706,
+      "changes": [
+        {
+          "type": "deletion",
+          "reference": "por"
+        },
+        {
+          "type": "substitution",
+          "reference": "que",
+          "recognized": "porque"
+        },
+        {
+          "type": "substitution",
+          "reference": "carta",
+          "recognized": "cata"
+        },
+        {
+          "type": "substitution",
+          "reference": "cartas",
+          "recognized": "catas"
+        },
+        {
+          "type": "substitution",
+          "reference": "carta",
+          "recognized": "cata"
+        },
+        {
+          "type": "insertion",
+          "recognized": "o"
+        },
+        {
+          "type": "insertion",
+          "recognized": "de"
+        },
+        {
+          "type": "substitution",
+          "reference": "observe",
+          "recognized": "serve"
+        },
+        {
+          "type": "substitution",
+          "reference": "conservação",
+          "recognized": "conseração"
+        },
+        {
+          "type": "substitution",
+          "reference": "bordas",
+          "recognized": "bodas"
+        },
+        {
+          "type": "substitution",
+          "reference": "preço",
+          "recognized": "peso"
+        },
+        {
+          "type": "substitution",
+          "reference": "comprar",
+          "recognized": "contar"
+        },
+        {
+          "type": "deletion",
+          "reference": "a"
+        },
+        {
+          "type": "substitution",
+          "reference": "um",
+          "recognized": "o"
+        },
+        {
+          "type": "substitution",
+          "reference": "baú",
+          "recognized": "mau"
+        },
+        {
+          "type": "substitution",
+          "reference": "cresce",
+          "recognized": "quece"
+        },
+        {
+          "type": "substitution",
+          "reference": "fim",
+          "recognized": "filme"
+        },
+        {
+          "type": "substitution",
+          "reference": "carta",
+          "recognized": "cata"
+        }
+      ]
+    },
+    {
+      "subject": "cartas",
+      "model": "large-v3-turbo",
+      "source": "/workspace/mine-story-engine/examples/audio/demo_cartas_PIPER_SINTETICO.wav",
+      "source_sha256": "7686f68fe53386d7a0b891f3342ffed1cfa25db390c02484651fc42bbd3940c7",
+      "duration": 70.460952,
+      "inference_seconds": 63.023,
+      "saved_result_reused": false,
+      "real_time_factor": 0.894438667249344,
+      "reference_words": 204,
+      "recognized_words": 204,
+      "errors": 4,
+      "wer": 0.0196078431372549,
+      "changes": [
+        {
+          "type": "substitution",
+          "reference": "preço",
+          "recognized": "peso"
+        },
+        {
+          "type": "substitution",
+          "reference": "comprar",
+          "recognized": "contar"
+        },
+        {
+          "type": "substitution",
+          "reference": "um",
+          "recognized": "o"
+        },
+        {
+          "type": "substitution",
+          "reference": "baú",
+          "recognized": "mau"
+        }
+      ]
+    },
+    {
+      "subject": "sol",
+      "model": "small",
+      "source": "/workspace/mine-story-engine/examples/audio/demo_sol_PIPER_SINTETICO.wav",
+      "source_sha256": "1b8889a592f6fd6fd199753676ee869a1b9882c7d8681367dcf9bc228fdcded5",
+      "duration": 42.794376,
+      "inference_seconds": 8.967,
+      "saved_result_reused": true,
+      "real_time_factor": 0.20953687933199447,
+      "reference_words": 115,
+      "recognized_words": 116,
+      "errors": 5,
+      "wer": 0.043478260869565216,
+      "changes": [
+        {
+          "type": "substitution",
+          "reference": "escureceria",
+          "recognized": "escolheceria"
+        },
+        {
+          "type": "substitution",
+          "reference": "atração",
+          "recognized": "atação"
+        },
+        {
+          "type": "insertion",
+          "recognized": "a"
+        },
+        {
+          "type": "substitution",
+          "reference": "resfriamento",
+          "recognized": "resfiamento"
+        },
+        {
+          "type": "substitution",
+          "reference": "sua",
+          "recognized": "seu"
+        }
+      ]
+    },
+    {
+      "subject": "sol",
+      "model": "large-v3-turbo",
+      "source": "/workspace/mine-story-engine/examples/audio/demo_sol_PIPER_SINTETICO.wav",
+      "source_sha256": "1b8889a592f6fd6fd199753676ee869a1b9882c7d8681367dcf9bc228fdcded5",
+      "duration": 42.794376,
+      "inference_seconds": 23.535,
+      "saved_result_reused": false,
+      "real_time_factor": 0.549955442743224,
+      "reference_words": 115,
+      "recognized_words": 116,
+      "errors": 1,
+      "wer": 0.008695652173913044,
+      "changes": [
+        {
+          "type": "insertion",
+          "recognized": "a"
+        }
+      ]
+    }
+  ],
+  "synchronization": {
+    "source": "/workspace/mine-story-engine/examples/audio/sincronia_PIPER_SINTETICO.wav",
+    "source_sha256": "14c88651678d49fc0ce9dc80367bf54bdd5a8683d5e6442634d0c44547766eb0",
+    "model": "large-v3-turbo",
+    "duration": 8.344308,
+    "inference_seconds": 10.608,
+    "forced_alignment": false,
+    "clipped_words": 2,
+    "exact_inserted_gaps": [
+      {
+        "start": 1.3931972789115645,
+        "end": 2.1931972789115646
+      },
+      {
+        "start": 4.224943310657596,
+        "end": 5.024943310657596
+      }
+    ],
+    "raw_word_overlap_inserted_gaps_seconds": 0.7281405895691606,
+    "refined_word_overlap_inserted_gaps_seconds": 4.331065759632935e-05,
+    "raw_word_overlap_acoustic_silences_seconds": 0.7661999999999998,
+    "refined_word_overlap_acoustic_silences_seconds": 0.0,
+    "words_overlapping_inserted_gap_more_than_20ms": 0,
+    "reference_words": 19,
+    "recognized_words": 20,
+    "errors": 3,
+    "wer": 0.15789473684210525,
+    "changes": [
+      {
+        "type": "insertion",
+        "recognized": "do"
+      },
+      {
+        "type": "substitution",
+        "reference": "bloco",
+        "recognized": "oco"
+      },
+      {
+        "type": "substitution",
+        "reference": "carta",
+        "recognized": "cada"
+      }
+    ]
+  }
+}

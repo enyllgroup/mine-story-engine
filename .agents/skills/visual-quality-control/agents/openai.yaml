@@ -1,0 +1,4 @@
+interface:
+  display_name: "Inspecionar vídeo"
+  short_description: "Inspecionar mídia real e gerar folha de contato"
+  default_prompt: "Use $visual-quality-control para inspecionar mídia real e gerar folha de contato."

@@ -1,0 +1,10 @@
+{
+  "name": "MineStory",
+  "font": "Pixelify Sans",
+  "font_license": "SIL OFL 1.1",
+  "palette": {"grass":"#71a447","earth":"#876047","stone":"#858584","sky":"#83b8ed","highlight":"#ffe24a","text":"#ffffff","outline":"#121514"},
+  "subtitle_anchor": [0.465, 0.735],
+  "subtitle_safe_width": 0.77,
+  "style": "Original pixel textures, nearest sampling, cuboid rigs, simple block worlds, no PBR",
+  "note": "Paleta e interface próprias; sem logos nem recursos oficiais Mojang. Parâmetros atuais de legendas em minestory/captions.py; materiais em minestory/assets.py."
+}

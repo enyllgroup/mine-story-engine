@@ -1,0 +1,4 @@
+interface:
+  display_name: "Enquadrar cenas"
+  short_description: "Enquadrar atores e objetos no formato vertical"
+  default_prompt: "Use $minecraft-camera-director para enquadrar atores e objetos no formato vertical."

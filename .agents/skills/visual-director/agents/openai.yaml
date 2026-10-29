@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dirigir história visual"
+  short_description: "Planejar cenas coerentes e diferentes por assunto"
+  default_prompt: "Use $visual-director para planejar cenas coerentes e diferentes por assunto."

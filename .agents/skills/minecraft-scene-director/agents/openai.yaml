@@ -1,0 +1,4 @@
+interface:
+  display_name: "Executar cenas"
+  short_description: "Executar acontecimentos e animações do storyboard"
+  default_prompt: "Use $minecraft-scene-director para executar acontecimentos e animações do storyboard."

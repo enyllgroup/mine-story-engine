@@ -1,0 +1,873 @@
+{
+  "schema_version": 1,
+  "source": "/workspace/mine-story-engine/examples/audio/demo_sol_SINTETICO.wav",
+  "audio_sha256": "4c059b589d4c4e253bb68671bdeffc108e04455d69078f1e976a1ed54dfd506c",
+  "language": "pt-BR",
+  "duration": 56.691111,
+  "text": "o que acontecedia se o Sol venha para a descesse. Durante cerca de 8 minutos e 20 segundos, ainda medíamos a luz que já estava viajando pelo espaço. A Terra continuaria iluminada nesse intervalo. Depois, o céu escudecedia. Sem a atração gravitacional do Sol, nosso planeta deixaria sua órbita e seguiria aproximadamente em linha certa. A Lua ainda poderia permanecer ligada à Terra. A temperatura não cai instantaneamente. Oceano e atmosfera guardam calor, mas o resfriamento seria progressivo. Sem luz, plantas perderiam sua principal fonte de energia. Cadeias alimentares seriam afetadas. Algumas formas de vida poderiam sobreviver em ambientes alimentados pelo calor interno do planeta. Este é um cenário hipotético. O sol não pode simplesmente Vem te desaparecer dessa maneira.",
+  "words": [
+    {
+      "word": "o",
+      "start": 0.0,
+      "end": 0.12,
+      "probability": 0.07276
+    },
+    {
+      "word": "que",
+      "start": 0.12,
+      "end": 0.22,
+      "probability": 0.79983
+    },
+    {
+      "word": "acontecedia",
+      "start": 0.22,
+      "end": 1.16,
+      "probability": 0.55279
+    },
+    {
+      "word": "se",
+      "start": 1.16,
+      "end": 1.32,
+      "probability": 0.75891
+    },
+    {
+      "word": "o",
+      "start": 1.32,
+      "end": 1.44,
+      "probability": 0.99297
+    },
+    {
+      "word": "Sol",
+      "start": 1.44,
+      "end": 1.66,
+      "probability": 0.54574
+    },
+    {
+      "word": "venha",
+      "start": 1.66,
+      "end": 1.98,
+      "probability": 0.39353
+    },
+    {
+      "word": "para",
+      "start": 1.98,
+      "end": 2.22,
+      "probability": 0.53073
+    },
+    {
+      "word": "a",
+      "start": 2.22,
+      "end": 2.26,
+      "probability": 0.59469
+    },
+    {
+      "word": "descesse.",
+      "start": 2.26,
+      "end": 2.94,
+      "probability": 0.55231
+    },
+    {
+      "word": "Durante",
+      "start": 3.08,
+      "end": 3.46,
+      "probability": 0.69631
+    },
+    {
+      "word": "cerca",
+      "start": 3.46,
+      "end": 3.84,
+      "probability": 0.98035
+    },
+    {
+      "word": "de",
+      "start": 3.84,
+      "end": 4.12,
+      "probability": 0.99487
+    },
+    {
+      "word": "8",
+      "start": 4.12,
+      "end": 4.32,
+      "probability": 0.74026
+    },
+    {
+      "word": "minutos",
+      "start": 4.32,
+      "end": 4.7,
+      "probability": 0.8976
+    },
+    {
+      "word": "e",
+      "start": 4.7,
+      "end": 5.0,
+      "probability": 0.99493
+    },
+    {
+      "word": "20",
+      "start": 5.0,
+      "end": 5.3,
+      "probability": 0.92085
+    },
+    {
+      "word": "segundos,",
+      "start": 5.3,
+      "end": 6.0,
+      "probability": 0.99592
+    },
+    {
+      "word": "ainda",
+      "start": 6.3,
+      "end": 6.68,
+      "probability": 0.99545
+    },
+    {
+      "word": "medíamos",
+      "start": 6.68,
+      "end": 7.2,
+      "probability": 0.78544
+    },
+    {
+      "word": "a",
+      "start": 7.2,
+      "end": 7.5,
+      "probability": 0.88775
+    },
+    {
+      "word": "luz",
+      "start": 7.5,
+      "end": 7.62,
+      "probability": 0.99642
+    },
+    {
+      "word": "que",
+      "start": 7.62,
+      "end": 7.86,
+      "probability": 0.99495
+    },
+    {
+      "word": "já",
+      "start": 7.86,
+      "end": 8.06,
+      "probability": 0.99439
+    },
+    {
+      "word": "estava",
+      "start": 8.06,
+      "end": 8.48,
+      "probability": 0.99003
+    },
+    {
+      "word": "viajando",
+      "start": 8.48,
+      "end": 9.1,
+      "probability": 0.98689
+    },
+    {
+      "word": "pelo",
+      "start": 9.1,
+      "end": 9.46,
+      "probability": 0.99368
+    },
+    {
+      "word": "espaço.",
+      "start": 9.46,
+      "end": 9.96,
+      "probability": 0.97562
+    },
+    {
+      "word": "A",
+      "start": 10.44,
+      "end": 10.56,
+      "probability": 0.99245
+    },
+    {
+      "word": "Terra",
+      "start": 10.56,
+      "end": 10.76,
+      "probability": 0.76211
+    },
+    {
+      "word": "continuaria",
+      "start": 10.76,
+      "end": 11.58,
+      "probability": 0.71677
+    },
+    {
+      "word": "iluminada",
+      "start": 11.58,
+      "end": 12.32,
+      "probability": 0.97432
+    },
+    {
+      "word": "nesse",
+      "start": 12.32,
+      "end": 12.64,
+      "probability": 0.93795
+    },
+    {
+      "word": "intervalo.",
+      "start": 12.64,
+      "end": 13.42,
+      "probability": 0.74958
+    },
+    {
+      "word": "Depois,",
+      "start": 13.76,
+      "end": 14.18,
+      "probability": 0.97589
+    },
+    {
+      "word": "o",
+      "start": 14.5,
+      "end": 14.64,
+      "probability": 0.98817
+    },
+    {
+      "word": "céu",
+      "start": 14.64,
+      "end": 14.78,
+      "probability": 0.75759
+    },
+    {
+      "word": "escudecedia.",
+      "start": 14.78,
+      "end": 15.78,
+      "probability": 0.89933
+    },
+    {
+      "word": "Sem",
+      "start": 16.12,
+      "end": 16.34,
+      "probability": 0.89322
+    },
+    {
+      "word": "a",
+      "start": 16.34,
+      "end": 16.52,
+      "probability": 0.93071
+    },
+    {
+      "word": "atração",
+      "start": 16.52,
+      "end": 16.88,
+      "probability": 0.97962
+    },
+    {
+      "word": "gravitacional",
+      "start": 16.88,
+      "end": 17.92,
+      "probability": 0.57417
+    },
+    {
+      "word": "do",
+      "start": 17.92,
+      "end": 18.38,
+      "probability": 0.99238
+    },
+    {
+      "word": "Sol,",
+      "start": 18.38,
+      "end": 18.66,
+      "probability": 0.88753
+    },
+    {
+      "word": "nosso",
+      "start": 18.96,
+      "end": 19.18,
+      "probability": 0.95523
+    },
+    {
+      "word": "planeta",
+      "start": 19.18,
+      "end": 19.56,
+      "probability": 0.89233
+    },
+    {
+      "word": "deixaria",
+      "start": 19.56,
+      "end": 20.2,
+      "probability": 0.91358
+    },
+    {
+      "word": "sua",
+      "start": 20.2,
+      "end": 20.58,
+      "probability": 0.94063
+    },
+    {
+      "word": "órbita",
+      "start": 20.58,
+      "end": 21.06,
+      "probability": 0.95854
+    },
+    {
+      "word": "e",
+      "start": 21.06,
+      "end": 21.26,
+      "probability": 0.88998
+    },
+    {
+      "word": "seguiria",
+      "start": 21.26,
+      "end": 21.82,
+      "probability": 0.74847
+    },
+    {
+      "word": "aproximadamente",
+      "start": 21.82,
+      "end": 22.4,
+      "probability": 0.95997
+    },
+    {
+      "word": "em",
+      "start": 22.4,
+      "end": 23.22,
+      "probability": 0.98636
+    },
+    {
+      "word": "linha",
+      "start": 23.22,
+      "end": 23.48,
+      "probability": 0.95176
+    },
+    {
+      "word": "certa.",
+      "start": 23.48,
+      "end": 23.84,
+      "probability": 0.07236
+    },
+    {
+      "word": "A",
+      "start": 24.26,
+      "end": 24.46,
+      "probability": 0.99424
+    },
+    {
+      "word": "Lua",
+      "start": 24.46,
+      "end": 24.58,
+      "probability": 0.90583
+    },
+    {
+      "word": "ainda",
+      "start": 24.58,
+      "end": 24.96,
+      "probability": 0.99476
+    },
+    {
+      "word": "poderia",
+      "start": 24.96,
+      "end": 25.3,
+      "probability": 0.58236
+    },
+    {
+      "word": "permanecer",
+      "start": 25.3,
+      "end": 26.22,
+      "probability": 0.98839
+    },
+    {
+      "word": "ligada",
+      "start": 26.22,
+      "end": 26.7,
+      "probability": 0.98923
+    },
+    {
+      "word": "à",
+      "start": 26.7,
+      "end": 26.96,
+      "probability": 0.50064
+    },
+    {
+      "word": "Terra.",
+      "start": 26.96,
+      "end": 27.16,
+      "probability": 0.85363
+    },
+    {
+      "word": "A",
+      "start": 27.16,
+      "end": 27.78,
+      "probability": 0.74487
+    },
+    {
+      "word": "temperatura",
+      "start": 27.78,
+      "end": 28.18,
+      "probability": 0.81312
+    },
+    {
+      "word": "não",
+      "start": 28.18,
+      "end": 28.76,
+      "probability": 0.99343
+    },
+    {
+      "word": "cai",
+      "start": 28.76,
+      "end": 29.0,
+      "probability": 0.84752
+    },
+    {
+      "word": "instantaneamente.",
+      "start": 29.0,
+      "end": 30.38,
+      "probability": 0.71661
+    },
+    {
+      "word": "Oceano",
+      "start": 30.8,
+      "end": 31.32,
+      "probability": 0.73655
+    },
+    {
+      "word": "e",
+      "start": 31.32,
+      "end": 31.52,
+      "probability": 0.22951
+    },
+    {
+      "word": "atmosfera",
+      "start": 31.52,
+      "end": 32.12,
+      "probability": 0.67699
+    },
+    {
+      "word": "guardam",
+      "start": 32.12,
+      "end": 32.68,
+      "probability": 0.8772
+    },
+    {
+      "word": "calor,",
+      "start": 32.68,
+      "end": 33.12,
+      "probability": 0.91571
+    },
+    {
+      "word": "mas",
+      "start": 33.42,
+      "end": 33.62,
+      "probability": 0.99231
+    },
+    {
+      "word": "o",
+      "start": 33.62,
+      "end": 33.74,
+      "probability": 0.94127
+    },
+    {
+      "word": "resfriamento",
+      "start": 33.74,
+      "end": 34.56,
+      "probability": 0.79982
+    },
+    {
+      "word": "seria",
+      "start": 34.56,
+      "end": 34.88,
+      "probability": 0.95939
+    },
+    {
+      "word": "progressivo.",
+      "start": 34.88,
+      "end": 35.86,
+      "probability": 0.97593
+    },
+    {
+      "word": "Sem",
+      "start": 36.22,
+      "end": 36.5,
+      "probability": 0.97262
+    },
+    {
+      "word": "luz,",
+      "start": 36.5,
+      "end": 36.82,
+      "probability": 0.99604
+    },
+    {
+      "word": "plantas",
+      "start": 37.18,
+      "end": 37.62,
+      "probability": 0.99183
+    },
+    {
+      "word": "perderiam",
+      "start": 37.62,
+      "end": 38.2,
+      "probability": 0.7467
+    },
+    {
+      "word": "sua",
+      "start": 38.2,
+      "end": 38.48,
+      "probability": 0.98188
+    },
+    {
+      "word": "principal",
+      "start": 38.48,
+      "end": 39.1,
+      "probability": 0.91963
+    },
+    {
+      "word": "fonte",
+      "start": 39.1,
+      "end": 39.58,
+      "probability": 0.93417
+    },
+    {
+      "word": "de",
+      "start": 39.58,
+      "end": 39.86,
+      "probability": 0.99618
+    },
+    {
+      "word": "energia.",
+      "start": 39.86,
+      "end": 40.3,
+      "probability": 0.99793
+    },
+    {
+      "word": "Cadeias",
+      "start": 40.78,
+      "end": 41.3,
+      "probability": 0.59328
+    },
+    {
+      "word": "alimentares",
+      "start": 41.3,
+      "end": 42.04,
+      "probability": 0.67047
+    },
+    {
+      "word": "seriam",
+      "start": 42.04,
+      "end": 42.54,
+      "probability": 0.88815
+    },
+    {
+      "word": "afetadas.",
+      "start": 42.54,
+      "end": 43.18,
+      "probability": 0.99506
+    },
+    {
+      "word": "Algumas",
+      "start": 43.64,
+      "end": 44.18,
+      "probability": 0.9888
+    },
+    {
+      "word": "formas",
+      "start": 44.18,
+      "end": 44.44,
+      "probability": 0.52604
+    },
+    {
+      "word": "de",
+      "start": 44.44,
+      "end": 44.78,
+      "probability": 0.99385
+    },
+    {
+      "word": "vida",
+      "start": 44.78,
+      "end": 45.08,
+      "probability": 0.99869
+    },
+    {
+      "word": "poderiam",
+      "start": 45.08,
+      "end": 45.66,
+      "probability": 0.97063
+    },
+    {
+      "word": "sobreviver",
+      "start": 45.66,
+      "end": 46.4,
+      "probability": 0.74219
+    },
+    {
+      "word": "em",
+      "start": 46.4,
+      "end": 46.76,
+      "probability": 0.70488
+    },
+    {
+      "word": "ambientes",
+      "start": 46.76,
+      "end": 47.16,
+      "probability": 0.55717
+    },
+    {
+      "word": "alimentados",
+      "start": 47.16,
+      "end": 48.18,
+      "probability": 0.99659
+    },
+    {
+      "word": "pelo",
+      "start": 48.18,
+      "end": 48.52,
+      "probability": 0.99828
+    },
+    {
+      "word": "calor",
+      "start": 48.52,
+      "end": 48.84,
+      "probability": 0.99683
+    },
+    {
+      "word": "interno",
+      "start": 48.84,
+      "end": 49.5,
+      "probability": 0.79236
+    },
+    {
+      "word": "do",
+      "start": 49.5,
+      "end": 49.62,
+      "probability": 0.99735
+    },
+    {
+      "word": "planeta.",
+      "start": 49.62,
+      "end": 50.04,
+      "probability": 0.99428
+    },
+    {
+      "word": "Este",
+      "start": 50.5,
+      "end": 50.76,
+      "probability": 0.8377
+    },
+    {
+      "word": "é",
+      "start": 50.76,
+      "end": 50.96,
+      "probability": 0.984
+    },
+    {
+      "word": "um",
+      "start": 50.96,
+      "end": 51.12,
+      "probability": 0.99655
+    },
+    {
+      "word": "cenário",
+      "start": 51.12,
+      "end": 51.58,
+      "probability": 0.97659
+    },
+    {
+      "word": "hipotético.",
+      "start": 51.58,
+      "end": 52.34,
+      "probability": 0.95892
+    },
+    {
+      "word": "O",
+      "start": 52.8,
+      "end": 52.92,
+      "probability": 0.99716
+    },
+    {
+      "word": "sol",
+      "start": 52.92,
+      "end": 53.1,
+      "probability": 0.61688
+    },
+    {
+      "word": "não",
+      "start": 53.1,
+      "end": 53.32,
+      "probability": 0.99648
+    },
+    {
+      "word": "pode",
+      "start": 53.32,
+      "end": 53.58,
+      "probability": 0.99256
+    },
+    {
+      "word": "simplesmente",
+      "start": 53.58,
+      "end": 54.28,
+      "probability": 0.99025
+    },
+    {
+      "word": "Vem",
+      "start": 54.28,
+      "end": 54.44,
+      "probability": 0.32156
+    },
+    {
+      "word": "te",
+      "start": 54.44,
+      "end": 54.56,
+      "probability": 0.59147
+    },
+    {
+      "word": "desaparecer",
+      "start": 54.56,
+      "end": 55.42,
+      "probability": 0.54539
+    },
+    {
+      "word": "dessa",
+      "start": 55.42,
+      "end": 55.72,
+      "probability": 0.8963
+    },
+    {
+      "word": "maneira.",
+      "start": 55.72,
+      "end": 56.1,
+      "probability": 0.84141
+    }
+  ],
+  "segments": [
+    {
+      "text": "o que acontecedia se o Sol venha para a descesse.",
+      "start": 0.0,
+      "end": 2.94,
+      "avg_logprob": -0.30744
+    },
+    {
+      "text": "Durante cerca de 8 minutos e 20 segundos, ainda medíamos a luz que já estava viajando pelo espaço.",
+      "start": 3.08,
+      "end": 9.96,
+      "avg_logprob": -0.30744
+    },
+    {
+      "text": "A Terra continuaria iluminada nesse intervalo.",
+      "start": 10.44,
+      "end": 13.42,
+      "avg_logprob": -0.30744
+    },
+    {
+      "text": "Depois, o céu escudecedia.",
+      "start": 13.76,
+      "end": 15.78,
+      "avg_logprob": -0.30744
+    },
+    {
+      "text": "Sem a atração gravitacional do Sol, nosso planeta deixaria sua órbita e seguiria aproximadamente em linha certa.",
+      "start": 16.12,
+      "end": 23.84,
+      "avg_logprob": -0.30744
+    },
+    {
+      "text": "A Lua ainda poderia permanecer ligada à Terra.",
+      "start": 24.26,
+      "end": 27.16,
+      "avg_logprob": -0.30744
+    },
+    {
+      "text": "A temperatura não cai instantaneamente. Oceano e atmosfera guardam calor, mas o resfriamento",
+      "start": 27.16,
+      "end": 34.56,
+      "avg_logprob": -0.26413
+    },
+    {
+      "text": "seria progressivo. Sem luz, plantas perderiam sua principal fonte de energia. Cadeias alimentares",
+      "start": 34.56,
+      "end": 42.04,
+      "avg_logprob": -0.26413
+    },
+    {
+      "text": "seriam afetadas. Algumas formas de vida poderiam sobreviver em ambientes alimentados pelo",
+      "start": 42.04,
+      "end": 48.52,
+      "avg_logprob": -0.26413
+    },
+    {
+      "text": "calor interno do planeta. Este é um cenário hipotético. O sol não pode simplesmente",
+      "start": 48.52,
+      "end": 54.28,
+      "avg_logprob": -0.26413
+    },
+    {
+      "text": "Vem te desaparecer dessa maneira.",
+      "start": 54.28,
+      "end": 56.1,
+      "avg_logprob": -0.83357
+    }
+  ],
+  "pauses": [
+    {
+      "start": 2.6961,
+      "end": 3.0782
+    },
+    {
+      "start": 10.0609,
+      "end": 10.4293
+    },
+    {
+      "start": 13.4078,
+      "end": 13.7931
+    },
+    {
+      "start": 15.75,
+      "end": 16.1302
+    },
+    {
+      "start": 23.913,
+      "end": 24.2842
+    },
+    {
+      "start": 27.2795,
+      "end": 27.6506
+    },
+    {
+      "start": 30.5023,
+      "end": 30.8713
+    },
+    {
+      "start": 35.9026,
+      "end": 36.2861
+    },
+    {
+      "start": 40.4355,
+      "end": 40.846
+    },
+    {
+      "start": 43.2985,
+      "end": 43.6655
+    },
+    {
+      "start": 50.1834,
+      "end": 50.5559
+    },
+    {
+      "start": 56.324,
+      "end": 56.6911
+    }
+  ],
+  "audio": {
+    "duration": 56.691111,
+    "sample_rate": 22050,
+    "channels": 1,
+    "codec": "pcm_s16le",
+    "path": "/workspace/mine-story-engine/examples/audio/demo_sol_SINTETICO.wav"
+  },
+  "transcription": {
+    "schema": 1,
+    "backend": "faster-whisper-1.2.1",
+    "model": "small",
+    "language": "pt",
+    "beam_size": 5,
+    "compute_type": "int8",
+    "cpu_threads": 2,
+    "alignment": "whisper-word-timestamps",
+    "forced_alignment": false,
+    "language_probability": 1.0,
+    "elapsed_seconds": 14.846
+  },
+  "cache_hit": false,
+  "warnings": [
+    "Timestamps estimados pelo Whisper; não são forced alignment independente.",
+    "Áudio com menos de 60 segundos: pode não cumprir a duração exigida pelo Programa de Recompensas do TikTok. A narração foi preservada."
+  ]
+}

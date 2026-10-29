@@ -1,0 +1,4 @@
+interface:
+  display_name: "Produzir vídeo"
+  short_description: "Produzir MP4 vertical desde o arquivo de narração"
+  default_prompt: "Use $render-pipeline para produzir MP4 vertical desde o arquivo de narração."

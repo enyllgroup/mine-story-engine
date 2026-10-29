@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analisar narração"
+  short_description: "Transcrever PT-BR e medir tempos reais do áudio"
+  default_prompt: "Use $narration-analyzer para transcrever PT-BR e medir tempos reais do áudio."

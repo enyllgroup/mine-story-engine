@@ -1,0 +1,4 @@
+interface:
+  display_name: "Criar recurso em blocos"
+  short_description: "Gerar e catalogar assets originais reutilizáveis"
+  default_prompt: "Use $minecraft-asset-creator para gerar e catalogar assets originais reutilizáveis."

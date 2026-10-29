@@ -1,0 +1,4 @@
+interface:
+  display_name: "Construir mundo"
+  short_description: "Construir cenários em blocos de forma procedural"
+  default_prompt: "Use $minecraft-world-builder para construir cenários em blocos de forma procedural."

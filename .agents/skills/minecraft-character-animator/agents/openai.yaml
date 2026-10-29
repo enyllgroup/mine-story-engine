@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animar personagens"
+  short_description: "Compor atuação corporal sincronizada à narração"
+  default_prompt: "Use $minecraft-character-animator para compor atuação corporal sincronizada à narração."

@@ -1,0 +1,1370 @@
+{
+  "schema_version": 2,
+  "source": "/workspace/mine-story-engine/examples/audio/demo_cartas_PIPER_SINTETICO.wav",
+  "audio_sha256": "7686f68fe53386d7a0b891f3342ffed1cfa25db390c02484651fc42bbd3940c7",
+  "language": "pt-BR",
+  "duration": 70.460952,
+  "text": "Porque uma cata pequena pode valer mais do que uma casa. Imagine um explorador abrindo um baú cheio de catas comuns. Entre centenas de figuras parecidas, ele encontra uma edição rara. A diferença começa na escassez. Se existem poucas cópias, muitos colecionadores passam a disputar o mesmo objeto. Mas raridade, sozinha, não garante valor. A cata também precisa despertar interesse. Um personagem famoso, uma história curiosa ou uma competição importante podem transformar um pedaço de papel em um objeto desejado. Agora o de serve dois colecionadores em uma feira, um deles oferece moedas por uma carta arranhada. O outro apresenta uma cópia bem conservada protegida dentro de uma caixa. O estado de conseração muda a negociação. Pequenos detalhes, como bodas gastas e marcas na superfície podem reduzir bastante o peso. Também existe o risco de falsificação. Antes de contar, o colecionador compara impressão, observa a textura e procura uma avaliação confiável. Em um leilão, os lances sobem quando várias pessoas querem a mesma peça. só que preços podem cair. O mau cheio de moedas não quece para sempre. O valor nasce do encontro entre oferta, procura, confiança e memória. No filme, a cata mais cara não é necessariamente a mais importante para quem coleciona.",
+  "words": [
+    {
+      "word": "Porque",
+      "start": 0.0,
+      "end": 0.18,
+      "probability": 0.4816
+    },
+    {
+      "word": "uma",
+      "start": 0.18,
+      "end": 0.36,
+      "probability": 0.97731
+    },
+    {
+      "word": "cata",
+      "start": 0.36,
+      "end": 0.68,
+      "probability": 0.67106
+    },
+    {
+      "word": "pequena",
+      "start": 0.68,
+      "end": 1.0,
+      "probability": 0.99348
+    },
+    {
+      "word": "pode",
+      "start": 1.0,
+      "end": 1.22,
+      "probability": 0.99416
+    },
+    {
+      "word": "valer",
+      "start": 1.22,
+      "end": 1.52,
+      "probability": 0.99392
+    },
+    {
+      "word": "mais",
+      "start": 1.52,
+      "end": 1.72,
+      "probability": 0.99039
+    },
+    {
+      "word": "do",
+      "start": 1.72,
+      "end": 1.88,
+      "probability": 0.94785
+    },
+    {
+      "word": "que",
+      "start": 1.88,
+      "end": 1.98,
+      "probability": 0.9972
+    },
+    {
+      "word": "uma",
+      "start": 1.98,
+      "end": 2.12,
+      "probability": 0.98192
+    },
+    {
+      "word": "casa.",
+      "start": 2.12,
+      "end": 2.52,
+      "probability": 0.98597
+    },
+    {
+      "word": "Imagine",
+      "start": 2.84,
+      "end": 3.16,
+      "probability": 0.81551
+    },
+    {
+      "word": "um",
+      "start": 3.16,
+      "end": 3.36,
+      "probability": 0.96957
+    },
+    {
+      "word": "explorador",
+      "start": 3.36,
+      "end": 3.88,
+      "probability": 0.9976
+    },
+    {
+      "word": "abrindo",
+      "start": 3.88,
+      "end": 4.24,
+      "probability": 0.9966
+    },
+    {
+      "word": "um",
+      "start": 4.24,
+      "end": 4.36,
+      "probability": 0.98741
+    },
+    {
+      "word": "baú",
+      "start": 4.36,
+      "end": 4.54,
+      "probability": 0.91985
+    },
+    {
+      "word": "cheio",
+      "start": 4.54,
+      "end": 4.86,
+      "probability": 0.99679
+    },
+    {
+      "word": "de",
+      "start": 4.86,
+      "end": 5.02,
+      "probability": 0.99327
+    },
+    {
+      "word": "catas",
+      "start": 5.02,
+      "end": 5.34,
+      "probability": 0.96957
+    },
+    {
+      "word": "comuns.",
+      "start": 5.34,
+      "end": 6.06,
+      "probability": 0.98738
+    },
+    {
+      "word": "Entre",
+      "start": 6.18,
+      "end": 6.38,
+      "probability": 0.98618
+    },
+    {
+      "word": "centenas",
+      "start": 6.38,
+      "end": 6.84,
+      "probability": 0.99369
+    },
+    {
+      "word": "de",
+      "start": 6.84,
+      "end": 7.0,
+      "probability": 0.99783
+    },
+    {
+      "word": "figuras",
+      "start": 7.0,
+      "end": 7.36,
+      "probability": 0.95747
+    },
+    {
+      "word": "parecidas,",
+      "start": 7.36,
+      "end": 8.0,
+      "probability": 0.98329
+    },
+    {
+      "word": "ele",
+      "start": 8.26,
+      "end": 8.4,
+      "probability": 0.98721
+    },
+    {
+      "word": "encontra",
+      "start": 8.4,
+      "end": 8.66,
+      "probability": 0.98579
+    },
+    {
+      "word": "uma",
+      "start": 8.66,
+      "end": 8.92,
+      "probability": 0.99667
+    },
+    {
+      "word": "edição",
+      "start": 8.92,
+      "end": 9.2,
+      "probability": 0.99751
+    },
+    {
+      "word": "rara.",
+      "start": 9.2,
+      "end": 9.56,
+      "probability": 0.99155
+    },
+    {
+      "word": "A",
+      "start": 9.9,
+      "end": 10.0,
+      "probability": 0.9846
+    },
+    {
+      "word": "diferença",
+      "start": 10.0,
+      "end": 10.3,
+      "probability": 0.99868
+    },
+    {
+      "word": "começa",
+      "start": 10.3,
+      "end": 10.78,
+      "probability": 0.99833
+    },
+    {
+      "word": "na",
+      "start": 10.78,
+      "end": 11.0,
+      "probability": 0.88403
+    },
+    {
+      "word": "escassez.",
+      "start": 11.0,
+      "end": 11.66,
+      "probability": 0.96238
+    },
+    {
+      "word": "Se",
+      "start": 11.92,
+      "end": 12.04,
+      "probability": 0.9967
+    },
+    {
+      "word": "existem",
+      "start": 12.04,
+      "end": 12.3,
+      "probability": 0.97614
+    },
+    {
+      "word": "poucas",
+      "start": 12.3,
+      "end": 12.7,
+      "probability": 0.99687
+    },
+    {
+      "word": "cópias,",
+      "start": 12.7,
+      "end": 13.24,
+      "probability": 0.78368
+    },
+    {
+      "word": "muitos",
+      "start": 13.46,
+      "end": 13.62,
+      "probability": 0.96841
+    },
+    {
+      "word": "colecionadores",
+      "start": 13.62,
+      "end": 14.44,
+      "probability": 0.93691
+    },
+    {
+      "word": "passam",
+      "start": 14.44,
+      "end": 14.92,
+      "probability": 0.99239
+    },
+    {
+      "word": "a",
+      "start": 14.92,
+      "end": 15.06,
+      "probability": 0.99598
+    },
+    {
+      "word": "disputar",
+      "start": 15.06,
+      "end": 15.52,
+      "probability": 0.99801
+    },
+    {
+      "word": "o",
+      "start": 15.52,
+      "end": 15.64,
+      "probability": 0.99282
+    },
+    {
+      "word": "mesmo",
+      "start": 15.64,
+      "end": 15.82,
+      "probability": 0.99732
+    },
+    {
+      "word": "objeto.",
+      "start": 15.82,
+      "end": 16.28,
+      "probability": 0.99294
+    },
+    {
+      "word": "Mas",
+      "start": 16.64,
+      "end": 16.84,
+      "probability": 0.97646
+    },
+    {
+      "word": "raridade,",
+      "start": 16.84,
+      "end": 17.26,
+      "probability": 0.91322
+    },
+    {
+      "word": "sozinha,",
+      "start": 17.46,
+      "end": 17.82,
+      "probability": 0.87195
+    },
+    {
+      "word": "não",
+      "start": 18.12,
+      "end": 18.18,
+      "probability": 0.99806
+    },
+    {
+      "word": "garante",
+      "start": 18.18,
+      "end": 18.5,
+      "probability": 0.98094
+    },
+    {
+      "word": "valor.",
+      "start": 18.5,
+      "end": 18.72,
+      "probability": 0.98116
+    },
+    {
+      "word": "A",
+      "start": 19.18,
+      "end": 19.3,
+      "probability": 0.98834
+    },
+    {
+      "word": "cata",
+      "start": 19.3,
+      "end": 19.54,
+      "probability": 0.91353
+    },
+    {
+      "word": "também",
+      "start": 19.54,
+      "end": 19.78,
+      "probability": 0.99449
+    },
+    {
+      "word": "precisa",
+      "start": 19.78,
+      "end": 20.08,
+      "probability": 0.99886
+    },
+    {
+      "word": "despertar",
+      "start": 20.08,
+      "end": 20.58,
+      "probability": 0.97476
+    },
+    {
+      "word": "interesse.",
+      "start": 20.58,
+      "end": 21.12,
+      "probability": 0.86309
+    },
+    {
+      "word": "Um",
+      "start": 21.4,
+      "end": 21.52,
+      "probability": 0.97549
+    },
+    {
+      "word": "personagem",
+      "start": 21.52,
+      "end": 21.94,
+      "probability": 0.99558
+    },
+    {
+      "word": "famoso,",
+      "start": 21.94,
+      "end": 22.4,
+      "probability": 0.99045
+    },
+    {
+      "word": "uma",
+      "start": 22.82,
+      "end": 22.9,
+      "probability": 0.99555
+    },
+    {
+      "word": "história",
+      "start": 22.9,
+      "end": 23.28,
+      "probability": 0.99642
+    },
+    {
+      "word": "curiosa",
+      "start": 23.28,
+      "end": 23.92,
+      "probability": 0.99768
+    },
+    {
+      "word": "ou",
+      "start": 23.92,
+      "end": 24.08,
+      "probability": 0.74719
+    },
+    {
+      "word": "uma",
+      "start": 24.08,
+      "end": 24.2,
+      "probability": 0.99741
+    },
+    {
+      "word": "competição",
+      "start": 24.2,
+      "end": 24.76,
+      "probability": 0.99795
+    },
+    {
+      "word": "importante",
+      "start": 24.76,
+      "end": 25.22,
+      "probability": 0.82144
+    },
+    {
+      "word": "podem",
+      "start": 25.22,
+      "end": 25.7,
+      "probability": 0.95778
+    },
+    {
+      "word": "transformar",
+      "start": 25.7,
+      "end": 26.24,
+      "probability": 0.99211
+    },
+    {
+      "word": "um",
+      "start": 26.24,
+      "end": 26.38,
+      "probability": 0.99476
+    },
+    {
+      "word": "pedaço",
+      "start": 26.38,
+      "end": 26.78,
+      "probability": 0.99843
+    },
+    {
+      "word": "de",
+      "start": 26.78,
+      "end": 26.92,
+      "probability": 0.99566
+    },
+    {
+      "word": "papel",
+      "start": 26.92,
+      "end": 27.24,
+      "probability": 0.99839
+    },
+    {
+      "word": "em",
+      "start": 27.24,
+      "end": 27.52,
+      "probability": 0.98057
+    },
+    {
+      "word": "um",
+      "start": 27.52,
+      "end": 27.62,
+      "probability": 0.99707
+    },
+    {
+      "word": "objeto",
+      "start": 27.62,
+      "end": 27.9,
+      "probability": 0.99506
+    },
+    {
+      "word": "desejado.",
+      "start": 27.9,
+      "end": 28.6,
+      "probability": 0.99857
+    },
+    {
+      "word": "Agora",
+      "start": 28.6,
+      "end": 29.04,
+      "probability": 0.47674
+    },
+    {
+      "word": "o",
+      "start": 29.04,
+      "end": 29.2,
+      "probability": 0.47746
+    },
+    {
+      "word": "de",
+      "start": 29.2,
+      "end": 29.26,
+      "probability": 0.33062
+    },
+    {
+      "word": "serve",
+      "start": 29.26,
+      "end": 29.4,
+      "probability": 0.30735
+    },
+    {
+      "word": "dois",
+      "start": 29.4,
+      "end": 29.66,
+      "probability": 0.81369
+    },
+    {
+      "word": "colecionadores",
+      "start": 29.66,
+      "end": 30.4,
+      "probability": 0.95018
+    },
+    {
+      "word": "em",
+      "start": 30.4,
+      "end": 30.62,
+      "probability": 0.9899
+    },
+    {
+      "word": "uma",
+      "start": 30.62,
+      "end": 30.78,
+      "probability": 0.99035
+    },
+    {
+      "word": "feira,",
+      "start": 30.78,
+      "end": 31.24,
+      "probability": 0.98446
+    },
+    {
+      "word": "um",
+      "start": 31.46,
+      "end": 31.56,
+      "probability": 0.71716
+    },
+    {
+      "word": "deles",
+      "start": 31.56,
+      "end": 31.72,
+      "probability": 0.97751
+    },
+    {
+      "word": "oferece",
+      "start": 31.72,
+      "end": 32.3,
+      "probability": 0.99596
+    },
+    {
+      "word": "moedas",
+      "start": 32.3,
+      "end": 32.72,
+      "probability": 0.99441
+    },
+    {
+      "word": "por",
+      "start": 32.72,
+      "end": 32.94,
+      "probability": 0.97827
+    },
+    {
+      "word": "uma",
+      "start": 32.94,
+      "end": 33.1,
+      "probability": 0.98985
+    },
+    {
+      "word": "carta",
+      "start": 33.1,
+      "end": 33.42,
+      "probability": 0.94615
+    },
+    {
+      "word": "arranhada.",
+      "start": 33.42,
+      "end": 34.06,
+      "probability": 0.84782
+    },
+    {
+      "word": "O",
+      "start": 34.34,
+      "end": 34.42,
+      "probability": 0.97048
+    },
+    {
+      "word": "outro",
+      "start": 34.42,
+      "end": 34.56,
+      "probability": 0.99816
+    },
+    {
+      "word": "apresenta",
+      "start": 34.56,
+      "end": 35.0,
+      "probability": 0.98394
+    },
+    {
+      "word": "uma",
+      "start": 35.0,
+      "end": 35.14,
+      "probability": 0.99134
+    },
+    {
+      "word": "cópia",
+      "start": 35.14,
+      "end": 35.46,
+      "probability": 0.97316
+    },
+    {
+      "word": "bem",
+      "start": 35.46,
+      "end": 35.62,
+      "probability": 0.99707
+    },
+    {
+      "word": "conservada",
+      "start": 35.62,
+      "end": 36.26,
+      "probability": 0.99253
+    },
+    {
+      "word": "protegida",
+      "start": 36.26,
+      "end": 36.84,
+      "probability": 0.81803
+    },
+    {
+      "word": "dentro",
+      "start": 36.84,
+      "end": 37.16,
+      "probability": 0.99403
+    },
+    {
+      "word": "de",
+      "start": 37.16,
+      "end": 37.32,
+      "probability": 0.99708
+    },
+    {
+      "word": "uma",
+      "start": 37.32,
+      "end": 37.46,
+      "probability": 0.99529
+    },
+    {
+      "word": "caixa.",
+      "start": 37.46,
+      "end": 37.9,
+      "probability": 0.98679
+    },
+    {
+      "word": "O",
+      "start": 38.2,
+      "end": 38.24,
+      "probability": 0.94392
+    },
+    {
+      "word": "estado",
+      "start": 38.24,
+      "end": 38.48,
+      "probability": 0.81673
+    },
+    {
+      "word": "de",
+      "start": 38.48,
+      "end": 38.64,
+      "probability": 0.9964
+    },
+    {
+      "word": "conseração",
+      "start": 38.64,
+      "end": 39.14,
+      "probability": 0.52564
+    },
+    {
+      "word": "muda",
+      "start": 39.14,
+      "end": 39.44,
+      "probability": 0.99226
+    },
+    {
+      "word": "a",
+      "start": 39.44,
+      "end": 39.52,
+      "probability": 0.93398
+    },
+    {
+      "word": "negociação.",
+      "start": 39.52,
+      "end": 40.26,
+      "probability": 0.99401
+    },
+    {
+      "word": "Pequenos",
+      "start": 40.54,
+      "end": 40.84,
+      "probability": 0.98246
+    },
+    {
+      "word": "detalhes,",
+      "start": 40.84,
+      "end": 41.5,
+      "probability": 0.73665
+    },
+    {
+      "word": "como",
+      "start": 41.72,
+      "end": 41.9,
+      "probability": 0.99434
+    },
+    {
+      "word": "bodas",
+      "start": 41.9,
+      "end": 42.2,
+      "probability": 0.92597
+    },
+    {
+      "word": "gastas",
+      "start": 42.2,
+      "end": 42.64,
+      "probability": 0.81439
+    },
+    {
+      "word": "e",
+      "start": 42.64,
+      "end": 42.76,
+      "probability": 0.99176
+    },
+    {
+      "word": "marcas",
+      "start": 42.76,
+      "end": 43.04,
+      "probability": 0.92608
+    },
+    {
+      "word": "na",
+      "start": 43.04,
+      "end": 43.2,
+      "probability": 0.84977
+    },
+    {
+      "word": "superfície",
+      "start": 43.2,
+      "end": 43.92,
+      "probability": 0.97152
+    },
+    {
+      "word": "podem",
+      "start": 43.92,
+      "end": 44.42,
+      "probability": 0.40644
+    },
+    {
+      "word": "reduzir",
+      "start": 44.42,
+      "end": 44.94,
+      "probability": 0.97458
+    },
+    {
+      "word": "bastante",
+      "start": 44.94,
+      "end": 45.22,
+      "probability": 0.95886
+    },
+    {
+      "word": "o",
+      "start": 45.22,
+      "end": 45.48,
+      "probability": 0.99692
+    },
+    {
+      "word": "peso.",
+      "start": 45.48,
+      "end": 45.8,
+      "probability": 0.97941
+    },
+    {
+      "word": "Também",
+      "start": 46.06,
+      "end": 46.32,
+      "probability": 0.98287
+    },
+    {
+      "word": "existe",
+      "start": 46.32,
+      "end": 46.58,
+      "probability": 0.99466
+    },
+    {
+      "word": "o",
+      "start": 46.58,
+      "end": 46.72,
+      "probability": 0.98562
+    },
+    {
+      "word": "risco",
+      "start": 46.72,
+      "end": 47.02,
+      "probability": 0.9969
+    },
+    {
+      "word": "de",
+      "start": 47.02,
+      "end": 47.16,
+      "probability": 0.99788
+    },
+    {
+      "word": "falsificação.",
+      "start": 47.16,
+      "end": 47.96,
+      "probability": 0.99688
+    },
+    {
+      "word": "Antes",
+      "start": 48.28,
+      "end": 48.48,
+      "probability": 0.99575
+    },
+    {
+      "word": "de",
+      "start": 48.48,
+      "end": 48.68,
+      "probability": 0.99947
+    },
+    {
+      "word": "contar,",
+      "start": 48.68,
+      "end": 48.98,
+      "probability": 0.99265
+    },
+    {
+      "word": "o",
+      "start": 49.42,
+      "end": 49.42,
+      "probability": 0.7918
+    },
+    {
+      "word": "colecionador",
+      "start": 49.42,
+      "end": 49.88,
+      "probability": 0.99255
+    },
+    {
+      "word": "compara",
+      "start": 49.88,
+      "end": 50.32,
+      "probability": 0.93711
+    },
+    {
+      "word": "impressão,",
+      "start": 50.32,
+      "end": 50.92,
+      "probability": 0.83616
+    },
+    {
+      "word": "observa",
+      "start": 51.14,
+      "end": 51.48,
+      "probability": 0.94759
+    },
+    {
+      "word": "a",
+      "start": 51.48,
+      "end": 51.56,
+      "probability": 0.95756
+    },
+    {
+      "word": "textura",
+      "start": 51.56,
+      "end": 51.92,
+      "probability": 0.99501
+    },
+    {
+      "word": "e",
+      "start": 51.92,
+      "end": 52.04,
+      "probability": 0.97298
+    },
+    {
+      "word": "procura",
+      "start": 52.04,
+      "end": 52.42,
+      "probability": 0.97744
+    },
+    {
+      "word": "uma",
+      "start": 52.42,
+      "end": 52.56,
+      "probability": 0.99611
+    },
+    {
+      "word": "avaliação",
+      "start": 52.56,
+      "end": 53.02,
+      "probability": 0.95911
+    },
+    {
+      "word": "confiável.",
+      "start": 53.02,
+      "end": 53.7,
+      "probability": 0.988
+    },
+    {
+      "word": "Em",
+      "start": 54.02,
+      "end": 54.14,
+      "probability": 0.95644
+    },
+    {
+      "word": "um",
+      "start": 54.14,
+      "end": 54.24,
+      "probability": 0.99136
+    },
+    {
+      "word": "leilão,",
+      "start": 54.24,
+      "end": 54.58,
+      "probability": 0.98238
+    },
+    {
+      "word": "os",
+      "start": 54.8,
+      "end": 54.94,
+      "probability": 0.99378
+    },
+    {
+      "word": "lances",
+      "start": 54.94,
+      "end": 55.18,
+      "probability": 0.88146
+    },
+    {
+      "word": "sobem",
+      "start": 55.18,
+      "end": 55.6,
+      "probability": 0.899
+    },
+    {
+      "word": "quando",
+      "start": 55.6,
+      "end": 55.78,
+      "probability": 0.97388
+    },
+    {
+      "word": "várias",
+      "start": 55.78,
+      "end": 56.16,
+      "probability": 0.98789
+    },
+    {
+      "word": "pessoas",
+      "start": 56.16,
+      "end": 56.52,
+      "probability": 0.9981
+    },
+    {
+      "word": "querem",
+      "start": 56.52,
+      "end": 56.82,
+      "probability": 0.99664
+    },
+    {
+      "word": "a",
+      "start": 56.82,
+      "end": 56.98,
+      "probability": 0.99425
+    },
+    {
+      "word": "mesma",
+      "start": 56.98,
+      "end": 57.2,
+      "probability": 0.90395
+    },
+    {
+      "word": "peça.",
+      "start": 57.2,
+      "end": 57.74,
+      "probability": 0.99471
+    },
+    {
+      "word": "só",
+      "start": 57.74,
+      "end": 58.08,
+      "probability": 0.25927
+    },
+    {
+      "word": "que",
+      "start": 58.08,
+      "end": 58.22,
+      "probability": 0.99663
+    },
+    {
+      "word": "preços",
+      "start": 58.22,
+      "end": 58.48,
+      "probability": 0.95221
+    },
+    {
+      "word": "podem",
+      "start": 58.48,
+      "end": 58.76,
+      "probability": 0.99402
+    },
+    {
+      "word": "cair.",
+      "start": 58.76,
+      "end": 59.16,
+      "probability": 0.98691
+    },
+    {
+      "word": "O",
+      "start": 59.4,
+      "end": 59.5,
+      "probability": 0.54771
+    },
+    {
+      "word": "mau",
+      "start": 59.5,
+      "end": 59.62,
+      "probability": 0.35717
+    },
+    {
+      "word": "cheio",
+      "start": 59.62,
+      "end": 60.02,
+      "probability": 0.91696
+    },
+    {
+      "word": "de",
+      "start": 60.02,
+      "end": 60.1,
+      "probability": 0.99527
+    },
+    {
+      "word": "moedas",
+      "start": 60.1,
+      "end": 60.48,
+      "probability": 0.99691
+    },
+    {
+      "word": "não",
+      "start": 60.48,
+      "end": 60.6,
+      "probability": 0.98874
+    },
+    {
+      "word": "quece",
+      "start": 60.6,
+      "end": 60.9,
+      "probability": 0.546
+    },
+    {
+      "word": "para",
+      "start": 60.9,
+      "end": 61.12,
+      "probability": 0.99014
+    },
+    {
+      "word": "sempre.",
+      "start": 61.12,
+      "end": 61.54,
+      "probability": 0.99807
+    },
+    {
+      "word": "O",
+      "start": 61.8,
+      "end": 61.86,
+      "probability": 0.99109
+    },
+    {
+      "word": "valor",
+      "start": 61.86,
+      "end": 62.06,
+      "probability": 0.99905
+    },
+    {
+      "word": "nasce",
+      "start": 62.06,
+      "end": 62.44,
+      "probability": 0.97455
+    },
+    {
+      "word": "do",
+      "start": 62.44,
+      "end": 62.54,
+      "probability": 0.97968
+    },
+    {
+      "word": "encontro",
+      "start": 62.54,
+      "end": 62.92,
+      "probability": 0.98478
+    },
+    {
+      "word": "entre",
+      "start": 62.92,
+      "end": 63.08,
+      "probability": 0.95111
+    },
+    {
+      "word": "oferta,",
+      "start": 63.08,
+      "end": 63.54,
+      "probability": 0.67773
+    },
+    {
+      "word": "procura,",
+      "start": 63.68,
+      "end": 64.08,
+      "probability": 0.94068
+    },
+    {
+      "word": "confiança",
+      "start": 64.24,
+      "end": 64.9,
+      "probability": 0.9969
+    },
+    {
+      "word": "e",
+      "start": 64.9,
+      "end": 65.04,
+      "probability": 0.97221
+    },
+    {
+      "word": "memória.",
+      "start": 65.04,
+      "end": 65.52,
+      "probability": 0.99462
+    },
+    {
+      "word": "No",
+      "start": 65.78,
+      "end": 65.84,
+      "probability": 0.98931
+    },
+    {
+      "word": "filme,",
+      "start": 65.84,
+      "end": 66.06,
+      "probability": 0.78313
+    },
+    {
+      "word": "a",
+      "start": 66.22,
+      "end": 66.3,
+      "probability": 0.98149
+    },
+    {
+      "word": "cata",
+      "start": 66.3,
+      "end": 66.56,
+      "probability": 0.66978
+    },
+    {
+      "word": "mais",
+      "start": 66.56,
+      "end": 66.76,
+      "probability": 0.99879
+    },
+    {
+      "word": "cara",
+      "start": 66.76,
+      "end": 67.02,
+      "probability": 0.98015
+    },
+    {
+      "word": "não",
+      "start": 67.02,
+      "end": 67.18,
+      "probability": 0.98801
+    },
+    {
+      "word": "é",
+      "start": 67.18,
+      "end": 67.3,
+      "probability": 0.98789
+    },
+    {
+      "word": "necessariamente",
+      "start": 67.3,
+      "end": 68.08,
+      "probability": 0.9898
+    },
+    {
+      "word": "a",
+      "start": 68.08,
+      "end": 68.3,
+      "probability": 0.98619
+    },
+    {
+      "word": "mais",
+      "start": 68.3,
+      "end": 68.56,
+      "probability": 0.9966
+    },
+    {
+      "word": "importante",
+      "start": 68.56,
+      "end": 68.96,
+      "probability": 0.99641
+    },
+    {
+      "word": "para",
+      "start": 68.96,
+      "end": 69.32,
+      "probability": 0.98721
+    },
+    {
+      "word": "quem",
+      "start": 69.32,
+      "end": 69.5,
+      "probability": 0.9899
+    },
+    {
+      "word": "coleciona.",
+      "start": 69.5,
+      "end": 70.3,
+      "probability": 0.98518
+    }
+  ],
+  "segments": [
+    {
+      "text": "Porque uma cata pequena pode valer mais do que uma casa.",
+      "start": 0.0,
+      "end": 2.52,
+      "avg_logprob": -0.1267
+    },
+    {
+      "text": "Imagine um explorador abrindo um baú cheio de catas comuns.",
+      "start": 2.84,
+      "end": 6.06,
+      "avg_logprob": -0.1267
+    },
+    {
+      "text": "Entre centenas de figuras parecidas, ele encontra uma edição rara.",
+      "start": 6.18,
+      "end": 9.56,
+      "avg_logprob": -0.1267
+    },
+    {
+      "text": "A diferença começa na escassez.",
+      "start": 9.9,
+      "end": 11.66,
+      "avg_logprob": -0.1267
+    },
+    {
+      "text": "Se existem poucas cópias, muitos colecionadores passam a disputar o mesmo objeto.",
+      "start": 11.92,
+      "end": 16.28,
+      "avg_logprob": -0.1267
+    },
+    {
+      "text": "Mas raridade, sozinha, não garante valor.",
+      "start": 16.64,
+      "end": 18.72,
+      "avg_logprob": -0.1267
+    },
+    {
+      "text": "A cata também precisa despertar interesse.",
+      "start": 19.18,
+      "end": 21.12,
+      "avg_logprob": -0.1267
+    },
+    {
+      "text": "Um personagem famoso, uma história curiosa ou uma competição importante podem transformar",
+      "start": 21.4,
+      "end": 26.24,
+      "avg_logprob": -0.1267
+    },
+    {
+      "text": "um pedaço de papel em um objeto desejado.",
+      "start": 26.24,
+      "end": 28.6,
+      "avg_logprob": -0.1267
+    },
+    {
+      "text": "Agora o de serve dois colecionadores em uma feira, um deles oferece moedas por uma carta arranhada.",
+      "start": 28.6,
+      "end": 34.06,
+      "avg_logprob": -0.19827
+    },
+    {
+      "text": "O outro apresenta uma cópia bem conservada protegida dentro de uma caixa.",
+      "start": 34.34,
+      "end": 37.9,
+      "avg_logprob": -0.19827
+    },
+    {
+      "text": "O estado de conseração muda a negociação. Pequenos detalhes, como bodas gastas e marcas na",
+      "start": 38.2,
+      "end": 43.2,
+      "avg_logprob": -0.19827
+    },
+    {
+      "text": "superfície podem reduzir bastante o peso. Também existe o risco de falsificação.",
+      "start": 43.2,
+      "end": 47.96,
+      "avg_logprob": -0.19827
+    },
+    {
+      "text": "Antes de contar, o colecionador compara impressão, observa a textura e procura uma avaliação",
+      "start": 48.28,
+      "end": 53.02,
+      "avg_logprob": -0.19827
+    },
+    {
+      "text": "confiável. Em um leilão, os lances sobem quando várias pessoas querem a mesma peça.",
+      "start": 53.02,
+      "end": 57.74,
+      "avg_logprob": -0.19827
+    },
+    {
+      "text": "só que preços podem cair. O mau cheio de moedas não quece para sempre. O valor nasce do encontro",
+      "start": 57.74,
+      "end": 62.92,
+      "avg_logprob": -0.29131
+    },
+    {
+      "text": "entre oferta, procura, confiança e memória. No filme, a cata mais cara não é necessariamente",
+      "start": 62.92,
+      "end": 68.08,
+      "avg_logprob": -0.29131
+    },
+    {
+      "text": "a mais importante para quem coleciona.",
+      "start": 68.08,
+      "end": 70.3,
+      "avg_logprob": -0.29131
+    }
+  ],
+  "pauses": [],
+  "audio": {
+    "duration": 70.460952,
+    "sample_rate": 22050,
+    "channels": 1,
+    "codec": "pcm_s16le",
+    "path": "/workspace/mine-story-engine/examples/audio/demo_cartas_PIPER_SINTETICO.wav"
+  },
+  "transcription": {
+    "schema": 2,
+    "backend": "faster-whisper-1.2.1",
+    "model": "small",
+    "language": "pt",
+    "beam_size": 5,
+    "compute_type": "int8",
+    "cpu_threads": 2,
+    "alignment": "whisper-word-timestamps+acoustic-silence-clipping",
+    "forced_alignment": false,
+    "silence_refined_words": 0,
+    "language_probability": 1.0,
+    "elapsed_seconds": 36.193
+  },
+  "cache_hit": true,
+  "warnings": [
+    "Timestamps estimados pelo Whisper; não são forced alignment independente."
+  ]
+}

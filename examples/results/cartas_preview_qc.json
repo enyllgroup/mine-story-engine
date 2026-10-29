@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "video": "/workspace/mine-story-engine/productions/cartas_preview/video_preview.mp4",
+  "status": "technical_pass",
+  "issues": [],
+  "scope": "Technical gates on decoded media and supplied timing data; semantic or artistic approval is not automated",
+  "unverified": [
+    "semantic match between narration and visible events",
+    "vanilla Minecraft fidelity",
+    "caption legibility, actual burned-in word highlight and exact display timing",
+    "actual occlusion, unsampled object/character cropping, continuity and acting quality"
+  ],
+  "thresholds": {
+    "black_pixel_value": 8,
+    "black_pixel_fraction": 0.985,
+    "static_sample_mean_difference": 0.12,
+    "static_warning_seconds": 5.0,
+    "narration_duration_tolerance_seconds": 0.12
+  },
+  "media": {
+    "duration": 70.466667,
+    "container_duration": 70.466667,
+    "width": 360,
+    "height": 640,
+    "fps": 30.0,
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_duration": 70.461
+  },
+  "narration_duration_error_seconds": 0.005715,
+  "render_measurements": [
+    {
+      "scene": "scene_001",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/bdcff27c9539a2dabbd9f4b642434f5fc4eee77e34f2435b7f01dbce2c016352/frames/render_metadata.json",
+      "projection_samples": 35,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_002",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/87300bfe9d196099c17d3f0070e9b007111c55dcfa50b330eab5a707ecabe637/frames/render_metadata.json",
+      "projection_samples": 45,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_003",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/31b966af0ce0c70215c682dae6aa0e22fa24682e07cffa0cbe96b503d05acd9d/frames/render_metadata.json",
+      "projection_samples": 25,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_004",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/4581809c2a378f9fd1d9d3645112c88ab8475ffe4a977834a90e9ee23ea94bc0/frames/render_metadata.json",
+      "projection_samples": 15,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_005",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/4c9cd9e6632026af14250e76181652d69bd348ae8fd63d78a655bb0782441304/frames/render_metadata.json",
+      "projection_samples": 20,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_006",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/44c6e65b6ddf653f8b1beae16d2c3a4998945d7b34acf5974efc14e9356fa6fb/frames/render_metadata.json",
+      "projection_samples": 30,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_007",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/801a73eb9a8712557dc27bc5e7655cf99c63a5a093a0b7f1dc4a4040bd6ec881/frames/render_metadata.json",
+      "projection_samples": 40,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_008",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/2134cb80603a4f7d0a89e4068280e7c20818f7341682fb3a7e98a6632f5cc2ea/frames/render_metadata.json",
+      "projection_samples": 30,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_009",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/367402093a5e818b876be2cea039731928f1626a5e7cfeb3cbf77deb10565a51/frames/render_metadata.json",
+      "projection_samples": 25,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_010",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/bbe285c8b99b08449f27ea56a959e8d29fe6dc7d96908ff6564bca3ff3e67a11/frames/render_metadata.json",
+      "projection_samples": 35,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_011",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/5d9fcf3ecf1264a2924f3e707e8310616c331d5c0d9b99e7a01a0a6492ac379c/frames/render_metadata.json",
+      "projection_samples": 35,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_012",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/40215996bcc01c6ec6cdfa6f8bb299289089aa7294898ac2de56a8677907a862/frames/render_metadata.json",
+      "projection_samples": 20,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    }
+  ],
+  "frame_analysis": {
+    "sample_count": 70,
+    "sample_fps": 1.0,
+    "black_spans": [],
+    "static_spans": [],
+    "mean_scene_frame_difference": 6.28529,
+    "coverage": "Periodic decoded frames; sub-sample glitches can be missed"
+  },
+  "affected_scenes": [],
+  "contact_sheet": "/workspace/mine-story-engine/productions/cartas_preview/qc/contact_sheet.jpg",
+  "technical_gates_passed": true
+}

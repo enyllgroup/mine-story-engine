@@ -1,0 +1,65 @@
+{
+  "official_frontmatter_validation": "11 passed",
+  "wrappers": [
+    {
+      "skill": "minecraft-asset-creator",
+      "help_exit": 0
+    },
+    {
+      "skill": "minecraft-camera-director",
+      "help_exit": 0
+    },
+    {
+      "skill": "minecraft-character-animator",
+      "help_exit": 0
+    },
+    {
+      "skill": "minecraft-scene-director",
+      "help_exit": 0
+    },
+    {
+      "skill": "minecraft-world-builder",
+      "help_exit": 0
+    },
+    {
+      "skill": "narration-analyzer",
+      "help_exit": 0
+    },
+    {
+      "skill": "render-pipeline",
+      "help_exit": 0
+    },
+    {
+      "skill": "sound-designer",
+      "help_exit": 0
+    },
+    {
+      "skill": "subtitle-director",
+      "help_exit": 0
+    },
+    {
+      "skill": "visual-director",
+      "help_exit": 0
+    },
+    {
+      "skill": "visual-quality-control",
+      "help_exit": 0
+    },
+    {
+      "skill": "subtitle-director",
+      "actual_execution": true,
+      "summary": {
+        "cues": 6,
+        "sound_events": null
+      }
+    },
+    {
+      "skill": "sound-designer",
+      "actual_execution": true,
+      "summary": {
+        "cues": null,
+        "sound_events": 1
+      }
+    }
+  ]
+}

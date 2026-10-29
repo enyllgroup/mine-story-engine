@@ -1,0 +1,4 @@
+interface:
+  display_name: "Criar legendas"
+  short_description: "Exportar SRT e ASS sincronizados por palavra"
+  default_prompt: "Use $subtitle-director para exportar SRT e ASS sincronizados por palavra."

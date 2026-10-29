@@ -1,0 +1,441 @@
+{
+  "checked_at": "2026-10-29",
+  "method": "Connected GitHub read API and official web documentation; executable checks against preinstalled binaries. No third-party installation or runtime validation of Minecraft/Mine-imator/Blockbench/MCprep.",
+  "repositories": [
+    {
+      "repository": "Moulberry/Flashback",
+      "url": "https://github.com/Moulberry/Flashback",
+      "default_branch": "master",
+      "repository_pushed_at": "2026-09-25T04:00:28Z",
+      "archived": false,
+      "license": "All rights reserved, do not redistribute; localization CC-BY-4.0",
+      "default_branch_commit": {
+        "sha": "bf046b763ddf466bdc1b6d9c6cc7ba06e527f3e2",
+        "date": "2026-09-21T06:35:09Z",
+        "message": "Bump version to 0.43.6"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    },
+    {
+      "repository": "ReplayMod/ReplayMod",
+      "url": "https://github.com/ReplayMod/ReplayMod",
+      "default_branch": "stable",
+      "repository_pushed_at": "2026-10-18T15:40:59Z",
+      "archived": false,
+      "license": "GPL-3.0",
+      "default_branch_commit": {
+        "sha": "13ca34329be20fd3f3d2b2ccb4512c7d3f028871",
+        "date": "2026-10-18T15:18:44Z",
+        "message": "Release 2.6.28"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    },
+    {
+      "repository": "stuffbydavid/Mine-imator",
+      "url": "https://github.com/stuffbydavid/Mine-imator",
+      "default_branch": "master",
+      "repository_pushed_at": "2026-10-29T01:52:01Z",
+      "archived": false,
+      "license": "No repository-wide license detected; bundled GameMaker installer EULA is restrictive",
+      "default_branch_commit": {
+        "sha": "eda12dd0db7cb5892fc068491c60259dba0aa154",
+        "date": "2026-09-12T21:24:12Z",
+        "message": "CppGen fixes"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    },
+    {
+      "repository": "openai/skills",
+      "url": "https://github.com/openai/skills",
+      "default_branch": "main",
+      "repository_pushed_at": "2026-10-28T17:31:41Z",
+      "archived": false,
+      "license": "Not reported; inspect per package",
+      "default_branch_commit": {
+        "sha": "49f948faa9258a0c61caceaf225e179651397431",
+        "date": "2026-06-24T02:36:12Z",
+        "message": "[codex] Update skill installer post-install guidance (#507)"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    },
+    {
+      "repository": "JannisX11/blockbench",
+      "url": "https://github.com/JannisX11/blockbench",
+      "default_branch": "master",
+      "repository_pushed_at": "2026-10-27T23:20:04Z",
+      "archived": false,
+      "license": "GPL-3.0",
+      "default_branch_commit": {
+        "sha": "ec0b2827104d0799c153bfb5f867579c0c44652f",
+        "date": "2026-10-18T18:46:55Z",
+        "message": "Fix paint tools being locked after switching modes while hovering over transform gizmo"
+      },
+      "latest_github_release": {
+        "tag": "v5.2.2",
+        "published_at": "2026-10-08T21:26:54Z",
+        "url": "https://github.com/JannisX11/blockbench/releases/tag/v5.2.2"
+      }
+    },
+    {
+      "repository": "Animated-Java/animated-java",
+      "url": "https://github.com/Animated-Java/animated-java",
+      "default_branch": "main",
+      "repository_pushed_at": "2026-10-25T22:58:20Z",
+      "archived": false,
+      "license": "AGPL-3.0-or-later (LICENSE inspected)",
+      "default_branch_commit": {
+        "sha": "dff3b52fbfdd8de714a46c10df2a9e317c89346a",
+        "date": "2026-10-25T16:12:05Z",
+        "message": "✨ Group bones for faster frame dispatch"
+      },
+      "latest_github_release": {
+        "tag": "v1.11.0",
+        "published_at": "2026-10-09T00:39:32Z",
+        "url": "https://github.com/Animated-Java/animated-java/releases/tag/v1.11.0"
+      }
+    },
+    {
+      "repository": "Moo-Ack-Productions/MCprep",
+      "url": "https://github.com/Moo-Ack-Productions/MCprep",
+      "default_branch": "master",
+      "repository_pushed_at": "2026-10-04T02:35:17Z",
+      "archived": false,
+      "license": "GPL-3.0",
+      "default_branch_commit": {
+        "sha": "bf146fc2a31f97152c28f29a709b1b2b9893ef16",
+        "date": "2026-07-11T21:51:56Z",
+        "message": "Dev to master v3.6.3 pt2 (#727)"
+      },
+      "latest_github_release": {
+        "tag": "3.6.3",
+        "published_at": "2026-07-12T06:25:38Z",
+        "url": "https://github.com/Moo-Ack-Productions/MCprep/releases/tag/3.6.3"
+      }
+    },
+    {
+      "repository": "RenasDemirbas/BlockBenchMCP",
+      "url": "https://github.com/RenasDemirbas/BlockBenchMCP",
+      "default_branch": "main",
+      "repository_pushed_at": "2026-10-25T16:53:33Z",
+      "archived": false,
+      "license": "GPL-3.0",
+      "default_branch_commit": {
+        "sha": "a7b78170aab138188e7291fd3886a7252a260c4b",
+        "date": "2026-10-25T16:53:32Z",
+        "message": "Remove the GitHub Pages documentation site"
+      },
+      "latest_github_release": {
+        "tag": "v1.10.1",
+        "published_at": "2026-10-25T16:48:00Z",
+        "url": "https://github.com/RenasDemirbas/BlockBenchMCP/releases/tag/v1.10.1"
+      }
+    },
+    {
+      "repository": "jasonjgardner/blockbench-mcp-plugin",
+      "url": "https://github.com/jasonjgardner/blockbench-mcp-plugin",
+      "default_branch": "main",
+      "repository_pushed_at": "2026-10-25T20:38:08Z",
+      "archived": false,
+      "license": "GPL-3.0",
+      "default_branch_commit": {
+        "sha": "97a8a80d3a37bf95c5e136d93d2c7da399fff753",
+        "date": "2026-10-25T20:37:24Z",
+        "message": "Merge pull request #86 from jasonjgardner/copilot/add-bbmodel-export-bedrock-animation"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    },
+    {
+      "repository": "toxicity188/BetterModel",
+      "url": "https://github.com/toxicity188/BetterModel",
+      "default_branch": "v3",
+      "repository_pushed_at": "2026-10-27T08:37:45Z",
+      "archived": false,
+      "license": "MIT",
+      "default_branch_commit": {
+        "sha": "4128f2cea38e06690626d8b81afedad014af525f",
+        "date": "2026-10-27T08:34:08Z",
+        "message": "chore: [ci skip] edit 3.6.0.md"
+      },
+      "latest_github_release": {
+        "tag": "3.6.0",
+        "published_at": "2026-10-27T08:37:45Z",
+        "url": "https://github.com/toxicity188/BetterModel/releases/tag/3.6.0"
+      }
+    },
+    {
+      "repository": "tomalbrc/blockbench-import-library",
+      "url": "https://github.com/tomalbrc/blockbench-import-library",
+      "default_branch": "main",
+      "repository_pushed_at": "2026-09-15T01:17:35Z",
+      "archived": false,
+      "license": "LGPL-3.0",
+      "default_branch_commit": {
+        "sha": "e04a30a244e647bdcbd442282caaeaf5499df408",
+        "date": "2026-09-15T01:17:03Z",
+        "message": "v2.2.0 for 26.3-rc-3"
+      },
+      "latest_github_release": {
+        "tag": "v2.2.0+26.3-rc-3",
+        "published_at": "2026-09-15T01:18:59Z",
+        "url": "https://github.com/tomalbrc/blockbench-import-library/releases/tag/v2.2.0%2B26.3-rc-3"
+      }
+    },
+    {
+      "repository": "FabricMC/fabric-api",
+      "url": "https://github.com/FabricMC/fabric-api",
+      "default_branch": "26.3",
+      "repository_pushed_at": "2026-10-27T17:15:45Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "default_branch_commit": {
+        "sha": "2065040b236a0d5ac011bd6a45625dc49579b222",
+        "date": "2026-10-23T08:28:37Z",
+        "message": "Bump version"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    },
+    {
+      "repository": "EngineHub/WorldEdit",
+      "url": "https://github.com/EngineHub/WorldEdit",
+      "default_branch": "version/7.4.x",
+      "repository_pushed_at": "2026-10-29T08:47:55Z",
+      "archived": false,
+      "license": "GPL-3.0 (LICENSE.txt inspected)",
+      "default_branch_commit": {
+        "sha": "8bb9d91b6a91d42b2e8b2130e711dad4957d2553",
+        "date": "2026-10-29T08:33:53Z",
+        "message": "Throw early if not on Paper for regen 26.1+ (#3044)"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    },
+    {
+      "repository": "SYSTRAN/faster-whisper",
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "default_branch": "master",
+      "repository_pushed_at": "2026-10-25T07:17:13Z",
+      "archived": false,
+      "license": "MIT",
+      "default_branch_commit": {
+        "sha": "9e472ae9de8bb374552f531f752654554b76b2d6",
+        "date": "2026-10-16T11:12:55Z",
+        "message": "Raise an error for languages unsupported by a model (#1564)"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    },
+    {
+      "repository": "m-bain/whisperX",
+      "url": "https://github.com/m-bain/whisperX",
+      "default_branch": "main",
+      "repository_pushed_at": "2026-10-22T14:53:44Z",
+      "archived": false,
+      "license": "BSD-2-Clause",
+      "default_branch_commit": {
+        "sha": "5d3678b8535698a2826a5db9eb3e4105aef85dd9",
+        "date": "2026-10-22T14:53:43Z",
+        "message": "Merge pull request #1469 from li-lizhe/fix-optional-torchaudio"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    },
+    {
+      "repository": "ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "default_branch": "master",
+      "repository_pushed_at": "2026-10-29T16:29:52Z",
+      "archived": false,
+      "license": "MIT",
+      "default_branch_commit": {
+        "sha": "0893ec98f5eafad36a43a72cd1c3723d72b0d03a",
+        "date": "2026-10-29T14:44:12Z",
+        "message": "skills: specify rule about ggml_build_forward_expand (#31375)"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    },
+    {
+      "repository": "blender/blender",
+      "url": "https://github.com/blender/blender",
+      "default_branch": "main",
+      "repository_pushed_at": "2026-10-29T16:07:51Z",
+      "archived": false,
+      "license": "GPL-2.0-or-later (Blender licensing)",
+      "default_branch_commit": {
+        "sha": "bf2a1c67da79a16bf81793d17654e357d1360b00",
+        "date": "2026-10-29T15:57:55Z",
+        "message": "Merge branch 'blender-v5.3-release'"
+      },
+      "latest_github_release": "No latest non-prerelease GitHub release returned by endpoint; does not establish no releases elsewhere"
+    }
+  ],
+  "code_inspection": [
+    {
+      "repo": "Moulberry/Flashback",
+      "ref": "bf046b763ddf466bdc1b6d9c6cc7ba06e527f3e2",
+      "paths": [
+        "LICENSE.md",
+        "src/main/java/com/moulberry/flashback/Flashback.java",
+        "src/main/java/com/moulberry/flashback/exporting/ExportJobQueue.java",
+        "src/main/java/com/moulberry/flashback/exporting/ExportSettings.java"
+      ],
+      "finding": "Internal export jobs and queue exist. Registered client commands start/finish/end/pause/unpause/config/mark; no export command found in this registration. Not a proof of absent interfaces elsewhere; no official stable external export API validated."
+    },
+    {
+      "repo": "stuffbydavid/Mine-imator",
+      "ref": "eda12dd0db7cb5892fc068491c60259dba0aa154",
+      "paths": [
+        "README.md",
+        "BUILD.md",
+        "CppProject/AppHandler.cpp",
+        "GmProject/scripts/project_load/project_load.gml",
+        "GmProject/scripts/project_save_project/project_save_project.gml",
+        "GmProject/scripts/render_start/render_start.gml",
+        "GmProject/options/windows/installer/license.txt"
+      ],
+      "finding": "Linux Qt build documented; .miproject is JSON; internal render_start exists; QApplication startup. No supported no-GUI batch render CLI was demonstrated. Restrictive bundled EULA and missing root license require clarification before shipping a modified bridge."
+    },
+    {
+      "repo": "RenasDemirbas/BlockBenchMCP",
+      "ref": "a7b78170aab138188e7291fd3886a7252a260c4b",
+      "paths": [
+        "README.md",
+        "SECURITY.md"
+      ],
+      "finding": "Current docs BB_HEADLESS=1 start-on-demand; Linux displayless use requires Xvfb wrapper. <=1.6.0 local WebSocket web-origin RCE issue documented; patched >=1.6.1, only 1.10.x supported. Powerful eval remains by design. Not installed or runtime tested."
+    },
+    {
+      "repo": "ReplayMod/ReplayMod",
+      "ref": "13ca34329be20fd3f3d2b2ccb4512c7d3f028871",
+      "paths": [
+        "README.md"
+      ],
+      "finding": "README explicitly says no external API; source GPL-3-or-later; docs command-line settings are FFmpeg encoder arguments, not proof of standalone headless ReplayMod CLI."
+    },
+    {
+      "repo": "openai/skills",
+      "ref": "49f948faa9258a0c61caceaf225e179651397431",
+      "paths": [
+        "skills/.system/skill-creator/SKILL.md",
+        "skills/.system/skill-installer/SKILL.md",
+        "skills/.curated/transcribe/SKILL.md",
+        "skills/.curated/screenshot/SKILL.md"
+      ],
+      "finding": "Curated tree searched. No Minecraft/Blockbench/Blender/storyboard/motion-design skill found in snapshot. transcribe calls paid OpenAI API; exclude. screenshot is OS desktop capture not video semantics. Custom repository skills are justified."
+    }
+  ],
+  "documentation": [
+    {
+      "url": "https://learn.chatgpt.com/docs/build-skills",
+      "finding": "Official skills discovery repository .agents/skills; required SKILL.md name and description; supports symlinks."
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/minecraft-java-edition-1-19-4",
+      "finding": "Display entities with interpolated transforms; custom data-pack technical features."
+    },
+    {
+      "url": "https://docs.fabricmc.net/develop/",
+      "finding": "Versioned Fabric mod APIs for commands, networking, rendering, data generation."
+    },
+    {
+      "url": "https://worldedit.enginehub.org/en/latest/usage/other/craftscripts/",
+      "finding": "CraftScripts require Rhino; construction API and /cs interface, not video export."
+    },
+    {
+      "url": "https://www.replaymod.com/docs/",
+      "finding": "Camera keyframes and GUI render settings; FFmpeg encoder command arguments."
+    },
+    {
+      "url": "https://animated-java.dev/docs/resources/faq",
+      "finding": "Target-version-specific data/resource pack animation export, not complete video pipeline."
+    },
+    {
+      "url": "https://www.blockbench.net/wiki/docs/plugin/",
+      "finding": "JavaScript plugin API; editor integration."
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/4.3/advanced/command_line/render.html",
+      "finding": "Documented background rendering with Python and frame range."
+    },
+    {
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "finding": "CPU int8 and word_timestamps supported; these are ASR timestamps, not forced phoneme alignment."
+    },
+    {
+      "url": "https://github.com/m-bain/whisperX",
+      "finding": "Explicit wav2vec2 phoneme forced alignment, language-specific weights; optional PyTorch overhead."
+    },
+    {
+      "url": "https://ffmpeg.org/ffmpeg-filters.html",
+      "finding": "ASS/subtitles, audio mix/ducking and video diagnostics."
+    },
+    {
+      "url": "https://github.com/google/fonts/blob/main/ofl/pressstart2p/OFL.txt",
+      "finding": "Press Start 2P font SIL OFL-1.1; include font license when distributing."
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/usage-guidelines",
+      "finding": "Original videos can be monetized subject to guidelines; assets/music distribution has separate conditions."
+    },
+    {
+      "url": "https://support.tiktok.com/en/business-and-creator/creator-rewards-program/how-is-the-creator-rewards-program-different-from-the-tiktok-creator-fund",
+      "finding": "Program requires videos longer than one minute plus other eligibility conditions."
+    }
+  ],
+  "local_checks": [
+    {
+      "command": "blender --version",
+      "observed": "Blender 4.3.2",
+      "status": "pass"
+    },
+    {
+      "command": "blender --background --factory-startup --python-expr <bpy.app check>",
+      "observed": {
+        "version": "4.3.2",
+        "background": true
+      },
+      "status": "pass",
+      "limit": "No render throughput/fidelity measurement from this smoke test."
+    },
+    {
+      "command": "ffmpeg -version",
+      "observed": "7.1.5-0+deb13u1; --enable-gpl --enable-libass --enable-libx264",
+      "status": "pass"
+    },
+    {
+      "command": "ffmpeg -hide_banner -filters",
+      "observed": [
+        "amix",
+        "loudnorm",
+        "sidechaincompress",
+        "ass",
+        "blackdetect",
+        "freezedetect",
+        "subtitles"
+      ],
+      "status": "pass"
+    },
+    {
+      "command": "codex --version",
+      "observed": "codex-cli 0.163.0",
+      "status": "pass"
+    },
+    {
+      "command": "codex login status",
+      "observed": "Logged in using ChatGPT",
+      "status": "pass",
+      "limit": "Does not prove a successful later model request or remaining plan quota."
+    },
+    {
+      "command": "codex exec --help",
+      "observed": "Noninteractive command available; --oss optional provider, --image and sandbox flags documented in installed CLI.",
+      "status": "pass"
+    }
+  ],
+  "decision": {
+    "preferred": "Blender headless + original block/skin assets + local ASR + FFmpeg; structured scene compiler, optional Codex ChatGPT-plan director or free local model",
+    "scope": "Architecture recommendation grounded in automation and licensing. Runtime/fidelity acceptance needs rendered outputs and independent inspection, tracked elsewhere.",
+    "not_selected": [
+      "Minecraft Java client: no licensed authenticated game available and zero-cost requirement",
+      "Mine-imator: no demonstrated stable batch export interface and unclear redistribution/modification licensing",
+      "Blockbench MCP: optional asset authoring; unnecessary live GUI bridge in render hot path",
+      "MCprep bundled assets: legal game license required, no need for material import in original procedural renderer"
+    ]
+  }
+}

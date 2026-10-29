@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sincronizar efeitos"
+  short_description: "Criar efeitos originais discretos e sincronizados"
+  default_prompt: "Use $sound-designer para criar efeitos originais discretos e sincronizados."
