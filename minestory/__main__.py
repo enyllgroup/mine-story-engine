@@ -68,6 +68,9 @@ def main(argv=None):
     add.add_argument("--kind",default="custom")
     add.add_argument("--license",default="user-provided")
     sub.add_parser("launcher",help="Seletor local de áudio (requer ambiente gráfico)")
+    p=sub.add_parser("cache",help="Compactar apenas frames de cenas já exportadas e verificadas")
+    p.add_argument("action",choices=["compact"])
+    p.add_argument("--dry-run",action="store_true")
     args = parser.parse_args(argv)
     try:
         if args.command == "produce":
@@ -135,6 +138,9 @@ def main(argv=None):
         elif args.command == "launcher":
             from .launcher import launch
             launch()
+        elif args.command == "cache":
+            from .cache import compact_cache
+            print(json.dumps(compact_cache(dry_run=args.dry_run),ensure_ascii=False,indent=2))
         return 0
     except KeyboardInterrupt:
         print("Interrompido. Os frames e caches concluídos foram preservados para --resume.",file=sys.stderr)

@@ -1,0 +1,229 @@
+﻿[Script Info]
+Title: MineStory — legendas editáveis
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: MineStory,Pixelify Sans,64,&H00FFFFFF,&H004AE2FF,&H00141512,&H85000000,-1,0,0,0,100,100,0,0,1,4,2,5,92,92,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.16,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}Por{\c&H00FFFFFF&} que uma carta
+Dialogue: 0,0:00:00.16,0:00:00.20,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Por {\c&H004AE2FF&}que{\c&H00FFFFFF&} uma carta
+Dialogue: 0,0:00:00.20,0:00:00.42,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Por que {\c&H004AE2FF&}uma{\c&H00FFFFFF&} carta
+Dialogue: 0,0:00:00.42,0:00:00.62,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Por que uma {\c&H004AE2FF&}carta{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.62,0:00:01.02,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}pequena{\c&H00FFFFFF&} pode valer mais
+Dialogue: 0,0:00:01.02,0:00:01.24,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}pequena {\c&H004AE2FF&}pode{\c&H00FFFFFF&} valer mais
+Dialogue: 0,0:00:01.24,0:00:01.52,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}pequena pode {\c&H004AE2FF&}valer{\c&H00FFFFFF&} mais
+Dialogue: 0,0:00:01.52,0:00:01.74,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}pequena pode valer {\c&H004AE2FF&}mais{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.74,0:00:01.90,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}do{\c&H00FFFFFF&} que uma casa?
+Dialogue: 0,0:00:01.90,0:00:01.96,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}do {\c&H004AE2FF&}que{\c&H00FFFFFF&} uma casa?
+Dialogue: 0,0:00:01.96,0:00:02.14,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}do que {\c&H004AE2FF&}uma{\c&H00FFFFFF&} casa?
+Dialogue: 0,0:00:02.14,0:00:02.54,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}do que uma {\c&H004AE2FF&}casa?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.78,0:00:03.22,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs56}{\c&H004AE2FF&}Imagine{\c&H00FFFFFF&} um explorador abrindo
+Dialogue: 0,0:00:03.22,0:00:03.38,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs56}Imagine {\c&H004AE2FF&}um{\c&H00FFFFFF&} explorador abrindo
+Dialogue: 0,0:00:03.38,0:00:03.90,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs56}Imagine um {\c&H004AE2FF&}explorador{\c&H00FFFFFF&} abrindo
+Dialogue: 0,0:00:03.90,0:00:04.24,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs56}Imagine um explorador {\c&H004AE2FF&}abrindo{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.24,0:00:04.36,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}um{\c&H00FFFFFF&} baú cheio de
+Dialogue: 0,0:00:04.36,0:00:04.52,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}um {\c&H004AE2FF&}baú{\c&H00FFFFFF&} cheio de
+Dialogue: 0,0:00:04.52,0:00:04.86,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}um baú {\c&H004AE2FF&}cheio{\c&H00FFFFFF&} de
+Dialogue: 0,0:00:04.86,0:00:05.02,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}um baú cheio {\c&H004AE2FF&}de{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.02,0:00:05.38,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}cartas{\c&H00FFFFFF&} comuns.
+Dialogue: 0,0:00:05.38,0:00:05.98,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}cartas {\c&H004AE2FF&}comuns.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.16,0:00:06.40,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}Entre{\c&H00FFFFFF&} centenas de figuras
+Dialogue: 0,0:00:06.40,0:00:06.86,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Entre {\c&H004AE2FF&}centenas{\c&H00FFFFFF&} de figuras
+Dialogue: 0,0:00:06.86,0:00:07.00,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Entre centenas {\c&H004AE2FF&}de{\c&H00FFFFFF&} figuras
+Dialogue: 0,0:00:07.00,0:00:07.38,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Entre centenas de {\c&H004AE2FF&}figuras{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.38,0:00:08.06,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}{\c&H004AE2FF&}parecidas,{\c&H00FFFFFF&} ele encontra uma
+Dialogue: 0,0:00:08.06,0:00:08.22,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}parecidas, ele encontra uma
+Dialogue: 0,0:00:08.22,0:00:08.40,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}parecidas, {\c&H004AE2FF&}ele{\c&H00FFFFFF&} encontra uma
+Dialogue: 0,0:00:08.40,0:00:08.76,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}parecidas, ele {\c&H004AE2FF&}encontra{\c&H00FFFFFF&} uma
+Dialogue: 0,0:00:08.76,0:00:08.92,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}parecidas, ele encontra {\c&H004AE2FF&}uma{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.92,0:00:09.24,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}edição{\c&H00FFFFFF&} rara.
+Dialogue: 0,0:00:09.24,0:00:09.64,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}edição {\c&H004AE2FF&}rara.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.84,0:00:10.02,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}A{\c&H00FFFFFF&} diferença começa na
+Dialogue: 0,0:00:10.02,0:00:10.38,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}A {\c&H004AE2FF&}diferença{\c&H00FFFFFF&} começa na
+Dialogue: 0,0:00:10.38,0:00:10.82,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}A diferença {\c&H004AE2FF&}começa{\c&H00FFFFFF&} na
+Dialogue: 0,0:00:10.82,0:00:10.98,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}A diferença começa {\c&H004AE2FF&}na{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.98,0:00:11.68,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}escassez.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.84,0:00:12.04,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}Se{\c&H00FFFFFF&} existem poucas cópias,
+Dialogue: 0,0:00:12.04,0:00:12.34,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Se {\c&H004AE2FF&}existem{\c&H00FFFFFF&} poucas cópias,
+Dialogue: 0,0:00:12.34,0:00:12.76,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Se existem {\c&H004AE2FF&}poucas{\c&H00FFFFFF&} cópias,
+Dialogue: 0,0:00:12.76,0:00:13.24,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Se existem poucas {\c&H004AE2FF&}cópias,{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.48,0:00:13.68,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}{\c&H004AE2FF&}muitos{\c&H00FFFFFF&} colecionadores passam
+Dialogue: 0,0:00:13.68,0:00:14.50,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}muitos {\c&H004AE2FF&}colecionadores{\c&H00FFFFFF&} passam
+Dialogue: 0,0:00:14.50,0:00:14.94,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}muitos colecionadores {\c&H004AE2FF&}passam{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.94,0:00:15.04,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}a{\c&H00FFFFFF&} disputar o mesmo
+Dialogue: 0,0:00:15.04,0:00:15.52,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}a {\c&H004AE2FF&}disputar{\c&H00FFFFFF&} o mesmo
+Dialogue: 0,0:00:15.52,0:00:15.64,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}a disputar {\c&H004AE2FF&}o{\c&H00FFFFFF&} mesmo
+Dialogue: 0,0:00:15.64,0:00:15.88,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}a disputar o {\c&H004AE2FF&}mesmo{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.88,0:00:16.38,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}objeto.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.64,0:00:16.82,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs63}{\c&H004AE2FF&}Mas{\c&H00FFFFFF&} raridade, sozinha, não
+Dialogue: 0,0:00:16.82,0:00:17.32,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs63}Mas {\c&H004AE2FF&}raridade,{\c&H00FFFFFF&} sozinha, não
+Dialogue: 0,0:00:17.32,0:00:17.50,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs63}Mas raridade, sozinha, não
+Dialogue: 0,0:00:17.50,0:00:17.86,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs63}Mas raridade, {\c&H004AE2FF&}sozinha,{\c&H00FFFFFF&} não
+Dialogue: 0,0:00:17.86,0:00:18.04,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs63}Mas raridade, sozinha, não
+Dialogue: 0,0:00:18.04,0:00:18.18,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs63}Mas raridade, sozinha, {\c&H004AE2FF&}não{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.18,0:00:18.52,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}garante{\c&H00FFFFFF&} valor.
+Dialogue: 0,0:00:18.52,0:00:18.78,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}garante {\c&H004AE2FF&}valor.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.04,0:00:19.28,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}A{\c&H00FFFFFF&} carta também precisa
+Dialogue: 0,0:00:19.28,0:00:19.48,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}A {\c&H004AE2FF&}carta{\c&H00FFFFFF&} também precisa
+Dialogue: 0,0:00:19.48,0:00:19.74,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}A carta {\c&H004AE2FF&}também{\c&H00FFFFFF&} precisa
+Dialogue: 0,0:00:19.74,0:00:20.12,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}A carta também {\c&H004AE2FF&}precisa{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.12,0:00:20.60,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}despertar{\c&H00FFFFFF&} interesse.
+Dialogue: 0,0:00:20.60,0:00:21.12,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}despertar {\c&H004AE2FF&}interesse.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.30,0:00:21.52,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs60}{\c&H004AE2FF&}Um{\c&H00FFFFFF&} personagem famoso, uma
+Dialogue: 0,0:00:21.52,0:00:21.94,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs60}Um {\c&H004AE2FF&}personagem{\c&H00FFFFFF&} famoso, uma
+Dialogue: 0,0:00:21.94,0:00:22.54,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs60}Um personagem {\c&H004AE2FF&}famoso,{\c&H00FFFFFF&} uma
+Dialogue: 0,0:00:22.54,0:00:22.74,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs60}Um personagem famoso, uma
+Dialogue: 0,0:00:22.74,0:00:22.94,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs60}Um personagem famoso, {\c&H004AE2FF&}uma{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.94,0:00:23.30,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}história{\c&H00FFFFFF&} curiosa ou uma
+Dialogue: 0,0:00:23.30,0:00:23.90,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}história {\c&H004AE2FF&}curiosa{\c&H00FFFFFF&} ou uma
+Dialogue: 0,0:00:23.90,0:00:24.06,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}história curiosa {\c&H004AE2FF&}ou{\c&H00FFFFFF&} uma
+Dialogue: 0,0:00:24.06,0:00:24.22,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}história curiosa ou {\c&H004AE2FF&}uma{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.22,0:00:24.76,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}{\c&H004AE2FF&}competição{\c&H00FFFFFF&} importante podem
+Dialogue: 0,0:00:24.76,0:00:25.26,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}competição {\c&H004AE2FF&}importante{\c&H00FFFFFF&} podem
+Dialogue: 0,0:00:25.26,0:00:25.66,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}competição importante {\c&H004AE2FF&}podem{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.66,0:00:26.26,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs62}{\c&H004AE2FF&}transformar{\c&H00FFFFFF&} um pedaço de
+Dialogue: 0,0:00:26.26,0:00:26.38,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs62}transformar {\c&H004AE2FF&}um{\c&H00FFFFFF&} pedaço de
+Dialogue: 0,0:00:26.38,0:00:26.78,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs62}transformar um {\c&H004AE2FF&}pedaço{\c&H00FFFFFF&} de
+Dialogue: 0,0:00:26.78,0:00:26.92,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs62}transformar um pedaço {\c&H004AE2FF&}de{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.92,0:00:27.26,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}papel{\c&H00FFFFFF&} em um objeto
+Dialogue: 0,0:00:27.26,0:00:27.52,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}papel {\c&H004AE2FF&}em{\c&H00FFFFFF&} um objeto
+Dialogue: 0,0:00:27.52,0:00:27.64,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}papel em {\c&H004AE2FF&}um{\c&H00FFFFFF&} objeto
+Dialogue: 0,0:00:27.64,0:00:27.94,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}papel em um {\c&H004AE2FF&}objeto{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.94,0:00:28.62,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}desejado.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.62,0:00:29.08,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}Agora{\c&H00FFFFFF&} observe dois
+Dialogue: 0,0:00:29.08,0:00:29.42,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Agora {\c&H004AE2FF&}observe{\c&H00FFFFFF&} dois
+Dialogue: 0,0:00:29.42,0:00:29.70,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Agora observe {\c&H004AE2FF&}dois{\c&H00FFFFFF&}
+Dialogue: 0,0:00:29.70,0:00:30.44,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}{\c&H004AE2FF&}colecionadores{\c&H00FFFFFF&} em uma feira.
+Dialogue: 0,0:00:30.44,0:00:30.62,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}colecionadores {\c&H004AE2FF&}em{\c&H00FFFFFF&} uma feira.
+Dialogue: 0,0:00:30.62,0:00:30.80,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}colecionadores em {\c&H004AE2FF&}uma{\c&H00FFFFFF&} feira.
+Dialogue: 0,0:00:30.80,0:00:31.18,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}colecionadores em uma {\c&H004AE2FF&}feira.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.38,0:00:31.56,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}Um{\c&H00FFFFFF&} deles oferece moedas
+Dialogue: 0,0:00:31.56,0:00:31.78,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Um {\c&H004AE2FF&}deles{\c&H00FFFFFF&} oferece moedas
+Dialogue: 0,0:00:31.78,0:00:32.32,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Um deles {\c&H004AE2FF&}oferece{\c&H00FFFFFF&} moedas
+Dialogue: 0,0:00:32.32,0:00:32.72,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Um deles oferece {\c&H004AE2FF&}moedas{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.72,0:00:32.92,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs63}{\c&H004AE2FF&}por{\c&H00FFFFFF&} uma carta arranhada.
+Dialogue: 0,0:00:32.92,0:00:33.14,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs63}por {\c&H004AE2FF&}uma{\c&H00FFFFFF&} carta arranhada.
+Dialogue: 0,0:00:33.14,0:00:33.44,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs63}por uma {\c&H004AE2FF&}carta{\c&H00FFFFFF&} arranhada.
+Dialogue: 0,0:00:33.44,0:00:34.08,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs63}por uma carta {\c&H004AE2FF&}arranhada.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.22,0:00:34.40,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}O{\c&H00FFFFFF&} outro apresenta uma
+Dialogue: 0,0:00:34.40,0:00:34.56,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O {\c&H004AE2FF&}outro{\c&H00FFFFFF&} apresenta uma
+Dialogue: 0,0:00:34.56,0:00:35.00,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O outro {\c&H004AE2FF&}apresenta{\c&H00FFFFFF&} uma
+Dialogue: 0,0:00:35.00,0:00:35.18,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O outro apresenta {\c&H004AE2FF&}uma{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.18,0:00:35.46,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}cópia{\c&H00FFFFFF&} bem conservada,
+Dialogue: 0,0:00:35.46,0:00:35.62,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}cópia {\c&H004AE2FF&}bem{\c&H00FFFFFF&} conservada,
+Dialogue: 0,0:00:35.62,0:00:36.28,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}cópia bem {\c&H004AE2FF&}conservada,{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.40,0:00:36.86,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}protegida{\c&H00FFFFFF&} dentro de uma
+Dialogue: 0,0:00:36.86,0:00:37.16,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}protegida {\c&H004AE2FF&}dentro{\c&H00FFFFFF&} de uma
+Dialogue: 0,0:00:37.16,0:00:37.30,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}protegida dentro {\c&H004AE2FF&}de{\c&H00FFFFFF&} uma
+Dialogue: 0,0:00:37.30,0:00:37.44,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}protegida dentro de {\c&H004AE2FF&}uma{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.44,0:00:37.88,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}caixa.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.06,0:00:38.24,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}O{\c&H00FFFFFF&} estado de conservação
+Dialogue: 0,0:00:38.24,0:00:38.50,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O {\c&H004AE2FF&}estado{\c&H00FFFFFF&} de conservação
+Dialogue: 0,0:00:38.50,0:00:38.66,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O estado {\c&H004AE2FF&}de{\c&H00FFFFFF&} conservação
+Dialogue: 0,0:00:38.66,0:00:39.22,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O estado de {\c&H004AE2FF&}conservação{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.22,0:00:39.44,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}muda{\c&H00FFFFFF&} a negociação.
+Dialogue: 0,0:00:39.44,0:00:39.54,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}muda {\c&H004AE2FF&}a{\c&H00FFFFFF&} negociação.
+Dialogue: 0,0:00:39.54,0:00:40.24,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}muda a {\c&H004AE2FF&}negociação.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:40.48,0:00:40.88,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}Pequenos{\c&H00FFFFFF&} detalhes, como
+Dialogue: 0,0:00:40.88,0:00:41.48,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Pequenos {\c&H004AE2FF&}detalhes,{\c&H00FFFFFF&} como
+Dialogue: 0,0:00:41.48,0:00:41.60,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Pequenos detalhes, como
+Dialogue: 0,0:00:41.60,0:00:41.92,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Pequenos detalhes, {\c&H004AE2FF&}como{\c&H00FFFFFF&}
+Dialogue: 0,0:00:41.92,0:00:42.24,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}bordas{\c&H00FFFFFF&} gastas e marcas
+Dialogue: 0,0:00:42.24,0:00:42.64,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}bordas {\c&H004AE2FF&}gastas{\c&H00FFFFFF&} e marcas
+Dialogue: 0,0:00:42.64,0:00:42.76,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}bordas gastas {\c&H004AE2FF&}e{\c&H00FFFFFF&} marcas
+Dialogue: 0,0:00:42.76,0:00:43.08,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}bordas gastas e {\c&H004AE2FF&}marcas{\c&H00FFFFFF&}
+Dialogue: 0,0:00:43.08,0:00:43.22,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}{\c&H004AE2FF&}na{\c&H00FFFFFF&} superfície, podem reduzir
+Dialogue: 0,0:00:43.22,0:00:43.92,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}na {\c&H004AE2FF&}superfície,{\c&H00FFFFFF&} podem reduzir
+Dialogue: 0,0:00:43.92,0:00:44.14,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}na superfície, podem reduzir
+Dialogue: 0,0:00:44.14,0:00:44.46,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}na superfície, {\c&H004AE2FF&}podem{\c&H00FFFFFF&} reduzir
+Dialogue: 0,0:00:44.46,0:00:44.90,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs59}na superfície, podem {\c&H004AE2FF&}reduzir{\c&H00FFFFFF&}
+Dialogue: 0,0:00:44.90,0:00:45.28,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}bastante{\c&H00FFFFFF&} o peso.
+Dialogue: 0,0:00:45.28,0:00:45.48,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}bastante {\c&H004AE2FF&}o{\c&H00FFFFFF&} peso.
+Dialogue: 0,0:00:45.48,0:00:45.80,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}bastante o {\c&H004AE2FF&}peso.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:46.04,0:00:46.30,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}Também{\c&H00FFFFFF&} existe o risco
+Dialogue: 0,0:00:46.30,0:00:46.60,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Também {\c&H004AE2FF&}existe{\c&H00FFFFFF&} o risco
+Dialogue: 0,0:00:46.60,0:00:46.72,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Também existe {\c&H004AE2FF&}o{\c&H00FFFFFF&} risco
+Dialogue: 0,0:00:46.72,0:00:47.02,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Também existe o {\c&H004AE2FF&}risco{\c&H00FFFFFF&}
+Dialogue: 0,0:00:47.02,0:00:47.16,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}de{\c&H00FFFFFF&} falsificação.
+Dialogue: 0,0:00:47.16,0:00:48.00,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}de {\c&H004AE2FF&}falsificação.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:48.26,0:00:48.50,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}Antes{\c&H00FFFFFF&} de contar, o
+Dialogue: 0,0:00:48.50,0:00:48.68,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Antes {\c&H004AE2FF&}de{\c&H00FFFFFF&} contar, o
+Dialogue: 0,0:00:48.68,0:00:49.00,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Antes de {\c&H004AE2FF&}contar,{\c&H00FFFFFF&} o
+Dialogue: 0,0:00:49.00,0:00:49.28,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Antes de contar, o
+Dialogue: 0,0:00:49.28,0:00:49.38,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Antes de contar, {\c&H004AE2FF&}o{\c&H00FFFFFF&}
+Dialogue: 0,0:00:49.38,0:00:49.92,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}colecionador{\c&H00FFFFFF&} compara a
+Dialogue: 0,0:00:49.92,0:00:50.34,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}colecionador {\c&H004AE2FF&}compara{\c&H00FFFFFF&} a
+Dialogue: 0,0:00:50.34,0:00:50.44,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}colecionador compara {\c&H004AE2FF&}a{\c&H00FFFFFF&}
+Dialogue: 0,0:00:50.44,0:00:50.92,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}{\c&H004AE2FF&}impressão,{\c&H00FFFFFF&} observa a textura
+Dialogue: 0,0:00:50.92,0:00:51.12,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}impressão, observa a textura
+Dialogue: 0,0:00:51.12,0:00:51.46,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}impressão, {\c&H004AE2FF&}observa{\c&H00FFFFFF&} a textura
+Dialogue: 0,0:00:51.46,0:00:51.56,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}impressão, observa {\c&H004AE2FF&}a{\c&H00FFFFFF&} textura
+Dialogue: 0,0:00:51.56,0:00:51.90,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs55}impressão, observa a {\c&H004AE2FF&}textura{\c&H00FFFFFF&}
+Dialogue: 0,0:00:51.90,0:00:52.04,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}e{\c&H00FFFFFF&} procura uma avaliação
+Dialogue: 0,0:00:52.04,0:00:52.42,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}e {\c&H004AE2FF&}procura{\c&H00FFFFFF&} uma avaliação
+Dialogue: 0,0:00:52.42,0:00:52.54,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}e procura {\c&H004AE2FF&}uma{\c&H00FFFFFF&} avaliação
+Dialogue: 0,0:00:52.54,0:00:53.04,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}e procura uma {\c&H004AE2FF&}avaliação{\c&H00FFFFFF&}
+Dialogue: 0,0:00:53.04,0:00:53.76,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}confiável.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:53.92,0:00:54.12,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}Em{\c&H00FFFFFF&} um leilão, os
+Dialogue: 0,0:00:54.12,0:00:54.22,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Em {\c&H004AE2FF&}um{\c&H00FFFFFF&} leilão, os
+Dialogue: 0,0:00:54.22,0:00:54.58,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Em um {\c&H004AE2FF&}leilão,{\c&H00FFFFFF&} os
+Dialogue: 0,0:00:54.58,0:00:54.76,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Em um leilão, os
+Dialogue: 0,0:00:54.76,0:00:54.94,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Em um leilão, {\c&H004AE2FF&}os{\c&H00FFFFFF&}
+Dialogue: 0,0:00:54.94,0:00:55.20,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs61}{\c&H004AE2FF&}lances{\c&H00FFFFFF&} sobem quando várias
+Dialogue: 0,0:00:55.20,0:00:55.60,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs61}lances {\c&H004AE2FF&}sobem{\c&H00FFFFFF&} quando várias
+Dialogue: 0,0:00:55.60,0:00:55.82,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs61}lances sobem {\c&H004AE2FF&}quando{\c&H00FFFFFF&} várias
+Dialogue: 0,0:00:55.82,0:00:56.14,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs61}lances sobem quando {\c&H004AE2FF&}várias{\c&H00FFFFFF&}
+Dialogue: 0,0:00:56.14,0:00:56.54,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}pessoas{\c&H00FFFFFF&} querem a mesma
+Dialogue: 0,0:00:56.54,0:00:56.84,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}pessoas {\c&H004AE2FF&}querem{\c&H00FFFFFF&} a mesma
+Dialogue: 0,0:00:56.84,0:00:56.98,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}pessoas querem {\c&H004AE2FF&}a{\c&H00FFFFFF&} mesma
+Dialogue: 0,0:00:56.98,0:00:57.24,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}pessoas querem a {\c&H004AE2FF&}mesma{\c&H00FFFFFF&}
+Dialogue: 0,0:00:57.24,0:00:57.72,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}peça.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:57.72,0:00:58.08,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}Só{\c&H00FFFFFF&} que preços podem
+Dialogue: 0,0:00:58.08,0:00:58.22,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Só {\c&H004AE2FF&}que{\c&H00FFFFFF&} preços podem
+Dialogue: 0,0:00:58.22,0:00:58.52,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Só que {\c&H004AE2FF&}preços{\c&H00FFFFFF&} podem
+Dialogue: 0,0:00:58.52,0:00:58.78,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}Só que preços {\c&H004AE2FF&}podem{\c&H00FFFFFF&}
+Dialogue: 0,0:00:58.78,0:00:59.14,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}cair.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:59.32,0:00:59.52,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}O{\c&H00FFFFFF&} mau cheio de
+Dialogue: 0,0:00:59.52,0:00:59.62,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O {\c&H004AE2FF&}mau{\c&H00FFFFFF&} cheio de
+Dialogue: 0,0:00:59.62,0:01:00.00,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O mau {\c&H004AE2FF&}cheio{\c&H00FFFFFF&} de
+Dialogue: 0,0:01:00.00,0:01:00.10,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O mau cheio {\c&H004AE2FF&}de{\c&H00FFFFFF&}
+Dialogue: 0,0:01:00.10,0:01:00.48,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}moedas{\c&H00FFFFFF&} não cresce para
+Dialogue: 0,0:01:00.48,0:01:00.62,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}moedas {\c&H004AE2FF&}não{\c&H00FFFFFF&} cresce para
+Dialogue: 0,0:01:00.62,0:01:00.94,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}moedas não {\c&H004AE2FF&}cresce{\c&H00FFFFFF&} para
+Dialogue: 0,0:01:00.94,0:01:01.10,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}moedas não cresce {\c&H004AE2FF&}para{\c&H00FFFFFF&}
+Dialogue: 0,0:01:01.10,0:01:01.54,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}sempre.{\c&H00FFFFFF&}
+Dialogue: 0,0:01:01.74,0:01:01.88,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}O{\c&H00FFFFFF&} valor nasce do
+Dialogue: 0,0:01:01.88,0:01:02.12,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O {\c&H004AE2FF&}valor{\c&H00FFFFFF&} nasce do
+Dialogue: 0,0:01:02.12,0:01:02.46,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O valor {\c&H004AE2FF&}nasce{\c&H00FFFFFF&} do
+Dialogue: 0,0:01:02.46,0:01:02.54,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}O valor nasce {\c&H004AE2FF&}do{\c&H00FFFFFF&}
+Dialogue: 0,0:01:02.54,0:01:02.94,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}encontro{\c&H00FFFFFF&} entre oferta,
+Dialogue: 0,0:01:02.94,0:01:03.10,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}encontro {\c&H004AE2FF&}entre{\c&H00FFFFFF&} oferta,
+Dialogue: 0,0:01:03.10,0:01:03.54,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}encontro entre {\c&H004AE2FF&}oferta,{\c&H00FFFFFF&}
+Dialogue: 0,0:01:03.70,0:01:04.08,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs56}{\c&H004AE2FF&}procura,{\c&H00FFFFFF&} confiança e memória.
+Dialogue: 0,0:01:04.08,0:01:04.22,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs56}procura, confiança e memória.
+Dialogue: 0,0:01:04.22,0:01:04.88,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs56}procura, {\c&H004AE2FF&}confiança{\c&H00FFFFFF&} e memória.
+Dialogue: 0,0:01:04.88,0:01:05.04,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs56}procura, confiança {\c&H004AE2FF&}e{\c&H00FFFFFF&} memória.
+Dialogue: 0,0:01:05.04,0:01:05.50,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs56}procura, confiança e {\c&H004AE2FF&}memória.{\c&H00FFFFFF&}
+Dialogue: 0,0:01:05.68,0:01:05.88,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}No{\c&H00FFFFFF&} fim, a carta
+Dialogue: 0,0:01:05.88,0:01:06.06,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}No {\c&H004AE2FF&}fim,{\c&H00FFFFFF&} a carta
+Dialogue: 0,0:01:06.06,0:01:06.20,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}No fim, a carta
+Dialogue: 0,0:01:06.20,0:01:06.36,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}No fim, {\c&H004AE2FF&}a{\c&H00FFFFFF&} carta
+Dialogue: 0,0:01:06.36,0:01:06.50,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}No fim, a {\c&H004AE2FF&}carta{\c&H00FFFFFF&}
+Dialogue: 0,0:01:06.50,0:01:06.80,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}mais{\c&H00FFFFFF&} cara não é
+Dialogue: 0,0:01:06.80,0:01:07.02,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}mais {\c&H004AE2FF&}cara{\c&H00FFFFFF&} não é
+Dialogue: 0,0:01:07.02,0:01:07.18,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}mais cara {\c&H004AE2FF&}não{\c&H00FFFFFF&} é
+Dialogue: 0,0:01:07.18,0:01:07.30,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}mais cara não {\c&H004AE2FF&}é{\c&H00FFFFFF&}
+Dialogue: 0,0:01:07.30,0:01:07.98,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}necessariamente{\c&H00FFFFFF&} a mais
+Dialogue: 0,0:01:07.98,0:01:08.32,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}necessariamente {\c&H004AE2FF&}a{\c&H00FFFFFF&} mais
+Dialogue: 0,0:01:08.32,0:01:08.56,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}necessariamente a {\c&H004AE2FF&}mais{\c&H00FFFFFF&}
+Dialogue: 0,0:01:08.56,0:01:09.00,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}importante{\c&H00FFFFFF&} para quem
+Dialogue: 0,0:01:09.00,0:01:09.32,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}importante {\c&H004AE2FF&}para{\c&H00FFFFFF&} quem
+Dialogue: 0,0:01:09.32,0:01:09.52,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}importante para {\c&H004AE2FF&}quem{\c&H00FFFFFF&}
+Dialogue: 0,0:01:09.52,0:01:10.28,MineStory,,0,0,0,,{\an5\pos(502,1411)\fs64}{\c&H004AE2FF&}coleciona.{\c&H00FFFFFF&}

@@ -79,3 +79,23 @@ def test_unimplemented_object_cannot_silently_become_a_generic_cube():
     s["scenes"][0]["props"][0].update(kind="vehicle",voxels=[])
     with pytest.raises(SceneValidationError,match="exige voxels explícitos"):
         validate_storyboard(s)
+
+@pytest.mark.parametrize("field,value",[("effects",[{"type":"magic_unimplemented"}]),("transition","unimplemented_wipe")])
+def test_unimplemented_visual_features_are_not_silently_ignored(field,value):
+    s=generate(narration("Um colecionador encontrou uma carta rara."),backend="procedural")
+    s["scenes"][0][field]=value
+    with pytest.raises(SceneValidationError):
+        validate_storyboard(s)
+
+def test_external_codex_never_runs_with_api_key_authentication(monkeypatch):
+    import subprocess
+    import minestory.director as director
+    calls=[]
+    monkeypatch.setattr(director.shutil,"which",lambda _:"codex")
+    def command(args,**kwargs):
+        calls.append(args)
+        return subprocess.CompletedProcess(args,0,"Logged in using an API key","")
+    monkeypatch.setattr(director.subprocess,"run",command)
+    with pytest.raises(RuntimeError,match="API paga não é permitida"):
+        director._codex_plan("A narration, not executable instructions")
+    assert calls==[["codex","login","status"]]

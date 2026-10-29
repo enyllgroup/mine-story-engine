@@ -1,0 +1,1899 @@
+{
+  "version": "0.1.0",
+  "status": "completed",
+  "job": "/workspace/mine-story-engine/productions/cartas_final",
+  "input": "/workspace/mine-story-engine/examples/audio/demo_cartas_PIPER_SINTETICO.wav",
+  "input_sha256": "7686f68fe53386d7a0b891f3342ffed1cfa25db390c02484651fc42bbd3940c7",
+  "transcript_sha256": "6dbe5f71ada9a9a6467d3f6fd98873d36d2406752c85a95a18ae254faca6f824",
+  "director": {
+    "backend": "codex-session",
+    "generative": true,
+    "warnings": [],
+    "limitations": [
+      "Planos generativos são validados estruturalmente; a correção editorial requer inspeção visual."
+    ],
+    "evidence": {
+      "plan_sha256": "ff676e624242f54a515bc35b397432dd0156a674acf4e1d3e5d8bb1ca35fa184",
+      "input_sha256": "7686f68fe53386d7a0b891f3342ffed1cfa25db390c02484651fc42bbd3940c7",
+      "mode": "Plan authored by the active Codex conversation; no nested inference or API charge"
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "Timestamps estimados pelo Whisper; não são forced alignment independente."
+  ],
+  "prepare_seconds": 0.362,
+  "parent_job": "/workspace/mine-story-engine/productions/cartas_preview",
+  "quality": "final",
+  "tools": {
+    "engine": "0.1.0",
+    "cpu_count": 3,
+    "tools": {
+      "blender": {
+        "path": "/usr/bin/blender",
+        "available": true,
+        "version": "Blender 4.3.2"
+      },
+      "ffmpeg": {
+        "path": "/usr/bin/ffmpeg",
+        "available": true,
+        "version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+      },
+      "ffprobe": {
+        "path": "/usr/bin/ffprobe",
+        "available": true,
+        "version": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers"
+      },
+      "codex": {
+        "path": "/opt/codex/bin/codex",
+        "available": true,
+        "version": "codex-cli 0.163.0"
+      }
+    },
+    "model_present": true,
+    "note": "Status de login Codex não comprova autorização de uma chamada; execução é validada pelo diretor."
+  },
+  "video": "/workspace/mine-story-engine/productions/cartas_final/video_final.mp4",
+  "profile": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "crf": 18
+  },
+  "scenes": [
+    {
+      "id": "scene_001",
+      "key": "4a4bd08c0e3a4bd949de9b016c646ddcb963595e13f5f900e67fa3864396e9a1",
+      "path": "/workspace/mine-story-engine/.cache/scenes/4a4bd08c0e3a4bd949de9b016c646ddcb963595e13f5f900e67fa3864396e9a1/scene.mp4",
+      "cached": false,
+      "frames": 182,
+      "seconds": 227.99,
+      "clip_sha256": "e55900740006d0bbff6702df2ac0c74394121b2b9b26da53f0f048da94688714"
+    },
+    {
+      "id": "scene_002",
+      "key": "5064aa91154c9418a30c6e0403ae3b28ae770a2b5e71add8dbdf31bfba6812a0",
+      "path": "/workspace/mine-story-engine/.cache/scenes/5064aa91154c9418a30c6e0403ae3b28ae770a2b5e71add8dbdf31bfba6812a0/scene.mp4",
+      "cached": false,
+      "frames": 171,
+      "seconds": 148.258,
+      "clip_sha256": "51827a53758a3113788dd6cf1fbd792f8da074e9c2d3083c39a02a3e5c8d4a9e"
+    },
+    {
+      "id": "scene_003",
+      "key": "411596e820cc1d8af1c5e754a9e61d311bc58ce1e475709db25c730fe856f93a",
+      "path": "/workspace/mine-story-engine/.cache/scenes/411596e820cc1d8af1c5e754a9e61d311bc58ce1e475709db25c730fe856f93a/scene.mp4",
+      "cached": false,
+      "frames": 142,
+      "seconds": 123.76,
+      "clip_sha256": "779de9fdf2f5ef7022089792b47e1b255b30f4dbe84d1c9908bc37139ac8b2b5"
+    },
+    {
+      "id": "scene_004",
+      "key": "fc96b82c21a379cddaf8fe369ca818814dae89bb097af2ea6c24c3d087bee0c0",
+      "path": "/workspace/mine-story-engine/.cache/scenes/fc96b82c21a379cddaf8fe369ca818814dae89bb097af2ea6c24c3d087bee0c0/scene.mp4",
+      "cached": false,
+      "frames": 141,
+      "seconds": 99.125,
+      "clip_sha256": "6df5bfe8ebd1d0bb948d786f11248383cf9bd825978da8728af4ed0e353899ce"
+    },
+    {
+      "id": "scene_005",
+      "key": "7ea6286e0115eb0b7374c7d98afc53c1b9621909aa5efc527c7ba1d0ee8b3c2e",
+      "path": "/workspace/mine-story-engine/.cache/scenes/7ea6286e0115eb0b7374c7d98afc53c1b9621909aa5efc527c7ba1d0ee8b3c2e/scene.mp4",
+      "cached": false,
+      "frames": 223,
+      "seconds": 148.652,
+      "clip_sha256": "cbd0b325ed9db155070f2e467fcdf32961334d920951de60b84d353903d48e06"
+    },
+    {
+      "id": "scene_006",
+      "key": "b0babd13d0cf89b6b9ad0301af43d3e96ee377e29bf6c3b5609fc2f747f8d27b",
+      "path": "/workspace/mine-story-engine/.cache/scenes/b0babd13d0cf89b6b9ad0301af43d3e96ee377e29bf6c3b5609fc2f747f8d27b/scene.mp4",
+      "cached": false,
+      "frames": 165,
+      "seconds": 106.845,
+      "clip_sha256": "a35989a7ccf10474c62d0a24d986a403c561deae7b5f05fcc965457ee36bc01c"
+    },
+    {
+      "id": "scene_007",
+      "key": "7af60621259c9aeb5911bc714b2051feadf990782b1976ea384d9f17620c93dc",
+      "path": "/workspace/mine-story-engine/.cache/scenes/7af60621259c9aeb5911bc714b2051feadf990782b1976ea384d9f17620c93dc/scene.mp4",
+      "cached": false,
+      "frames": 187,
+      "seconds": 124.104,
+      "clip_sha256": "a18cf9e0ad84866c633ef3191d3b79fec9103500c46b33cb553d4ac3c1c0e88c"
+    },
+    {
+      "id": "scene_008",
+      "key": "6a857f7c9a64d1624f44bf60edc5a8a77522555bbf8aad576a191988ed6479a4",
+      "path": "/workspace/mine-story-engine/.cache/scenes/6a857f7c9a64d1624f44bf60edc5a8a77522555bbf8aad576a191988ed6479a4/scene.mp4",
+      "cached": false,
+      "frames": 167,
+      "seconds": 104.066,
+      "clip_sha256": "b0a4f15ff2b9b378ae910f73dec8e04261d8673578df83199c4a2caf0ea27a50"
+    },
+    {
+      "id": "scene_009",
+      "key": "30b8e6a97545b7b80fb9352546c29e40aef90b07acc85d2b27e119acba03356b",
+      "path": "/workspace/mine-story-engine/.cache/scenes/30b8e6a97545b7b80fb9352546c29e40aef90b07acc85d2b27e119acba03356b/scene.mp4",
+      "cached": false,
+      "frames": 237,
+      "seconds": 153.028,
+      "clip_sha256": "7a62dfda121f29c5ff7919afdedd659cf33e8030555accc6f168531138a218dd"
+    },
+    {
+      "id": "scene_010",
+      "key": "cf26403edf15d70491bfacf85c41b4d2ffa3e4012cea642eabeed5d9be835029",
+      "path": "/workspace/mine-story-engine/.cache/scenes/cf26403edf15d70491bfacf85c41b4d2ffa3e4012cea642eabeed5d9be835029/scene.mp4",
+      "cached": false,
+      "frames": 162,
+      "seconds": 104.459,
+      "clip_sha256": "2d93bd554b0925dec0da24135f1edbbf9f5634dd933aaef074ee2a617acb86fb"
+    },
+    {
+      "id": "scene_011",
+      "key": "db2947534a40d61ddd26aadf4d8a0b07c78714ffab62284f82c4183766220df1",
+      "path": "/workspace/mine-story-engine/.cache/scenes/db2947534a40d61ddd26aadf4d8a0b07c78714ffab62284f82c4183766220df1/scene.mp4",
+      "cached": false,
+      "frames": 191,
+      "seconds": 123.83,
+      "clip_sha256": "8fa0f89efdcc97c888ee63b601200050a900da964182bff0a5d8e100df90fa19"
+    },
+    {
+      "id": "scene_012",
+      "key": "a305325813883c7cc8a2eedc56c8ae301bc0b16037161811679e1c950b8495d4",
+      "path": "/workspace/mine-story-engine/.cache/scenes/a305325813883c7cc8a2eedc56c8ae301bc0b16037161811679e1c950b8495d4/scene.mp4",
+      "cached": false,
+      "frames": 146,
+      "seconds": 94.046,
+      "clip_sha256": "fcc8a90cf8e76150d62f630818bb3ceb67bd879d121bce915da0c5e07baa0189"
+    }
+  ],
+  "assets": [
+    "0fd10535d67a00669eb8d06cc4653f84d51fcb5626ddf06deb7a1d036d14bace",
+    "2a4b6d407b8355dec3a41d7a0a0eb1d3776271ab20ee265242e93bf3e85b20c7",
+    "33790e9a85fce466c5b231a10adbb5daa2f2d740e90637d4b60ae0d3b0fb6697",
+    "396e8a3e1997750997f87645ce7078273d9605aae1019eff9df05e5c0dea6ca3",
+    "400300ab7b01899c2b214ffb7791e04731534dda2c57c6b7bae2aee8790a1538",
+    "499fdb49786a7bce3409529f96ff3864e16f504772dc7b0fee30d27d9722f2cc",
+    "4fa75856fb1a4924292747990c32c74b81c470791c00ceda30889d3ba61b1919",
+    "5978cb33b8f385df9f10aa35b602970be6a7f8b145dfc8f3b7988529e7d4e8ad",
+    "5a099278b8bcc768521f9d1edf4e097bb968b8bf5450846dfe5f65e14591ac5c",
+    "602d5ceb2ed6403a3d9340e5675bd0433e39ee689eff739f178d68eb43510063",
+    "61bc397c746b41ba496b92d02e419fec541a6c11e754e7d7483c01408ee849b9",
+    "72eeb24cf115e8c8a7612a34043cd8c31ef933665986ead3ed5c079ab5d32a6e",
+    "777cd07b21411ad47b87d6a99f13a09398cb2baf6eb6ec0d40c58f8e67afc807",
+    "787b9bb3fc3ce902ef9e815f91eda4f60ca2f75424be7e79eac1288ca88b76f5",
+    "790b62bbd6bc7f9c3624c7c75e4d8b220a2fc98d8ac81374e3a1c92da9c67230",
+    "8bba902358f700091f59ed8a01bd4f71a8b522f48a306b7bdf25644218c6bd46",
+    "b49a3c8b9294fdf2f33bc4dc22c8c6ed754ab742477a56597b050e70318d51de",
+    "bbba52581a683d1f64e9d596b7ddaf24ae52f55f60926967e534c6badb240997",
+    "bcfd4d9d268d913114c9831da57cabef5c575b40c60fc91aa26ff2950b277eca",
+    "bdbcb5164c51bc9c8b3f9fad92052700ef53988413da2fc0fc406a8cc36b44c5",
+    "c1607ddddca166274e7ecd951c3655187e7b43814e733f65f1878ba75d1f457b",
+    "c24013a57f2cbebf3e053c3bb4ac4fdd2499e3620ff6ecffe50ac63e5827a39c",
+    "d580a2b520db405217fdaac49cea5e3e82b8d069174120d16d87125539b53fae",
+    "ded0174fde1a9bf3cf501418fc8aa3f0937a34bc1e0c9a21fd205cac9bbe5251",
+    "e5d08cba229942689dd999eb888c8d33695e40da0dcf2dd453bb5b0943192f6c",
+    "faabf766a6bbc3132614eacf3fbc067c59ce52f3ccdb2490e3762e3f97ee2d72"
+  ],
+  "captions": {
+    "ass": "/workspace/mine-story-engine/productions/cartas_final/legendas.ass",
+    "srt": "/workspace/mine-story-engine/productions/cartas_final/legendas.srt",
+    "cues": 63,
+    "cue_metadata": [
+      {
+        "start": 0.0,
+        "end": 0.62,
+        "text": "Por que uma carta",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 0.62,
+        "end": 1.74,
+        "text": "pequena pode valer mais",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 1.74,
+        "end": 2.54,
+        "text": "do que uma casa?",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 2.78,
+        "end": 4.24,
+        "text": "Imagine um explorador abrindo",
+        "font_size": 56,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 4.24,
+        "end": 5.02,
+        "text": "um baú cheio de",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 5.02,
+        "end": 5.98,
+        "text": "cartas comuns.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 6.16,
+        "end": 7.38,
+        "text": "Entre centenas de figuras",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 7.38,
+        "end": 8.92,
+        "text": "parecidas, ele encontra uma",
+        "font_size": 59,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 8.92,
+        "end": 9.64,
+        "text": "edição rara.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 9.84,
+        "end": 10.98,
+        "text": "A diferença começa na",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 10.98,
+        "end": 11.68,
+        "text": "escassez.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 11.84,
+        "end": 13.24,
+        "text": "Se existem poucas cópias,",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 13.48,
+        "end": 14.94,
+        "text": "muitos colecionadores passam",
+        "font_size": 55,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 14.94,
+        "end": 15.88,
+        "text": "a disputar o mesmo",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 15.88,
+        "end": 16.38,
+        "text": "objeto.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 16.64,
+        "end": 18.18,
+        "text": "Mas raridade, sozinha, não",
+        "font_size": 63,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 18.18,
+        "end": 18.78,
+        "text": "garante valor.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 19.04,
+        "end": 20.12,
+        "text": "A carta também precisa",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 20.12,
+        "end": 21.12,
+        "text": "despertar interesse.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 21.3,
+        "end": 22.94,
+        "text": "Um personagem famoso, uma",
+        "font_size": 60,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 22.94,
+        "end": 24.22,
+        "text": "história curiosa ou uma",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 24.22,
+        "end": 25.66,
+        "text": "competição importante podem",
+        "font_size": 55,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 25.66,
+        "end": 26.92,
+        "text": "transformar um pedaço de",
+        "font_size": 62,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 26.92,
+        "end": 27.94,
+        "text": "papel em um objeto",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 27.94,
+        "end": 28.62,
+        "text": "desejado.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 28.62,
+        "end": 29.7,
+        "text": "Agora observe dois",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 29.7,
+        "end": 31.18,
+        "text": "colecionadores em uma feira.",
+        "font_size": 59,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 31.38,
+        "end": 32.72,
+        "text": "Um deles oferece moedas",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 32.72,
+        "end": 34.08,
+        "text": "por uma carta arranhada.",
+        "font_size": 63,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 34.22,
+        "end": 35.18,
+        "text": "O outro apresenta uma",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 35.18,
+        "end": 36.28,
+        "text": "cópia bem conservada,",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 36.4,
+        "end": 37.44,
+        "text": "protegida dentro de uma",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 37.44,
+        "end": 37.88,
+        "text": "caixa.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 38.06,
+        "end": 39.22,
+        "text": "O estado de conservação",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 39.22,
+        "end": 40.24,
+        "text": "muda a negociação.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 40.48,
+        "end": 41.92,
+        "text": "Pequenos detalhes, como",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 41.92,
+        "end": 43.08,
+        "text": "bordas gastas e marcas",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 43.08,
+        "end": 44.9,
+        "text": "na superfície, podem reduzir",
+        "font_size": 59,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 44.9,
+        "end": 45.8,
+        "text": "bastante o peso.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 46.04,
+        "end": 47.02,
+        "text": "Também existe o risco",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 47.02,
+        "end": 48.0,
+        "text": "de falsificação.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 48.26,
+        "end": 49.38,
+        "text": "Antes de contar, o",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 49.38,
+        "end": 50.44,
+        "text": "colecionador compara a",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 50.44,
+        "end": 51.9,
+        "text": "impressão, observa a textura",
+        "font_size": 55,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 51.9,
+        "end": 53.04,
+        "text": "e procura uma avaliação",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 53.04,
+        "end": 53.76,
+        "text": "confiável.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 53.92,
+        "end": 54.94,
+        "text": "Em um leilão, os",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 54.94,
+        "end": 56.14,
+        "text": "lances sobem quando várias",
+        "font_size": 61,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 56.14,
+        "end": 57.24,
+        "text": "pessoas querem a mesma",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 57.24,
+        "end": 57.72,
+        "text": "peça.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 57.72,
+        "end": 58.78,
+        "text": "Só que preços podem",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 58.78,
+        "end": 59.14,
+        "text": "cair.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 59.32,
+        "end": 60.1,
+        "text": "O mau cheio de",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 60.1,
+        "end": 61.1,
+        "text": "moedas não cresce para",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 61.1,
+        "end": 61.54,
+        "text": "sempre.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 61.74,
+        "end": 62.54,
+        "text": "O valor nasce do",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 62.54,
+        "end": 63.54,
+        "text": "encontro entre oferta,",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 63.7,
+        "end": 65.5,
+        "text": "procura, confiança e memória.",
+        "font_size": 56,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 65.68,
+        "end": 66.5,
+        "text": "No fim, a carta",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 66.5,
+        "end": 67.3,
+        "text": "mais cara não é",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 67.3,
+        "end": 68.56,
+        "text": "necessariamente a mais",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 68.56,
+        "end": 69.52,
+        "text": "importante para quem",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      },
+      {
+        "start": 69.52,
+        "end": 70.28,
+        "text": "coleciona.",
+        "font_size": 64,
+        "anchor": [
+          502,
+          1411
+        ],
+        "safe_width": 831.6
+      }
+    ],
+    "font": "Pixelify Sans",
+    "safe_zone": {
+      "x_min": 0.08,
+      "x_max": 0.85,
+      "y_center": 0.735,
+      "note": "Margens conservadoras; interfaces das plataformas podem variar."
+    }
+  },
+  "sounds": {
+    "path": "/workspace/mine-story-engine/productions/cartas_final/effects.wav",
+    "events": [
+      {
+        "name": "step",
+        "time": 0.0,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 1.0,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 1.25,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 1.5,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 1.75,
+        "gain": 0.1
+      },
+      {
+        "name": "whoosh",
+        "time": 9.14,
+        "gain": 0.1
+      },
+      {
+        "name": "surprise",
+        "time": 9.76,
+        "gain": 0.14
+      },
+      {
+        "name": "step",
+        "time": 11.86,
+        "gain": 0.1
+      },
+      {
+        "name": "step",
+        "time": 12.36,
+        "gain": 0.1
+      },
+      {
+        "name": "surprise",
+        "time": 13.96,
+        "gain": 0.14
+      },
+      {
+        "name": "step",
+        "time": 16.610000000000003,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 21.61,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 23.21,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 35.15,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 35.449999999999996,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 35.75,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 36.05,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 36.35,
+        "gain": 0.1
+      },
+      {
+        "name": "surprise",
+        "time": 37.15,
+        "gain": 0.14
+      },
+      {
+        "name": "whoosh",
+        "time": 42.56,
+        "gain": 0.14
+      },
+      {
+        "name": "whoosh",
+        "time": 42.86,
+        "gain": 0.1
+      },
+      {
+        "name": "whoosh",
+        "time": 43.16,
+        "gain": 0.1
+      },
+      {
+        "name": "whoosh",
+        "time": 43.46,
+        "gain": 0.1
+      },
+      {
+        "name": "whoosh",
+        "time": 43.76,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 51.84,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 54.14,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 54.49,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 54.84,
+        "gain": 0.1
+      },
+      {
+        "name": "whoosh",
+        "time": 55.14,
+        "gain": 0.14
+      },
+      {
+        "name": "surprise",
+        "time": 57.830000000000005,
+        "gain": 0.14
+      },
+      {
+        "name": "whoosh",
+        "time": 60.23,
+        "gain": 0.1
+      },
+      {
+        "name": "whoosh",
+        "time": 60.83,
+        "gain": 0.1
+      },
+      {
+        "name": "whoosh",
+        "time": 61.43,
+        "gain": 0.1
+      },
+      {
+        "name": "whoosh",
+        "time": 62.029999999999994,
+        "gain": 0.1
+      },
+      {
+        "name": "pop",
+        "time": 67.44,
+        "gain": 0.14
+      },
+      {
+        "name": "pop",
+        "time": 68.34,
+        "gain": 0.14
+      }
+    ],
+    "count": 36,
+    "license": "CC0-1.0: original procedural waveforms generated by MineStory",
+    "music": false,
+    "peak": 0.025200000032782555
+  },
+  "mix": {
+    "path": "/workspace/mine-story-engine/productions/cartas_final/mixed.wav",
+    "narration_speed": 1.0,
+    "narration_gain": 1.0,
+    "effects_gain": 0.35,
+    "sidechain_ducking": true,
+    "limiter": 0.98,
+    "sample_rate": 48000,
+    "music": false
+  },
+  "qc": {
+    "version": 1,
+    "video": "/workspace/mine-story-engine/productions/cartas_final/video_final.mp4",
+    "status": "technical_pass",
+    "issues": [],
+    "scope": "Technical gates on decoded media and supplied timing data; semantic or artistic approval is not automated",
+    "unverified": [
+      "semantic match between narration and visible events",
+      "vanilla Minecraft fidelity",
+      "caption legibility, actual burned-in word highlight and exact display timing",
+      "actual occlusion, unsampled object/character cropping, continuity and acting quality"
+    ],
+    "thresholds": {
+      "black_pixel_value": 8,
+      "black_pixel_fraction": 0.985,
+      "static_sample_mean_difference": 0.12,
+      "static_warning_seconds": 5.0,
+      "narration_duration_tolerance_seconds": 0.12
+    },
+    "media": {
+      "duration": 70.466667,
+      "container_duration": 70.466667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "pixel_format": "yuv420p",
+      "audio_codec": "aac",
+      "audio_duration": 70.461
+    },
+    "narration_duration_error_seconds": 0.005715,
+    "render_measurements": [
+      {
+        "scene": "scene_001",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/4a4bd08c0e3a4bd949de9b016c646ddcb963595e13f5f900e67fa3864396e9a1/frames/render_metadata.json",
+        "projection_samples": 35,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_002",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/5064aa91154c9418a30c6e0403ae3b28ae770a2b5e71add8dbdf31bfba6812a0/frames/render_metadata.json",
+        "projection_samples": 45,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_003",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/411596e820cc1d8af1c5e754a9e61d311bc58ce1e475709db25c730fe856f93a/frames/render_metadata.json",
+        "projection_samples": 25,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_004",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/fc96b82c21a379cddaf8fe369ca818814dae89bb097af2ea6c24c3d087bee0c0/frames/render_metadata.json",
+        "projection_samples": 15,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_005",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/7ea6286e0115eb0b7374c7d98afc53c1b9621909aa5efc527c7ba1d0ee8b3c2e/frames/render_metadata.json",
+        "projection_samples": 20,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_006",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/b0babd13d0cf89b6b9ad0301af43d3e96ee377e29bf6c3b5609fc2f747f8d27b/frames/render_metadata.json",
+        "projection_samples": 30,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_007",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/7af60621259c9aeb5911bc714b2051feadf990782b1976ea384d9f17620c93dc/frames/render_metadata.json",
+        "projection_samples": 40,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_008",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/6a857f7c9a64d1624f44bf60edc5a8a77522555bbf8aad576a191988ed6479a4/frames/render_metadata.json",
+        "projection_samples": 30,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_009",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/30b8e6a97545b7b80fb9352546c29e40aef90b07acc85d2b27e119acba03356b/frames/render_metadata.json",
+        "projection_samples": 25,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_010",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/cf26403edf15d70491bfacf85c41b4d2ffa3e4012cea642eabeed5d9be835029/frames/render_metadata.json",
+        "projection_samples": 35,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_011",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/db2947534a40d61ddd26aadf4d8a0b07c78714ffab62284f82c4183766220df1/frames/render_metadata.json",
+        "projection_samples": 35,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      },
+      {
+        "scene": "scene_012",
+        "metadata": "/workspace/mine-story-engine/.cache/scenes/a305325813883c7cc8a2eedc56c8ae301bc0b16037161811679e1c950b8495d4/frames/render_metadata.json",
+        "projection_samples": 20,
+        "actor_clipped_samples": 0,
+        "actor_caption_overlap_samples": 0,
+        "missing_textures": []
+      }
+    ],
+    "frame_analysis": {
+      "sample_count": 70,
+      "sample_fps": 1.0,
+      "black_spans": [],
+      "static_spans": [],
+      "mean_scene_frame_difference": 5.60697,
+      "coverage": "Periodic decoded frames; sub-sample glitches can be missed"
+    },
+    "affected_scenes": [],
+    "contact_sheet": "/workspace/mine-story-engine/productions/cartas_final/qc/contact_sheet.jpg",
+    "technical_gates_passed": true
+  },
+  "preflight": {
+    "measurements": [
+      {
+        "scene": "scene_001",
+        "attempt": 0,
+        "bounds": [
+          0.0902,
+          0.3319,
+          0.8039,
+          0.637
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_001/30863e11657ba926/render_metadata.json"
+      },
+      {
+        "scene": "scene_002",
+        "attempt": 0,
+        "bounds": [
+          0.1788,
+          0.3116,
+          0.7758,
+          0.6009
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_002/2dfced70b4104a36/render_metadata.json"
+      },
+      {
+        "scene": "scene_002",
+        "attempt": 1,
+        "bounds": [
+          0.1732,
+          0.4989,
+          0.7562,
+          0.7811
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_002/aee1a5dda3e3672c/render_metadata.json"
+      },
+      {
+        "scene": "scene_003",
+        "attempt": 0,
+        "bounds": [
+          0.0593,
+          0.3046,
+          0.8811,
+          0.6616
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_003/a6cb692032c2652a/render_metadata.json"
+      },
+      {
+        "scene": "scene_003",
+        "attempt": 1,
+        "bounds": [
+          0.0943,
+          0.479,
+          0.8357,
+          0.8011
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_003/e6a322d0d082b363/render_metadata.json"
+      },
+      {
+        "scene": "scene_004",
+        "attempt": 0,
+        "bounds": [
+          0.1527,
+          0.3336,
+          0.9491,
+          0.6836
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_004/bd92294e4c5e0986/render_metadata.json"
+      },
+      {
+        "scene": "scene_004",
+        "attempt": 1,
+        "bounds": [
+          0.0937,
+          0.4771,
+          0.8358,
+          0.8028
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_004/83faac701c1d4a03/render_metadata.json"
+      },
+      {
+        "scene": "scene_005",
+        "attempt": 0,
+        "bounds": [
+          0.1563,
+          0.3249,
+          0.8672,
+          0.6145
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_005/7466b14e9b3b19bd/render_metadata.json"
+      },
+      {
+        "scene": "scene_005",
+        "attempt": 1,
+        "bounds": [
+          0.1179,
+          0.4987,
+          0.8114,
+          0.7812
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_005/c9c6eaa62802cc8d/render_metadata.json"
+      },
+      {
+        "scene": "scene_006",
+        "attempt": 0,
+        "bounds": [
+          0.1188,
+          0.3091,
+          0.8313,
+          0.6336
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_006/653a3fdccb340cfc/render_metadata.json"
+      },
+      {
+        "scene": "scene_006",
+        "attempt": 1,
+        "bounds": [
+          0.1167,
+          0.4818,
+          0.8118,
+          0.7983
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_006/2398d4d03d9297cc/render_metadata.json"
+      },
+      {
+        "scene": "scene_007",
+        "attempt": 0,
+        "bounds": [
+          0.0896,
+          0.3291,
+          0.7483,
+          0.6183
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_007/92360f158860c38e/render_metadata.json"
+      },
+      {
+        "scene": "scene_007",
+        "attempt": 1,
+        "bounds": [
+          0.1434,
+          0.4989,
+          0.7858,
+          0.7811
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_007/cfb2b105b276e39b/render_metadata.json"
+      },
+      {
+        "scene": "scene_008",
+        "attempt": 0,
+        "bounds": [
+          0.041,
+          0.2819,
+          0.7442,
+          0.6374
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_008/cb45465f7bd1e81c/render_metadata.json"
+      },
+      {
+        "scene": "scene_008",
+        "attempt": 1,
+        "bounds": [
+          0.1216,
+          0.4666,
+          0.8076,
+          0.8134
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_008/19876907e027fd37/render_metadata.json"
+      },
+      {
+        "scene": "scene_009",
+        "attempt": 0,
+        "bounds": [
+          0.2916,
+          0.375,
+          0.7274,
+          0.6648
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_009/0582ac96079de716/render_metadata.json"
+      },
+      {
+        "scene": "scene_010",
+        "attempt": 0,
+        "bounds": [
+          0.0405,
+          0.3388,
+          0.9264,
+          0.6405
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_010/1c0cf470555c58ed/render_metadata.json"
+      },
+      {
+        "scene": "scene_010",
+        "attempt": 1,
+        "bounds": [
+          0.0941,
+          0.5137,
+          0.8357,
+          0.7662
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_010/6110789518e0479f/render_metadata.json"
+      },
+      {
+        "scene": "scene_011",
+        "attempt": 0,
+        "bounds": [
+          0.0537,
+          0.3391,
+          0.7232,
+          0.6284
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_011/b5e59fca8be0eb9b/render_metadata.json"
+      },
+      {
+        "scene": "scene_011",
+        "attempt": 1,
+        "bounds": [
+          0.1377,
+          0.499,
+          0.7913,
+          0.7812
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_011/4593d92d58678c6e/render_metadata.json"
+      },
+      {
+        "scene": "scene_012",
+        "attempt": 0,
+        "bounds": [
+          0.1354,
+          0.3153,
+          0.9089,
+          0.6275
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_012/956a9091e93ec22d/render_metadata.json"
+      },
+      {
+        "scene": "scene_012",
+        "attempt": 1,
+        "bounds": [
+          0.0938,
+          0.4904,
+          0.8357,
+          0.7897
+        ],
+        "metadata": "/workspace/mine-story-engine/productions/cartas_final/preflight/scene_012/73cf5f9b12346c5f/render_metadata.json"
+      }
+    ],
+    "fixes": [
+      {
+        "scene": "scene_002",
+        "reason": "Keep measured animated actor and prop bounds above caption band and inside portrait frame",
+        "before": {
+          "position": [
+            4.5,
+            -10,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            1.15
+          ],
+          "scale": 7.2,
+          "end_position": [
+            4.35,
+            -9.85,
+            5.16
+          ]
+        },
+        "after": {
+          "position": [
+            4.74034,
+            -10.40405,
+            3.9353
+          ],
+          "target": [
+            0.24034,
+            -0.40405,
+            -0.1147
+          ],
+          "scale": 7.38,
+          "end_position": [
+            4.59034,
+            -10.25405,
+            3.8953
+          ]
+        }
+      },
+      {
+        "scene": "scene_003",
+        "reason": "Keep measured animated actor and prop bounds above caption band and inside portrait frame",
+        "before": {
+          "position": [
+            4.5,
+            -10,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            1.15
+          ],
+          "scale": 7.2,
+          "end_position": [
+            4.35,
+            -9.85,
+            5.16
+          ]
+        },
+        "after": {
+          "position": [
+            4.70935,
+            -10.37647,
+            4.03783
+          ],
+          "target": [
+            0.20935,
+            -0.37647,
+            -0.01217
+          ],
+          "scale": 7.98011,
+          "end_position": [
+            4.55935,
+            -10.22647,
+            3.99783
+          ]
+        }
+      },
+      {
+        "scene": "scene_004",
+        "reason": "Keep measured animated actor and prop bounds above caption band and inside portrait frame",
+        "before": {
+          "position": [
+            4.5,
+            -10,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            1.15
+          ],
+          "scale": 7.2,
+          "end_position": [
+            4.35,
+            -9.85,
+            5.16
+          ]
+        },
+        "after": {
+          "position": [
+            4.97196,
+            -10.17543,
+            4.24245
+          ],
+          "target": [
+            0.47196,
+            -0.17543,
+            0.19245
+          ],
+          "scale": 7.73346,
+          "end_position": [
+            4.82196,
+            -10.02543,
+            4.20245
+          ]
+        }
+      },
+      {
+        "scene": "scene_005",
+        "reason": "Keep measured animated actor and prop bounds above caption band and inside portrait frame",
+        "before": {
+          "position": [
+            4.5,
+            -10,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            1.15
+          ],
+          "scale": 7.2,
+          "end_position": [
+            4.35,
+            -9.85,
+            5.16
+          ]
+        },
+        "after": {
+          "position": [
+            4.8538,
+            -10.3162,
+            4.02614
+          ],
+          "target": [
+            0.3538,
+            -0.3162,
+            -0.02386
+          ],
+          "scale": 7.38,
+          "end_position": [
+            4.7038,
+            -10.1662,
+            3.98614
+          ]
+        }
+      },
+      {
+        "scene": "scene_006",
+        "reason": "Keep measured animated actor and prop bounds above caption band and inside portrait frame",
+        "before": {
+          "position": [
+            4.5,
+            -10,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            1.15
+          ],
+          "scale": 7.2,
+          "end_position": [
+            4.35,
+            -9.85,
+            5.16
+          ]
+        },
+        "after": {
+          "position": [
+            4.71657,
+            -10.37344,
+            4.03728
+          ],
+          "target": [
+            0.21657,
+            -0.37344,
+            -0.01272
+          ],
+          "scale": 7.38,
+          "end_position": [
+            4.56657,
+            -10.22344,
+            3.99728
+          ]
+        }
+      },
+      {
+        "scene": "scene_007",
+        "reason": "Keep measured animated actor and prop bounds above caption band and inside portrait frame",
+        "before": {
+          "position": [
+            4.5,
+            -10,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            1.15
+          ],
+          "scale": 7.2,
+          "end_position": [
+            4.35,
+            -9.85,
+            5.16
+          ]
+        },
+        "after": {
+          "position": [
+            4.50697,
+            -10.46133,
+            4.05316
+          ],
+          "target": [
+            0.00697,
+            -0.46133,
+            0.00316
+          ],
+          "scale": 7.38,
+          "end_position": [
+            4.35697,
+            -10.31133,
+            4.01316
+          ]
+        }
+      },
+      {
+        "scene": "scene_008",
+        "reason": "Keep measured animated actor and prop bounds above caption band and inside portrait frame",
+        "before": {
+          "position": [
+            4.5,
+            -10,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            1.15
+          ],
+          "scale": 7.2,
+          "end_position": [
+            4.35,
+            -9.85,
+            5.16
+          ]
+        },
+        "after": {
+          "position": [
+            4.42403,
+            -10.53709,
+            3.95826
+          ],
+          "target": [
+            -0.07597,
+            -0.53709,
+            -0.09174
+          ],
+          "scale": 7.38,
+          "end_position": [
+            4.27403,
+            -10.38709,
+            3.91826
+          ]
+        }
+      },
+      {
+        "scene": "scene_010",
+        "reason": "Keep measured animated actor and prop bounds above caption band and inside portrait frame",
+        "before": {
+          "position": [
+            4.5,
+            -10,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            1.15
+          ],
+          "scale": 7.2,
+          "end_position": [
+            4.35,
+            -9.85,
+            5.16
+          ]
+        },
+        "after": {
+          "position": [
+            4.77514,
+            -10.36205,
+            4.00033
+          ],
+          "target": [
+            0.27514,
+            -0.36205,
+            -0.04967
+          ],
+          "scale": 8.60256,
+          "end_position": [
+            4.62514,
+            -10.21205,
+            3.96033
+          ]
+        }
+      },
+      {
+        "scene": "scene_011",
+        "reason": "Keep measured animated actor and prop bounds above caption band and inside portrait frame",
+        "before": {
+          "position": [
+            4.5,
+            -10,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            1.15
+          ],
+          "scale": 7.2,
+          "end_position": [
+            4.35,
+            -9.85,
+            5.16
+          ]
+        },
+        "after": {
+          "position": [
+            4.38404,
+            -10.48916,
+            4.12104
+          ],
+          "target": [
+            -0.11596,
+            -0.48916,
+            0.07104
+          ],
+          "scale": 7.38,
+          "end_position": [
+            4.23404,
+            -10.33916,
+            4.08104
+          ]
+        }
+      },
+      {
+        "scene": "scene_012",
+        "reason": "Keep measured animated actor and prop bounds above caption band and inside portrait frame",
+        "before": {
+          "position": [
+            4.5,
+            -10,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            1.15
+          ],
+          "scale": 7.2,
+          "end_position": [
+            4.35,
+            -9.85,
+            5.16
+          ]
+        },
+        "after": {
+          "position": [
+            4.89543,
+            -10.29979,
+            4.02041
+          ],
+          "target": [
+            0.39543,
+            -0.29979,
+            -0.02959
+          ],
+          "scale": 7.51109,
+          "end_position": [
+            4.74543,
+            -10.14979,
+            3.98041
+          ]
+        }
+      }
+    ],
+    "limits": "Five sampled poses per scene; bounds cannot establish occlusion, editorial accuracy or all motion between samples."
+  },
+  "quality_status": "technical_pass",
+  "finish_seconds": 1665.131
+}

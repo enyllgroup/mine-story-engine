@@ -309,12 +309,20 @@ def _codex_plan(prompt: str, timeout: int = 360) -> dict:
     binary = shutil.which("codex")
     if not binary:
         raise RuntimeError("Codex CLI ausente: instale o CLI oficial e autentique com seu plano ChatGPT, sem API paga")
+    status=subprocess.run([binary,"login","status"],text=True,capture_output=True,timeout=15)
+    if status.returncode or "chatgpt" not in (status.stdout+status.stderr).lower():
+        raise RuntimeError("Codex externo exige login pelo plano ChatGPT. Autenticação por API paga não é permitida; use o modelo desta conversa.")
+    child_environment=os.environ.copy()
+    # Retain proxy/runtime headers. API keys are deliberately not inherited by
+    # this optional child: the user authorized only the existing ChatGPT plan.
+    for name in ("OPENAI_API_KEY","AZURE_OPENAI_API_KEY"):
+        child_environment.pop(name,None)
     with tempfile.TemporaryDirectory(prefix="minestory-director-") as temporary:
         folder = Path(temporary)
         schema, output = folder / "schema.json", folder / "direction.json"
         schema.write_text(json.dumps(MODEL_PLAN_SCHEMA), encoding="utf-8")
-        command = [binary, "exec", "--ephemeral", "--skip-git-repo-check", "--sandbox", "read-only", "--color", "never", "--output-schema", str(schema), "--output-last-message", str(output), "-"]
-        result = subprocess.run(command, input=prompt, text=True, capture_output=True, cwd=temporary, timeout=timeout)
+        command = [binary, "exec", "--ignore-user-config", "--ephemeral", "--skip-git-repo-check", "--sandbox", "read-only", "--color", "never", "--output-schema", str(schema), "--output-last-message", str(output), "-"]
+        result = subprocess.run(command, input=prompt, text=True, capture_output=True, cwd=temporary, timeout=timeout,env=child_environment)
         if result.returncode or not output.exists():
             # Return only a short diagnostic: never expose log dumps, headers or
             # the contents of any authentication file in a production report.

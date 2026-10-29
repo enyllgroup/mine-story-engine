@@ -1,0 +1,33 @@
+{
+  "synthetic_test_only": true,
+  "not_user_narration": true,
+  "director": "GPT in active Codex conversation; no external API",
+  "architecture": "Blender4.3.2 Workbench + faster-whisper large-v3-turbo CPUint8 + FFmpeg7.1.5",
+  "video": {
+    "path": "examples/results/cartas_final.mp4",
+    "sha256": "78e9305b7cc100657ba1a6d30de1fb4dbdf0fd445fb97f23e005b049f9aced5f",
+    "bytes": 21061495,
+    "duration": 70.466667,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac"
+  },
+  "quality_status": "technical_pass",
+  "technical_issues": [],
+  "native_render_and_export_seconds": 1665.131,
+  "test_suite": {
+    "passed": 53,
+    "failed": 0
+  },
+  "final_assets_indexed": 142,
+  "cache_compaction": {
+    "scenes": 34,
+    "files": 6015,
+    "bytes": 15682658505,
+    "skipped_active": 0,
+    "dry_run": false
+  },
+  "limitations_document": "docs/VALIDATION.md"
+}

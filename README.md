@@ -6,6 +6,8 @@ Engine gratuita de narração PT-BR para animação vertical com personagens de 
 
 O renderizador é Blender 4.3.2 em background, seguido por FFmpeg. Não exige Minecraft, licença do jogo, interface gráfica ou GPU. Os recursos são originais: não inclui texturas, skins, logos ou sons oficiais Mojang. A aproximação estética e a direção devem ser avaliadas nos vídeos; não há promessa de equivalência pixel a pixel ao jogo.
 
+**Validação real:** 53 testes passaram. [Demonstração de 70,47 segundos em 1080×1920 nativo](examples/results/cartas_final.mp4), [outro assunto: desaparecimento do Sol](examples/results/sol_review_preview.mp4), [folha de contato final](examples/results/cartas_final_contact_sheet.jpg) e [resumo verificável](examples/results/validation_summary.json). Os áudios dessas demonstrações são sintéticos, criados só para testes. O render completo nativo levou 27 min 45 s nas 3 CPUs deste ambiente, parcialmente ocupado por testes paralelos; não é uma promessa de velocidade para todo vídeo.
+
 ## Instalação
 
 Requisitos do sistema: Python 3.10+, Blender 4.3+, FFmpeg com `libass`/`libx264`. No ambiente da implementação, Blender e FFmpeg já estavam instalados.

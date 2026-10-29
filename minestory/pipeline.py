@@ -98,6 +98,8 @@ def _realize_scene(scene,profile,folder,key,log,*,reuse=True):
     info = {"id":scene["id"],"key":key,"path":str(clip),"cached":False,"frames":frames,
             "seconds":round(time.monotonic()-started,3),"clip_sha256":file_hash(clip)}
     write_json(marker,info)
+    from .cache import compact_scene
+    info["frame_compaction"]=compact_scene(folder)
     return info
 
 def render_storyboard(storyboard, audio, output, *, quality="preview", captions=True, reuse_assets=True,

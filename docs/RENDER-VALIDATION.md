@@ -18,9 +18,18 @@ qualquer narração futura nem a certificação de estética vanilla idêntica.
 | `productions/sol_preview/preflight/**/still.png` | Inspeção das sete cenas | Planetas em blocos, Sol, partículas, cama e objeto subterrâneo são diferentes dos assets do tema cartas |
 | `.cache/scenes/4a4bd08c0e3a4bd949de9b016c646ddcb963595e13f5f900e67fa3864396e9a1/frames/frame_0060.png` | Inspeção do PNG e metadados | Render nativo de 1080×1920, não ampliação do preview; personagem, baú e cartas íntegros |
 
-As produções completas finais podem terminar depois desta inspeção. O estado
-atual e as medições definitivas são os de `production_report.json` e do relatório
-de QC de cada job. Um PNG final isolado não prova a conclusão de um MP4 final.
+**Validação final posterior concluída:** `productions/cartas_final/video_final.mp4`
+foi exportado, decodificado e reinspecionado: 70,466667 s, 1080×1920 nativo,
+30 FPS, H.264/yuv420p e AAC. O QC técnico não apontou ocorrências; a diferença
+de duração para o áudio é 0,005715 s. A folha de contato do vídeo completo e
+frames extraídos em 31 s e 68,5 s foram abertos em resolução final para conferir
+texto, enquadramento e interação. Os arquivos estão em `examples/results/`.
+
+A revisão do Sol também terminou: o experimento de água/gelo e planta passou
+para uma ilha de observação sem o ator que o encobria. A sobreposição de globos
+foi corrigida. Cinco de sete cenas foram reutilizadas do cache. Os PNGs antigos
+de cache podem ter sido compactados após esta inspeção; os vídeos, projetos e
+quadros de referência continuam preservados.
 
 ## Teste A — personagem e atuação
 

@@ -33,6 +33,8 @@ Texturas originais e arquivos `.bbmodel` são gerados com versão e hashes. Mode
 
 As definições usadas são registradas por hash em `library/catalog.sqlite3` e `library/objects`; o histórico associa recursos aos jobs. Os personagens Lia, Noa e Ivo são originais e usam o mesmo rig, com roupas distintas. O nome não replica personagens de terceiros.
 
+Objetos que ainda não possuem implementação nativa exigem `voxels` explícitos; o validador recusa placeholders que de outra forma virariam um cubo genérico. O gerador de cena aceita apenas o vocabulário implementado, vetores finitos, referências existentes e limites de recursos. A criação de um modelo novo continua aberta à combinação de cuboides.
+
 ## Identidade visual
 
 `assets/identity.json` documenta paleta e zonas reservadas. A fonte instalada é `assets/fonts/PixelifySans.ttf` (OFL). Ajuste texto/âncora/contorno em `captions.py` e cores/texturas em `assets.py`. Alterações no gerador de assets precisam incrementar `assets.VERSION`; os arquivos existentes são imutáveis e uma colisão com conteúdo diferente gera erro. O hash do código do renderer participa do cache das cenas.
@@ -51,6 +53,17 @@ O áudio é cacheado por SHA256, modelo, versão do transcritor e configuração
 ```
 
 O hash de entrada precisa coincidir. Um job concluído não pode ser regravado; use `version` para outra exportação. Revisões do plano também devem criar outra versão. Logs e frames completos permanecem no cache após falha. Não remover caches em uso. Não existe política automática de exclusão de produções.
+
+Há lock por cena para duas produções não escreverem o mesmo cache simultaneamente. PNGs existentes são verificados antes de uma retomada; um arquivo incompleto é removido do cache e renderizado novamente. Os MP4s completos são verificados por SHA256. A sessão também arquiva uma cópia da narração em seu job, para preservar a entrada quando o arquivo temporário anexado deixar de existir.
+
+Depois de exportar e verificar uma cena, a engine conserva o MP4, o `.blend` com texturas empacotadas, metadados e três PNGs de referência. Os demais PNGs intermediários são removidos do cache. Uma cena incompleta conserva todos os quadros para retomada. Isso não modifica produções, biblioteca ou a qualidade do vídeo.
+
+```bash
+.venv/bin/python -m minestory cache compact --dry-run
+.venv/bin/python -m minestory cache compact
+```
+
+O comando também compacta caches gerados por versões anteriores. Só atua em diretórios de hash com marcador de conclusão e vídeo cujo SHA256 coincide; pula locks ativos e diretórios simbólicos.
 
 ## Diagnóstico
 

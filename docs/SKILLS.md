@@ -4,6 +4,8 @@ As 11 skills ficam em `.agents/skills/<nome>/SKILL.md`, formato de descoberta po
 
 O formato segue o [guia oficial de skills](https://learn.chatgpt.com/docs/build-skills) e o [skill-creator oficial](https://github.com/openai/skills/tree/main/skills/.system/skill-creator). Os scripts `init_skill.py`, `generate_openai_yaml.py` e `quick_validate.py` foram lidos antes de executar. A validação oficial dos 11 arquivos passou. Nenhuma skill com API faturada foi instalada.
 
+Para a narração anexada nesta conversa, o modelo ativo do Codex dirige as cenas diretamente: `prepare AUDIO` gera o pacote de direção; o próprio agente cria o plano; `finish JOB` exporta e inspeciona. O usuário fornece somente o áudio. Os wrappers `plan`/`produce` da tabela são a alternativa de execução externa pelo Codex CLI, cuja autenticação precisa ser pelo plano ChatGPT. Não há fallback silencioso para um modelo menor.
+
 | Skill | Responsabilidade executada | Interface do wrapper |
 |---|---|---|
 | `narration-analyzer` | Whisper local e timestamps reais | `AUDIO --output DIR` |

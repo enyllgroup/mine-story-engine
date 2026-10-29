@@ -66,6 +66,10 @@ def validate_storyboard(storyboard: dict, expected_duration: float | None = None
             raise SceneValidationError(f"{prefix}: ambiente desconhecido")
         if not isinstance(scene.get("narration"), str) or not isinstance(scene.get("objective"), str):
             raise SceneValidationError(f"{prefix}: narration/objective devem ser texto")
+        if scene.get("transition","cut") != "cut":
+            raise SceneValidationError("Transição não implementada; use cut ou construa a transição com props animados")
+        if scene.get("effects"):
+            raise SceneValidationError("Efeitos extras exigem props animados; partículas de reação são geradas pelas ações")
         actors, props, blocks = scene.get("actors", []), scene.get("props", []), scene.get("blocks", [])
         if not isinstance(actors, list) or len(actors) > 12 or not isinstance(props, list) or len(props) > 64 or not isinstance(blocks, list) or len(blocks) > 1000:
             raise SceneValidationError(f"{prefix}: número de assets acima do limite")
