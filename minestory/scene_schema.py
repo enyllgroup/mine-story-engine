@@ -98,6 +98,8 @@ def validate_storyboard(storyboard: dict, expected_duration: float | None = None
             if prop.get("material", "stone") not in MATERIALS:
                 raise SceneValidationError("Material não suportado")
             voxels = prop.get("voxels", [])
+            if prop["kind"] in {"tree","house","machine","book","crystal","building","cell","vehicle","heart","galaxy"} and not voxels:
+                raise SceneValidationError(f"{prop['kind']} exige voxels explícitos: não há modelo nativo desse objeto no renderer")
             if len(voxels) > 400:
                 raise SceneValidationError("Asset custom excede 400 cuboides")
             for voxel in voxels:

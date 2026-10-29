@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "video": "/workspace/mine-story-engine/productions/sol_review/video_preview.mp4",
+  "status": "technical_pass",
+  "issues": [],
+  "scope": "Technical gates on decoded media and supplied timing data; semantic or artistic approval is not automated",
+  "unverified": [
+    "semantic match between narration and visible events",
+    "vanilla Minecraft fidelity",
+    "caption legibility, actual burned-in word highlight and exact display timing",
+    "actual occlusion, unsampled object/character cropping, continuity and acting quality"
+  ],
+  "thresholds": {
+    "black_pixel_value": 8,
+    "black_pixel_fraction": 0.985,
+    "static_sample_mean_difference": 0.12,
+    "static_warning_seconds": 5.0,
+    "narration_duration_tolerance_seconds": 0.12
+  },
+  "media": {
+    "duration": 42.8,
+    "container_duration": 42.8,
+    "width": 360,
+    "height": 640,
+    "fps": 30.0,
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_duration": 42.794
+  },
+  "narration_duration_error_seconds": 0.005624,
+  "render_measurements": [
+    {
+      "scene": "scene_001",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/5920734202afab0efe93e898944a8f6bd4f7065ad203fa06d79774c30df74eb7/frames/render_metadata.json",
+      "projection_samples": 40,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_002",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/c73b9727307fb80e8b7303cd987c4fe789dcd4d10dbeaaa28c09f050f790bdd3/frames/render_metadata.json",
+      "projection_samples": 15,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_003",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/f39d729c58e8b3fda6df0d5b17be5bf4ccdd4689b03814b602bd8aba1e38b380/frames/render_metadata.json",
+      "projection_samples": 40,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_004",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/3b293e5748aeea475d69bb18e09111111c0948653a027415e7e5f6dfe8b978f7/frames/render_metadata.json",
+      "projection_samples": 25,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_005",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/7139f93e49cd1c427aad12fc2c6cb7ac09c2b73497a4017c949adb65d9dc1c7d/frames/render_metadata.json",
+      "projection_samples": 50,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_006",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/b3fb2a28d0d958cfa0c49bcf179d340fb6b06efb00cace8405a299cf7edf3729/frames/render_metadata.json",
+      "projection_samples": 10,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    },
+    {
+      "scene": "scene_007",
+      "metadata": "/workspace/mine-story-engine/.cache/scenes/e2b027272ee17fed8fcc23df77202abf26aefe6acc126fb922fbcf79233a4d8b/frames/render_metadata.json",
+      "projection_samples": 15,
+      "actor_clipped_samples": 0,
+      "actor_caption_overlap_samples": 0,
+      "missing_textures": []
+    }
+  ],
+  "frame_analysis": {
+    "sample_count": 43,
+    "sample_fps": 1.0,
+    "black_spans": [],
+    "static_spans": [],
+    "mean_scene_frame_difference": 5.12932,
+    "coverage": "Periodic decoded frames; sub-sample glitches can be missed"
+  },
+  "affected_scenes": [],
+  "contact_sheet": "/workspace/mine-story-engine/productions/sol_review/qc/contact_sheet.jpg",
+  "editorial_notice": "Audio shorter than 60 seconds may not meet TikTok Creator Rewards duration requirements; narration was not extended",
+  "technical_gates_passed": true
+}

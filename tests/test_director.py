@@ -73,3 +73,9 @@ def test_model_cannot_omit_a_beat_or_change_narration_clock():
     p["scenes"] = []
     with pytest.raises(SceneValidationError, match="omitiu"):
         compile_plan(p, beats, t["duration"], "llama")
+
+def test_unimplemented_object_cannot_silently_become_a_generic_cube():
+    s=generate(narration("O cientista descobriu um telescópio novo."),backend="procedural")
+    s["scenes"][0]["props"][0].update(kind="vehicle",voxels=[])
+    with pytest.raises(SceneValidationError,match="exige voxels explícitos"):
+        validate_storyboard(s)

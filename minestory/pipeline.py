@@ -51,6 +51,12 @@ def _scene_clip(scene, profile, cache, log, *, reuse=True):
                         "blender":run(["blender","--version"],timeout=15).stdout.splitlines()[0]})
     folder = Path(cache) / "scenes" / key
     folder.mkdir(parents=True, exist_ok=True)
+    from filelock import FileLock
+    with FileLock(str(folder/".render.lock"),timeout=3600):
+        return _realize_scene(scene,profile,folder,key,log,reuse=reuse)
+
+def _realize_scene(scene,profile,folder,key,log,*,reuse=True):
+    """Only one process may write a content-addressed scene at a time."""
     marker = folder / "complete.json"
     clip = folder / "scene.mp4"
     frames = round(scene["end"] * profile["fps"]) - round(scene["start"] * profile["fps"])

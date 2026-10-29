@@ -17,7 +17,9 @@ ctranslate2==4.8.4
 faster-whisper==1.2.1
     # via minestory (pyproject.toml)
 filelock==4.2.4
-    # via huggingface-hub
+    # via
+    #   minestory (pyproject.toml)
+    #   huggingface-hub
 flatbuffers==25.12.19
     # via onnxruntime
 fsspec==2026.9.0
