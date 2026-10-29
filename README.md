@@ -1,5 +1,7 @@
 # MineStory
 
+> **Status corrigido:** o usuário rejeitou o resultado visual da demonstração abaixo. O pipeline Blender funciona tecnicamente, mas NÃO cumpre o requisito de storytelling no ambiente Minecraft. Não é uma engine Minecraft entregue/aprovada. Minecraft Java, Mine-imator e integrações Blockbench/MCprep não foram executados para validar uma alternativa. O desenvolvimento visual anterior está suspenso; não haverá substituição por mera imitação estética.
+
 Engine gratuita de narração PT-BR para animação vertical com personagens de proporções Minecraft, mundos de blocos, texturas pixeladas originais, atuação, legendas por palavra e efeitos sonoros gerados localmente.
 
 **Fluxo principal: envie somente o MP3/WAV na conversa do Codex.** O próprio modelo ativo interpreta a narração, cria a direção visual e executa a produção. Não é necessário usar uma API GPT paga, um modelo local menor, escrever roteiro visual ou escolher cenas.

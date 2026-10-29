@@ -1,5 +1,15 @@
 # MineStory — instruções de produção
 
+## Correção obrigatória de escopo pelo usuário
+
+O usuário REJEITOU o renderer Blender com texturas e formas apenas inspiradas em Minecraft. A história deve acontecer no ambiente Minecraft, com aparência e recursos fiéis ao jogo. A demonstração existente não foi aprovada para esse requisito. Não continuar gerando aproximações, não apresentar o projeto como engine Minecraft entregue e não usar o pipeline Blender legado automaticamente quando chegar um áudio.
+
+Minecraft Java é a rota direta a investigar; Mine-imator, Blockbench/Animated Java e MCprep continuam alternativas/auxiliares que não foram validados em execução. Pesquisa de documentação não prova impossibilidade nem funcionamento. Antes de outra produção, é necessário demonstrar um caminho que atenda ao requisito visual, com acesso legítimo aos componentes necessários. Se não for viável, informar o bloqueio e parar, sem substituir por imitação.
+
+Próximos testes: UM vídeo de aproximadamente20segundos. Sites deve disponibilizar somente esse vídeo, sem pacotes, código, relatórios ou lista de arquivos na interface. Preservar os artefatos antigos; não confundir preservação com aprovação.
+
+As instruções abaixo descrevem a implementação LEGADA e só podem ser usadas para diagnóstico técnico explicitamente autorizado, não como fluxo de entrega aceito.
+
 O usuário envia a narração finalizada **nesta conversa**. A única entrada obrigatória é esse áudio. O próprio modelo ativo do Codex faz a direção visual; não delegue automaticamente o raciocínio a Qwen/llama nem use uma API GPT paga. `llama.cpp` é um runtime opcional, não o modelo principal deste fluxo.
 
 1. Leia `.agents/skills/narration-analyzer/SKILL.md`, `visual-director/SKILL.md` e `render-pipeline/SKILL.md` sob `.agents/skills/`.
