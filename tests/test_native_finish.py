@@ -96,3 +96,32 @@ def test_real_preview_finish_with_effects_preserves_original_and_names(job):
     # The guarded output prevents a rerun from replacing the reviewed version.
     second=subprocess.run(result.args,capture_output=True,text=True)
     assert second.returncode!=0 and 'Preserving existing' in second.stderr
+
+
+def test_finish_inserts_verified_retake_without_retiming_voice(job):
+    folder,voice,_=job
+    native=folder/'native-fixture.mp4';patch=folder/'retake-fixture.mp4'
+    for target,color,frames in [(native,'0x334455',9),(patch,'red',3)]:
+        subprocess.run(['ffmpeg','-v','error','-nostdin','-f','lavfi','-i',
+            f'color=c={color}:s=540x960:r=30','-frames:v',str(frames),'-an',
+            '-c:v','libx264','-threads','1','-pix_fmt','yuv420p',str(target)],check=True)
+    project=folder/'retake.miproject'
+    project.write_text(json.dumps({'project':{'timeline':{'region_start':3,'region_end':5}}}))
+    evidence=folder/'retake.export.json'
+    evidence.write_text(json.dumps({'native_export_confirmed':True,'sha256':FINISH.file_hash(patch),
+                                    'output':str(patch),'project':str(project)}))
+    manifest=folder/'retakes.json'
+    manifest.write_text(json.dumps({'retakes':[{'video':patch.name,'export_report':evidence.name,
+                                                'start_frame':3,'end_frame_exclusive':6}]}))
+    (folder/'legendas.ass').write_text('''[Script Info]\nScriptType: v4.00+\nPlayResX: 540\nPlayResY: 960\n
+[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Default,Pixelify Sans,40,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,0,2,10,10,30,1\n
+[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\nDialogue: 0,0:00:00.00,0:00:00.25,Default,,0,0,0,,teste\n''')
+    result=subprocess.run([sys.executable,str(ROOT/'scripts/finish_mineimator.py'),
+        '--video',str(native),'--audio',str(voice),'--job',str(folder),'--quality','preview',
+        '--captions','on','--retakes',str(manifest)],capture_output=True,text=True)
+    assert result.returncode==0,result.stderr
+    report=json.loads((folder/'finish_preview_report.json').read_text())
+    assert report['retakes'][0]['frames']==3
+    assert report['narration_speed']==1 and report['input']['narration_sha256']==FINISH.file_hash(voice)
+    qc=json.loads((folder/'qc_preview_report.json').read_text())
+    assert qc['decoded_frames']==9 and qc['technical_gates_passed']

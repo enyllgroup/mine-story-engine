@@ -249,6 +249,8 @@ def main() -> None:
                         help='Require matching native dimensions; never resize or upscale')
     parser.add_argument('--effects', type=Path,
                         help='Action-synchronized effects WAV; --audio remains the original narration')
+    parser.add_argument('--retakes', type=Path,
+                        help='Optional JSON manifest of frame-exact native scene retakes')
     parser.add_argument("--max-mib", type=positive_mib,
                         help="Optional actual file cap in MiB; constrained CRF18 with 20%% bitrate reserve")
     parser.add_argument("--check-only", action="store_true", help="Read-only input validation, without rendering or writing")
@@ -256,9 +258,13 @@ def main() -> None:
     video, audio, job = args.video.resolve(), args.audio.resolve(), args.job.resolve()
     effects = args.effects.resolve() if args.effects is not None else None
     inputs = check_inputs(video, audio, job, args.captions == "on", quality=args.quality, effects=effects)
+    retakes = []
+    if args.retakes is not None:
+        from minestory.native_retake import validate_retakes
+        retakes = validate_retakes(args.retakes.resolve(strict=True), media_video(video), media_video)
     limit = encoder_limit(args.max_mib, inputs["narration"]["duration"])
     if args.check_only:
-        print(json.dumps({**inputs, "encoder_limit": limit}, ensure_ascii=False, indent=2))
+        print(json.dumps({**inputs, "encoder_limit": limit, "retakes":retakes}, ensure_ascii=False, indent=2))
         return
     names = ({'video':'video_final.mp4','finish':'finish_report.json',
               'qc':'qc_report.json','sheet':'contact_sheet.jpg'} if args.quality=='final' else
@@ -275,6 +281,7 @@ def main() -> None:
               "renderer_substitution": False, "upscale": False, "narration_speed": 1,
               "narration_gain": 1, "music": False, "effects": effects is not None,
               "quality": args.quality,
+              "retakes":retakes,
               "work_directory": str(work), "encoder_limit": limit}
     started = time.monotonic()
     try:
@@ -283,12 +290,23 @@ def main() -> None:
             from minestory.native_sound import mix_narration
             audio_input = work/'audio_mix.wav'
             report['effects_mix'] = mix_narration(audio,effects,audio_input,inputs['narration']['duration'])
-        command = ["ffmpeg", "-n", "-hide_banner", "-nostdin", "-threads", "2",
-                   "-i", str(video), "-i", str(audio_input), "-map", "0:v:0", "-map", "1:a:0"]
+        command = ["ffmpeg", "-n", "-hide_banner", "-nostdin", "-threads", "2", "-i", str(video)]
+        for retake in retakes:
+            command.extend(["-i",retake['video']])
+        command.extend(["-i",str(audio_input)])
         if args.captions == "on":
             shutil.copy2(job / "legendas.ass", work / "captions.ass")
             (work / "fonts").symlink_to(ROOT / "assets/fonts", target_is_directory=True)
-            command.extend(["-vf", "ass=captions.ass:fontsdir=fonts"])
+        if retakes:
+            from minestory.native_retake import filter_graph
+            base_media=media_video(video)
+            base_frames=int(base_media['stream'].get('nb_frames') or round(base_media['duration']*base_media['fps']))
+            command.extend(["-filter_complex",filter_graph(base_frames,retakes,captions=args.captions == 'on'),
+                            "-map","[vout]","-map",f"{len(retakes)+1}:a:0"])
+        else:
+            command.extend(["-map", "0:v:0", "-map", "1:a:0"])
+            if args.captions == "on":
+                command.extend(["-vf", "ass=captions.ass:fontsdir=fonts"])
         command.extend(["-c:v", "libx264", "-preset", "fast", "-crf", "18", "-threads", "2"])
         if limit is not None:
             command.extend(["-maxrate", f"{limit['video_maxrate_kbps']}k",

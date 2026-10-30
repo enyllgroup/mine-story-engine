@@ -46,6 +46,34 @@ reutilizáveis. Narração, objetos específicos, roteiro, eventos, projetos e m
 de cada assunto ficam exclusivamente em seu diretório `productions/`, ignorado
 pelo Git. Não transformar uma produção em tema ou template permanente.
 
+## Corrigir apenas uma faixa de quadros
+
+Para uma versão revisada do projeto, crie outro `.miproject` no mesmo diretório
+de assets e defina a região nativa usando início inclusivo e fim exclusivo:
+
+```bash
+.venv/bin/python -m minestory native retake \
+  --project productions/NOVO_JOB/mineimator/story-revisado.miproject \
+  --output productions/NOVO_JOB/mineimator/retake-0300-0450.miproject \
+  --start-frame 300 --end-frame-exclusive 450
+```
+
+Abra e exporte essa região no Mine-imator com `native gui` e `native export`.
+O relatório do exportador precisa confirmar o projeto, o arquivo e seu SHA256.
+Na montagem, `native finish --retakes retakes.json` substitui as faixas em uma
+única codificação final. Exemplo de manifesto relativo ao próprio JSON:
+
+```json
+{"retakes":[{"video":"retake.mp4","export_report":"retake.export.json",
+             "start_frame":300,"end_frame_exclusive":450}]}
+```
+
+As faixas devem ser ordenadas, não sobrepostas e ter a mesma resolução e FPS do
+master. O programa valida hashes, projeto e número exato de quadros, preserva
+os arquivos de origem e não estica o áudio. O corte e a montagem foram testados
+com arquivos de teste; cada região precisa também ser exportada e revisada no
+Mine-imator real antes do uso em uma produção.
+
 ## Projeto portátil
 
 ```bash
