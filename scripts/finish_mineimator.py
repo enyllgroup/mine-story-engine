@@ -2,7 +2,8 @@
 """Finish an actual native Mine-imator MP4 and inspect its decoded frames.
 
 No renderer, 3D generator, upscale, voice synthesis, or playback speed change is
-performed here. Inputs must already be 1080x1920 at 30 or 60 FPS. The narration
+performed here. Inputs must already be 1080x1920 (final) or 540x960 (preview)
+at 30 or 60 FPS. The narration
 defines the duration; a short native clip is rejected instead of being padded.
 """
 from __future__ import annotations
@@ -83,10 +84,14 @@ def parse_ass_time(value: str) -> float:
     return int(hours) * 3600 + int(minutes) * 60 + float(seconds)
 
 
-def check_inputs(video: Path, audio: Path, job: Path, captions: bool) -> dict:
+def check_inputs(video: Path, audio: Path, job: Path, captions: bool, *,
+                 quality: str = 'final', effects: Path | None = None) -> dict:
+    dimensions = {'final': (1080,1920), 'preview': (540,960)}
+    if quality not in dimensions:
+        raise ValueError('Unknown native quality profile')
     native = media_video(video)
-    if (native["width"], native["height"]) != (1080, 1920):
-        raise ValueError("Native export must be 1080x1920; no upscale is permitted")
+    if (native["width"], native["height"]) != dimensions[quality]:
+        raise ValueError(f"Native {quality} export must be {dimensions[quality][0]}x{dimensions[quality][1]}; no upscale is permitted")
     if min(abs(native["fps"] - 30), abs(native["fps"] - 60)) > .02:
         raise ValueError("Native export must be 30 or 60 FPS; no retiming is permitted")
     narration = probe_audio(audio)
@@ -99,6 +104,14 @@ def check_inputs(video: Path, audio: Path, job: Path, captions: bool) -> dict:
         raise ValueError("Transcript duration differs from supplied narration")
     if transcript.get("audio_sha256") != file_hash(audio):
         raise ValueError("Transcript is not bound to the supplied narration SHA256")
+    effect_info = None
+    if effects is not None:
+        if effects.resolve() == audio.resolve() or file_hash(effects) == file_hash(audio):
+            raise ValueError('Effects must not be the original narration duplicated')
+        effect_info = probe_audio(effects)
+        if abs(effect_info['duration']-narration['duration']) > .03:
+            raise ValueError('Effects timeline duration differs from original narration')
+        effect_info['sha256'] = file_hash(effects)
     events = []
     if captions:
         for line in (job / "legendas.ass").read_text(encoding="utf-8-sig").splitlines():
@@ -116,7 +129,8 @@ def check_inputs(video: Path, audio: Path, job: Path, captions: bool) -> dict:
             "narration": narration, "narration_sha256": file_hash(audio),
             "transcript": str(transcript_path), "word_count": len(transcript["words"]),
             "forced_alignment": transcript.get("transcription", {}).get("forced_alignment", False),
-            "caption_events": len(events), "captions": captions}
+            "caption_events": len(events), "captions": captions,
+            "quality": quality, "effects": effect_info}
 
 
 def runs(flags: list[bool], step: float, minimum: float) -> list[dict]:
@@ -131,7 +145,8 @@ def runs(flags: list[bool], step: float, minimum: float) -> list[dict]:
     return result
 
 
-def inspect_native_output(path: Path, expected: float, work: Path) -> dict:
+def inspect_native_output(path: Path, expected: float, work: Path, *,
+                          dimensions: tuple[int,int] = (1080,1920)) -> dict:
     media = media_video(path)
     stream = media["stream"]
     audio = next((s for s in media["probe"]["streams"] if s.get("codec_type") == "audio"), None)
@@ -140,7 +155,7 @@ def inspect_native_output(path: Path, expected: float, work: Path) -> dict:
         issues.append({"severity": "error", "code": "video_codec"})
     if audio is None or audio.get("codec_name") != "aac":
         issues.append({"severity": "error", "code": "audio_codec"})
-    if (media["width"], media["height"]) != (1080, 1920):
+    if (media["width"], media["height"]) != dimensions:
         issues.append({"severity": "error", "code": "dimensions"})
     drift = abs(media["duration"] - expected)
     if drift > max(.04, 1 / media["fps"] + .012):
@@ -230,18 +245,27 @@ def main() -> None:
     parser.add_argument("--audio", type=Path, required=True, help="Original unchanged narration")
     parser.add_argument("--job", type=Path, required=True, help="Job containing transcript.json and legendas.ass")
     parser.add_argument("--captions", choices=("on", "off"), default="on")
+    parser.add_argument('--quality', choices=('preview','final'), default='final',
+                        help='Require matching native dimensions; never resize or upscale')
+    parser.add_argument('--effects', type=Path,
+                        help='Action-synchronized effects WAV; --audio remains the original narration')
     parser.add_argument("--max-mib", type=positive_mib,
                         help="Optional actual file cap in MiB; constrained CRF18 with 20%% bitrate reserve")
     parser.add_argument("--check-only", action="store_true", help="Read-only input validation, without rendering or writing")
     args = parser.parse_args()
     video, audio, job = args.video.resolve(), args.audio.resolve(), args.job.resolve()
-    inputs = check_inputs(video, audio, job, args.captions == "on")
+    effects = args.effects.resolve() if args.effects is not None else None
+    inputs = check_inputs(video, audio, job, args.captions == "on", quality=args.quality, effects=effects)
     limit = encoder_limit(args.max_mib, inputs["narration"]["duration"])
     if args.check_only:
         print(json.dumps({**inputs, "encoder_limit": limit}, ensure_ascii=False, indent=2))
         return
-    final = job / "video_final.mp4"
-    for name in ("video_final.mp4", "finish_report.json", "qc_report.json", "contact_sheet.jpg"):
+    names = ({'video':'video_final.mp4','finish':'finish_report.json',
+              'qc':'qc_report.json','sheet':'contact_sheet.jpg'} if args.quality=='final' else
+             {'video':'video_preview.mp4','finish':'finish_preview_report.json',
+              'qc':'qc_preview_report.json','sheet':'preview_contact_sheet.jpg'})
+    final = job / names['video']
+    for name in names.values():
         if (job / name).exists():
             raise SystemExit(f"Preserving existing {name}; use a new production version/job directory")
     work = Path(tempfile.mkdtemp(prefix=".finish-", dir=job))
@@ -249,12 +273,18 @@ def main() -> None:
     report = {"status": "running", "input": inputs, "native_video": str(video),
               "output": str(final), "native_video_sha256": file_hash(video),
               "renderer_substitution": False, "upscale": False, "narration_speed": 1,
-              "narration_gain": 1, "music": False, "effects": False,
+              "narration_gain": 1, "music": False, "effects": effects is not None,
+              "quality": args.quality,
               "work_directory": str(work), "encoder_limit": limit}
     started = time.monotonic()
     try:
+        audio_input = audio
+        if effects is not None:
+            from minestory.native_sound import mix_narration
+            audio_input = work/'audio_mix.wav'
+            report['effects_mix'] = mix_narration(audio,effects,audio_input,inputs['narration']['duration'])
         command = ["ffmpeg", "-n", "-hide_banner", "-nostdin", "-threads", "2",
-                   "-i", str(video), "-i", str(audio), "-map", "0:v:0", "-map", "1:a:0"]
+                   "-i", str(video), "-i", str(audio_input), "-map", "0:v:0", "-map", "1:a:0"]
         if args.captions == "on":
             shutil.copy2(job / "legendas.ass", work / "captions.ass")
             (work / "fonts").symlink_to(ROOT / "assets/fonts", target_is_directory=True)
@@ -274,14 +304,17 @@ def main() -> None:
             report["encoder_limit"]["actual_bytes"] = temporary.stat().st_size
             if temporary.stat().st_size > limit["max_bytes"]:
                 raise RuntimeError("Encoded file exceeds actual size cap; temporary file retained, final not published")
-        qc = inspect_native_output(temporary, inputs["narration"]["duration"], work)
+        qc = inspect_native_output(temporary, inputs["narration"]["duration"], work,
+                                   dimensions=(inputs['native']['width'],inputs['native']['height']))
         qc["video"] = str(final)
-        qc["contact_sheet"] = str(job / "contact_sheet.jpg")
-        qc["word_timestamps_validated_against_original_audio"] = True
+        qc["contact_sheet"] = str(job / names['sheet'])
+        qc["transcript_bound_to_original_audio_sha256"] = True
+        qc["word_timestamps_acoustically_verified"] = False
         qc["source_audio_sha256"] = inputs["narration_sha256"]
         qc["encoder_limit"] = report["encoder_limit"]
-        write_new_json(job / "qc_report.json", qc)
-        os.link(work / "contact_sheet.jpg", job / "contact_sheet.jpg")
+        qc['effects_mix'] = report.get('effects_mix')
+        write_new_json(job / names['qc'], qc)
+        os.link(work / "contact_sheet.jpg", job / names['sheet'])
         if not qc["technical_gates_passed"]:
             raise RuntimeError("Technical QC failed; temporary video preserved, final output not published")
         # link() is atomic and fails if final already exists; no production can
@@ -295,9 +328,9 @@ def main() -> None:
             report["editorial_notice"] = "Teste abaixo de 60s pode não cumprir a duração do Programa de Recompensas do TikTok; narração não ampliada."
     except Exception as exc:
         report.update(status="failed", error=str(exc), elapsed_seconds=round(time.monotonic() - started, 3))
-        write_new_json(job / "finish_report.json", report)
+        write_new_json(job / names['finish'], report)
         raise
-    write_new_json(job / "finish_report.json", report)
+    write_new_json(job / names['finish'], report)
     print(json.dumps({"video": str(final), "technical_gates_passed": True,
                       "visual_review_required": True, "duration": inputs["narration"]["duration"]}, indent=2))
 

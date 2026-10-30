@@ -9,6 +9,10 @@ from .util import ROOT, read_json, write_json
 
 LEGACY_VISUAL_COMMANDS = {"produce", "prepare", "finish", "render", "launcher"}
 NATIVE_SCRIPTS = {
+    "narration": "analyze_native_narration.py",
+    "align": "align_native_narration.py",
+    "character": "build_native_character.py",
+    "sound": "native_sound_design.py",
     "project": "create_mineimator_test_project.py",
     "gui": "mineimator_gui.py",
     "export": "export_mineimator.py",

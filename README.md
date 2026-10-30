@@ -12,11 +12,12 @@ quadros finais foram decodificados; a sequência e frames em resolução complet
 foram inspecionados. Os 87 testes de código passaram. Isso valida esta fixture
 técnica, sem concluir o diretor criativo para novas narrações.
 
-O teste atual é **um único vídeo de 17,95 segundos**, com áudio sintético
-identificado como teste. O [Sites](https://minestory-arquivos.earlybrook129.chatgpt.site)
-publicado contém somente o player e o botão de download desse vídeo, mantendo
-o acesso privado do proprietário. Produções anteriores são preservadas, mas não representam aprovação
-da aparência Minecraft. O README anterior permanece integralmente em
+O fluxo para novas narrações ainda exige direção e montagem pelo Codex; não existe
+um comando nativo de ponta a ponta validado para histórias arbitrárias. O
+[Site privado existente](https://minestory-arquivos.earlybrook129.chatgpt.site)
+é reutilizado para disponibilizar somente o vídeo final revisado. Produções
+anteriores são preservadas, mas não representam aprovação da aparência Minecraft.
+O README anterior permanece integralmente em
 [docs/LEGACY-BLENDER.md](docs/LEGACY-BLENDER.md).
 
 ## Instalação local
@@ -99,9 +100,10 @@ controlador cuja identidade PID/starttime ainda corresponde ao registro:
 O usuário fornece somente seu MP3/WAV nesta conversa. A voz e sua velocidade
 devem ser preservadas. Transcrição local e legendas podem reutilizar os módulos
 independentes `minestory/audio.py` e `minestory/captions.py`, depois de conferir
-as palavras reais. Os timestamps Whisper são estimativas acústicas; não são
-forced alignment independente. Nenhum áudio sintético deve ser apresentado como
-narração do usuário.
+as palavras reais. O alinhamento CTC opcional pode melhorar tempos de palavras;
+segmentos de baixa confiança usam os timestamps Whisper. Nenhum alinhamento
+garante que a transcrição corresponda ao que foi falado. Nenhum áudio sintético
+deve ser apresentado como narração do usuário.
 
 A análise isolada pode ser executada sem acionar o backend visual legado. Use
 um diretório de produção novo:
@@ -129,9 +131,9 @@ Mine-imator pela interface. Confira câmera ativa, resolução vertical,
 O gerador usa 1080×1920 e 600 frames em `--quality final`, seu padrão atual.
 `--quality preview` gera 540×960. O master 1080×1920 levou 7 min 11 s neste host;
 a montagem final levou 41,711 s. Esses tempos não são uma promessa para outros jobs.
-O fluxo de cliques foi conduzido com os helpers e inspeção da GUI; o monitor
-confirmou log e MP4 reais. O controlador autônomo completo de exportação ainda
-não foi exercitado de ponta a ponta no perfil documentado.
+O controlador de cliques foi exercitado até a conclusão de exportações nativas;
+o monitor confirmou o log e os quadros reais. Cada projeto ainda precisa de
+inspeção visual e correções próprias.
 
 Após obter o arquivo nativo, FFmpeg pode acrescentar a narração original e ASS,
 produzindo H.264/AAC. Essa montagem não substitui a renderização Mine-imator.

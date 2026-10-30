@@ -230,6 +230,9 @@ def main():
             checkpoint = log_checkpoint(args.log)
         except OSError:
             raise SystemExit(f"Cannot read native runtime log {args.log}; no open request sent")
+        xdotool = str(XROOT / "usr/bin/xdotool")
+        editor_window = subprocess.check_output([xdotool, "getwindowfocus"], env=env).decode().strip()
+        editor_title = subprocess.check_output([xdotool, "getwindowname", editor_window], env=env).decode().strip()
         held_key("ctrl+o")
         time.sleep(1)
         focused = subprocess.check_output([str(XROOT / "usr/bin/xdotool"), "getwindowfocus"], env=env).decode().strip()
@@ -247,6 +250,11 @@ def main():
         deadline = time.monotonic() + args.timeout
         while time.monotonic() < deadline:
             if project_load_confirmed(new_log_segment(args.log, checkpoint), path):
+                # Xvfb without a window manager can leave focus on the X root
+                # after Qt closes its picker. Restore only the verified editor
+                # that initiated this request, after native load completion.
+                if editor_title == "Mine-imator" or editor_title.endswith(" - Mine-imator"):
+                    xdo("windowfocus", "--sync", editor_window)
                 print(json.dumps({"project": str(path), "native_load_confirmed": True,
                                   "evidence": str(args.log)}))
                 return

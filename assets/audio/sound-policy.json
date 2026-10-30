@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "permanent": true,
+  "default": "Minecraft actual SFX for vanilla actions; original/licensed matching SFX for non-vanilla phenomena",
+  "minecraft_catalog": "minecraft-sfx-1.20.2.json",
+  "voice": {
+    "speed": 1,
+    "pitch": 1,
+    "nominal_gain": 1,
+    "original_hash_required": true,
+    "duck_effects_under_speech": true
+  },
+  "music": "off",
+  "story_cues": "production-specific only; never permanent story rules",
+  "original_events": [
+    "original:digitalize",
+    "original:squeeze",
+    "original:scan",
+    "original:whoosh"
+  ],
+  "game_asset_distribution": "private ignored library only; no isolated game audio in Git or downloads"
+}

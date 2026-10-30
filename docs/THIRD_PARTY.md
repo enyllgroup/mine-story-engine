@@ -6,8 +6,10 @@ Código MineStory: MIT, arquivo [LICENSE](../LICENSE). Texturas, personagens, mo
 |---|---|---|
 | Blender4.3.2 | https://www.blender.org/about/license/ | GPL; ferramenta instalada no ambiente, não embutida no repositório |
 | FFmpeg7.1.5 | https://ffmpeg.org/legal.html | Build instalado com GPL/libx264/libass; ferramenta externa |
+| SFX Minecraft1.20.2, somente cache local | https://www.minecraft.net/en-us/usage-guidelines / https://resources.download.minecraft.net | Mojang/Microsoft, direitos reservados; uso condicionado às Guidelines em vídeo original.27OGGs/18eventos, SHA1 fixos. NãoCC0; não redistribuir os arquivos isolados. Ver [NATIVE-SOUND.md](NATIVE-SOUND.md). |
 | faster-whisper1.2.1 | https://github.com/SYSTRAN/faster-whisper | MIT, inferência CPU |
 | Whisper/pesos convertidos | https://github.com/openai/whisper / https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo | MIT indicada no model card; cache local |
+| Wav2Vec2 português ONNX quantizado | https://huggingface.co/onnx-community/wav2vec2-large-xlsr-53-portuguese-ONNX | Apache-2.0 indicada no model card; alinhamento CTC local, pesos em cache privado |
 | CTranslate2/PyAV/NumPy/Pillow/jsonschema | Pacotes oficiais PyPI, versões em requirements.lock | Licenças próprias dos distribuidores; não confundir com os assets |
 | Pixelify Sans | https://github.com/google/fonts/tree/main/ofl/pixelifysans | SIL OFL1.1, OFL.txt preservado junto da fonte; SHA256 9ba86cd010a4de309d263ceff8e8044092c9db7efda869620cb9ff1c4389e8a5 |
 | llama.cpp opcional | https://github.com/ggml-org/llama.cpp/releases/tag/b11982 | MIT, binário oficial CPU Linuxx64; SHA256 a7e6cc16d423fc88c204a8d8e646c1d11b1d0de9ec4a56942f6c02936e9bf09c |

@@ -36,6 +36,18 @@ def test_old_project_completion_does_not_confirm_another_project(tmp_path):
     log=f'00 Opening project: {wanted}\n00 Project loaded\n01 Opening project: /other.miproject\n'
     assert not EXPORT.last_project_loaded(log,wanted)
 
+def test_long_narration_requires_explicit_limit_and_keeps_all_frames(tmp_path):
+    project=tmp_path/'narration.miproject'
+    project.write_text(json.dumps({'format':34,'created_in':'2.0.2',
+        'project':{'video_width':540,'video_height':960,'tempo':30,
+                   'timeline':{'region_start':0,'region_end':1839}},
+        'timelines':[{'type':'camera'}]}))
+    with pytest.raises(ValueError,match='at most 20 seconds'):
+        EXPORT.inspect_project(project)
+    result=EXPORT.inspect_project(project,max_seconds=62)
+    assert result['expected_frames']==1840
+    assert result['expected_duration']==pytest.approx(1840/30)
+
 
 def test_other_export_completion_cannot_confirm_target(tmp_path):
     wanted=tmp_path/'wanted.mp4'

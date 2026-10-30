@@ -36,7 +36,9 @@ GUI = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(GUI)
 
 
-def inspect_project(path: Path) -> dict:
+def inspect_project(path: Path, max_seconds: float = 20) -> dict:
+    if not math.isfinite(max_seconds) or max_seconds <= 0:
+        raise ValueError('Maximum duration must be finite and positive')
     doc = json.loads(path.read_text())
     if doc.get('format') != 34 or doc.get('created_in') != '2.0.2':
         raise ValueError('Only native Mine-imator 2.0.2 format 34 is supported')
@@ -54,8 +56,8 @@ def inspect_project(path: Path) -> dict:
     if start < 0 or end < start:
         raise ValueError('Invalid export region')
     frames = math.floor((end-start)/fps*30) + 1
-    if frames < 2 or frames/30 > 20:
-        raise ValueError('This validation controller allows one test of at most 20 seconds')
+    if frames < 2 or frames/30 > max_seconds:
+        raise ValueError(f'This validation controller allows a project of at most {max_seconds:g} seconds; use --max-seconds for a longer requested narration')
     if not any(t.get('type') == 'camera' for t in doc.get('timelines', [])):
         raise ValueError('Native project has no camera timeline')
     return {'project':str(path.resolve()), 'width':width, 'height':height,
@@ -208,7 +210,8 @@ def assert_editor_geometry(display: str) -> None:
     title = subprocess.check_output([xdo,'getwindowname',focused],env=env,text=True).strip()
     geometry = subprocess.check_output([xdo,'getwindowgeometry','--shell',focused],env=env,text=True)
     values = dict(line.split('=',1) for line in geometry.splitlines() if '=' in line)
-    if title != 'Mine-imator' or any(values.get(k) != v for k,v in {'X':'0','Y':'0','WIDTH':'1600','HEIGHT':'1000'}.items()):
+    native_title = title == 'Mine-imator' or title.endswith(' - Mine-imator')
+    if not native_title or any(values.get(k) != v for k,v in {'X':'0','Y':'0','WIDTH':'1600','HEIGHT':'1000'}.items()):
         raise ValueError('Focused Mine-imator editor must fill the display at 0,0')
 
 
@@ -273,6 +276,8 @@ def main():
     parser.add_argument('--profile-confirmed',action='store_true')
     parser.add_argument('--save-dialog-title',default='Save movie')
     parser.add_argument('--timeout',type=float,default=3600)
+    parser.add_argument('--max-seconds',type=float,default=20,
+                        help='Allowed narration length; default retains earlier short-test limit')
     parser.add_argument('--check',action='store_true',help='validate file/log guards without GUI interaction')
     parser.add_argument('--monitor',action='store_true',help='only monitor an already started native export, never operate GUI')
     parser.add_argument('--report',type=Path,help='new JSON evidence report path; existing reports are never overwritten')
@@ -292,7 +297,7 @@ def main():
             raise ValueError('Report path must differ from the video destination')
         if not args.check and report_path.exists():
             raise FileExistsError('Report exists; choose a new report path')
-        expected = inspect_project(args.project)
+        expected = inspect_project(args.project,args.max_seconds)
         if args.monitor:
             if args.check:
                 raise ValueError('--check and --monitor are separate modes')

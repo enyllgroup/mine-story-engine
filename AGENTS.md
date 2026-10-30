@@ -1,5 +1,29 @@
 # MineStory — instruções de produção
 
+Para cada narração enviada na conversa, o objetivo é entregar somente o vídeo
+final completo, após renderização e revisão reais. Não apresentar prévias ao
+usuário como entrega; prévias internas de diagnóstico são permitidas. Não
+presumir que o pipeline esteja pronto ou que a qualidade tenha sido aprovada.
+Usar sempre o Site privado já existente para disponibilizar o vídeo, sem criar
+um novo Site por produção. Preservar versões anteriores e a narração original.
+
+Preferência permanente de aparência confirmada: o personagem usa os óculos
+esportivos espelhados durante as histórias e prévias. Não levantá-los, removê-los
+nem revelar os olhos automaticamente. A foto posterior sem óculos serve apenas
+como referência facial. Consultar `library/characters/channel_host/selection.json`
+e a política da versão selecionada antes de compor animações.
+
+## Personagem, privacidade e produção
+
+Manter personagem, versões e animações em biblioteca privada persistente.
+Não registrar aprovação artística não recebida. Manter fotos, voz, perfis e
+recursos pessoais fora do Git. Roteiros, narrações e assets temáticos ficam
+apenas no diretório da produção; não convertê-los em identidade permanente.
+Usar o modelo ativo do Codex para direção sem API faturada. Sons Minecraft devem
+ter fonte oficial e proveniência; não declarar seus arquivos CC0 nem
+redistribuí-los isoladamente. Usar complementos originais/licenciados quando
+necessário. O objetivo é o vídeo final, com revisão técnica e artística real.
+
 ## Rota atual autorizada: Mine-imator
 
 O usuário escolheu explicitamente a solução **Mine-imator**. Use o binário oficial
@@ -12,9 +36,8 @@ os helpers executáveis ficam em `scripts/mineimator_gui.py`,
 O teste nativo foi exportado e inspecionado em 30/10/2026: master de 600 quadros,
 20 segundos, 1080×1920/30 FPS; versão final de 17,95 segundos com narração
 sintética e legendas. A inspeção está em `docs/MINEIMATOR-VALIDATION.md`.
-Isso valida esta fixture, não um diretor para narrações arbitrárias. O controlador
-completo de cliques de exportação ainda não foi testado de ponta a ponta; os
-helpers de GUI e o monitor foram usados de verdade. Não afirmar engine completa
+Isso valida esta fixture, não um diretor para narrações arbitrárias. O controlador de exportação via GUI foi usado de ponta a ponta em testes e
+em um render interno longo. Isso não valida, por si só, uma produção final. Não afirmar engine completa
 nem trocar de backend silenciosamente se houver bloqueio.
 
 O usuário envia a narração finalizada nesta conversa. A única entrada obrigatória
@@ -51,7 +74,7 @@ impossibilidade nem funcionamento. É necessário demonstrar um caminho que aten
 ao requisito visual, com acesso legítimo aos componentes necessários. Se não for
 viável, informar o bloqueio e parar, sem substituir por imitação.
 
-Próximos testes: UM vídeo de aproximadamente20segundos. Sites deve disponibilizar somente esse vídeo, sem pacotes, código, relatórios ou lista de arquivos na interface. Preservar os artefatos antigos; não confundir preservação com aprovação.
+Para a narração real, preservar a duração completa. O mesmo Site privado deve disponibilizar somente o vídeo final aprovado, sem pacotes, código, relatórios ou lista de arquivos. Preservar os artefatos antigos; não confundir preservação com aprovação.
 
 ## Implementação Blender legada — somente diagnóstico autorizado
 
@@ -67,6 +90,6 @@ O usuário envia a narração finalizada **nesta conversa**. A única entrada ob
 6. Preserve a voz original e sua duração. A transcrição deve refletir a fala. Sem texto adicional em legendas, diálogos inventados ou retiming. Defaults:Whisper large-v3-turbo CPUint8, música off, efeitos originais com ducking. Timestamps são estimativas acústicas, não forced alignment independente.
 7. Preserve jobs, biblioteca e caches. Não inclua narrações/produções do usuário em commits públicos. Verifique `.gitignore` antes de publicar.
 
-Fora da conversa, `produce AUDIO` usa Codex CLI com autenticação ChatGPT válida. Se falhar, relate o bloqueio e continue pelo fluxo de sessão. Alternativas `--director llama`/`procedural` exigem escolha explícita e têm limites. Não comprar ferramentas, ativar API faturada, ler credenciais ou contornar autenticação/licenciamento.
+O fluxo `produce AUDIO` pertence ao backend legado e permanece bloqueado na rota Mine-imator. Não tratá-lo como produção nativa automatizada. Alternativas `--director llama`/`procedural` exigem escolha explícita e têm limites. Não comprar ferramentas, ativar API faturada, ler credenciais ou contornar autenticação/licenciamento.
 
 Código e assets são locais/originais; dependências externas têm licenças próprias. Mudanças no renderer/assets invalidam cache de cenas por hash. Não altere o renderer durante uma renderização em andamento: crie uma nova versão após o job terminar.
