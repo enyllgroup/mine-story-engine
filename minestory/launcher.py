@@ -12,8 +12,8 @@ def launch():
         from tkinter import filedialog, ttk
         app = tk.Tk()
     except Exception as exc:
-        raise RuntimeError("Launcher requer Python Tk e sessão gráfica. Neste servidor use python -m minestory produce AUDIO") from exc
-    app.title("MineStory")
+        raise RuntimeError("Launcher legado requer Python Tk e sessão gráfica. Para a rota atual use o Codex nesta conversa ou python -m minestory native --help") from exc
+    app.title("MineStory — diagnóstico legado Blender")
     app.geometry("680x460")
     ttk.Label(app,text="Selecione sua narração finalizada",font=("sans",17)).pack(pady=18)
     quality = tk.StringVar(value="preview")
@@ -22,7 +22,7 @@ def launch():
     text = tk.Text(app,wrap="word",height=18)
     text.pack(fill="both",expand=True,padx=14,pady=14)
     def worker(path):
-        proc = subprocess.Popen([sys.executable,"-m","minestory","produce",path,"--quality",quality.get()],
+        proc = subprocess.Popen([sys.executable,"-m","minestory","produce",path,"--quality",quality.get(),"--legacy-blender"],
                                 cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True)
         for line in proc.stdout:
             messages.put(line)
