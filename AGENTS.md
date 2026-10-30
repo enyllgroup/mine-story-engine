@@ -1,14 +1,61 @@
 # MineStory — instruções de produção
 
-## Correção obrigatória de escopo pelo usuário
+## Rota atual autorizada: Mine-imator
+
+O usuário escolheu explicitamente a solução **Mine-imator**. Use o binário oficial
+sem modificações, os formatos nativos e a interface real para construir, animar e
+exportar as cenas. A skill atual é `.agents/skills/mineimator-native/SKILL.md`;
+os helpers executáveis ficam em `scripts/mineimator_gui.py`,
+`scripts/install_mineimator.py`, `scripts/install_mineimator_x11.py` e
+`scripts/create_mineimator_test_project.py`.
+
+O teste nativo foi exportado e inspecionado em 30/10/2026: master de 600 quadros,
+20 segundos, 1080×1920/30 FPS; versão final de 17,95 segundos com narração
+sintética e legendas. A inspeção está em `docs/MINEIMATOR-VALIDATION.md`.
+Isso valida esta fixture, não um diretor para narrações arbitrárias. O controlador
+completo de cliques de exportação ainda não foi testado de ponta a ponta; os
+helpers de GUI e o monitor foram usados de verdade. Não afirmar engine completa
+nem trocar de backend silenciosamente se houver bloqueio.
+
+O usuário envia a narração finalizada nesta conversa. A única entrada obrigatória
+é esse áudio, e o próprio modelo ativo do Codex faz a direção. Não usar API
+faturada nem substituir a direção por Qwen/Llama automaticamente. Preservar a voz,
+velocidade e duração originais; não gerar diálogos nem texto extra em legendas.
+
+Os comandos legados `python -m minestory produce`, `finish` e `render` ainda
+acionam Blender. **Nunca executá-los automaticamente para uma nova narração da
+rota Mine-imator.** Os módulos independentes de transcrição, legendas e som podem
+ser reutilizados sem encaminhar a renderização para o backend antigo. As skills
+visuais legadas têm avisos; seus wrappers não equivalem a integrações Mine-imator.
+
+A CLI bloqueia `produce`, `prepare`, `finish`, `render` e `launcher` por padrão,
+inclusive `produce --director session`. `--legacy-blender` só deve ser fornecido
+para diagnóstico legado explicitamente autorizado. A interface atual é
+`python -m minestory native {project,gui,export,finish}`; cada etapa encaminha
+argumentos para seu script nativo e retorna seu status real. `analyze` continua
+disponível para transcrição isolada. Não apresentar essas etapas como conclusão
+automática de uma produção a partir de áudio enquanto a integração não for validada.
+
+Toda ferramenta deve ser gratuita. A Trial e o fluxo oficial de chave Full com
+doação opcional devem permanecer intactos. Não modificar flags de licença,
+fabricar chaves, retirar watermark por pós-produção ou redistribuir recursos
+Minecraft incluídos no software. Não expor chaves em logs, argumentos ou Git.
+
+## Correções anteriores e restrições preservadas
 
 O usuário REJEITOU o renderer Blender com texturas e formas apenas inspiradas em Minecraft. A história deve acontecer no ambiente Minecraft, com aparência e recursos fiéis ao jogo. A demonstração existente não foi aprovada para esse requisito. Não continuar gerando aproximações, não apresentar o projeto como engine Minecraft entregue e não usar o pipeline Blender legado automaticamente quando chegar um áudio.
 
-Minecraft Java é a rota direta a investigar; Mine-imator, Blockbench/Animated Java e MCprep continuam alternativas/auxiliares que não foram validados em execução. Pesquisa de documentação não prova impossibilidade nem funcionamento. Antes de outra produção, é necessário demonstrar um caminho que atenda ao requisito visual, com acesso legítimo aos componentes necessários. Se não for viável, informar o bloqueio e parar, sem substituir por imitação.
+Minecraft Java, Blockbench/Animated Java e MCprep foram alternativas investigadas;
+a escolha atual do usuário é Mine-imator. Pesquisa de documentação não prova
+impossibilidade nem funcionamento. É necessário demonstrar um caminho que atenda
+ao requisito visual, com acesso legítimo aos componentes necessários. Se não for
+viável, informar o bloqueio e parar, sem substituir por imitação.
 
 Próximos testes: UM vídeo de aproximadamente20segundos. Sites deve disponibilizar somente esse vídeo, sem pacotes, código, relatórios ou lista de arquivos na interface. Preservar os artefatos antigos; não confundir preservação com aprovação.
 
-As instruções abaixo descrevem a implementação LEGADA e só podem ser usadas para diagnóstico técnico explicitamente autorizado, não como fluxo de entrega aceito.
+## Implementação Blender legada — somente diagnóstico autorizado
+
+As instruções abaixo descrevem a implementação LEGADA e só podem ser usadas para diagnóstico técnico explicitamente autorizado, não como fluxo de entrega aceito. O README anterior foi preservado integralmente em `docs/LEGACY-BLENDER.md`.
 
 O usuário envia a narração finalizada **nesta conversa**. A única entrada obrigatória é esse áudio. O próprio modelo ativo do Codex faz a direção visual; não delegue automaticamente o raciocínio a Qwen/llama nem use uma API GPT paga. `llama.cpp` é um runtime opcional, não o modelo principal deste fluxo.
 

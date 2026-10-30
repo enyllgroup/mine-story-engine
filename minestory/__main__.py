@@ -1,18 +1,29 @@
-"""Command-line interface, with one required input for `produce`."""
+"""Native Mine-imator stages and explicitly opted-in legacy diagnostics."""
 from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+import subprocess
 import sys
 from .util import ROOT, read_json, write_json
+
+LEGACY_VISUAL_COMMANDS = {"produce", "prepare", "finish", "render", "launcher"}
+NATIVE_SCRIPTS = {
+    "project": "create_mineimator_test_project.py",
+    "gui": "mineimator_gui.py",
+    "export": "export_mineimator.py",
+    "finish": "finish_mineimator.py",
+}
 
 def boolean(value):
     return value == "on"
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(prog="minestory",description="Narração PT-BR → animação vertical. Sem serviços pagos.")
+    parser = argparse.ArgumentParser(prog="minestory",description="Etapas Mine-imator nativas. Direção pelo Codex nesta conversa, sem API paga; integração áudio → vídeo em andamento.")
+    parser.add_argument("--legacy-blender", action="store_true",
+                        help="Habilitar somente diagnóstico explicitamente autorizado do pipeline Blender legado")
     sub = parser.add_subparsers(dest="command",required=True)
-    p = sub.add_parser("produce",help="Produzir vídeo usando somente áudio")
+    p = sub.add_parser("produce",help="LEGADO Blender: diagnóstico a partir de áudio; exige --legacy-blender")
     p.add_argument("audio",type=Path)
     p.add_argument("--quality",choices=["preview","final"],default="final")
     p.add_argument("--director",choices=["auto","session","codex","llama","procedural"],default="auto")
@@ -23,11 +34,11 @@ def main(argv=None):
     p.add_argument("--output",type=Path)
     p.add_argument("--resume",type=Path)
     p.add_argument("--jobs",type=int,default=1)
-    p = sub.add_parser("prepare",help="Preparar áudio para direção pelo modelo ativo desta conversa")
+    p = sub.add_parser("prepare",help="LEGADO Blender: preparar pacote de direção; exige --legacy-blender")
     p.add_argument("audio",type=Path)
     p.add_argument("--output",type=Path)
     p.add_argument("--model",default="large-v3-turbo")
-    p = sub.add_parser("finish",help="Renderizar direção criada pelo Codex nesta conversa")
+    p = sub.add_parser("finish",help="LEGADO Blender: renderizar direção; exige --legacy-blender")
     p.add_argument("job",type=Path)
     p.add_argument("--plan",type=Path)
     p.add_argument("--quality",choices=["preview","final"],default="preview")
@@ -41,13 +52,13 @@ def main(argv=None):
     p.add_argument("audio",type=Path)
     p.add_argument("--output",type=Path,required=True)
     p.add_argument("--model",default="large-v3-turbo")
-    p = sub.add_parser("plan",help="Gerar storyboard a partir de transcript.json")
+    p = sub.add_parser("plan",help="Gerar storyboard no schema legado a partir de transcript.json")
     p.add_argument("transcript",type=Path)
     p.add_argument("--output",type=Path,required=True)
     p.add_argument("--director",choices=["auto","codex","llama","procedural"],default="auto")
     p = sub.add_parser("validate",help="Validar grafo de cenas")
     p.add_argument("storyboard",type=Path)
-    p = sub.add_parser("render",help="Renderizar storyboard sem alterar uma produção existente")
+    p = sub.add_parser("render",help="LEGADO Blender: renderizar storyboard; exige --legacy-blender")
     p.add_argument("storyboard",type=Path)
     p.add_argument("--audio",type=Path,required=True)
     p.add_argument("--transcript",type=Path)
@@ -67,13 +78,45 @@ def main(argv=None):
     add.add_argument("path",type=Path)
     add.add_argument("--kind",default="custom")
     add.add_argument("--license",default="user-provided")
-    sub.add_parser("launcher",help="Seletor local de áudio (requer ambiente gráfico)")
+    sub.add_parser("launcher",help="LEGADO Blender: seletor de diagnóstico; exige --legacy-blender")
     p=sub.add_parser("cache",help="Compactar apenas frames de cenas já exportadas e verificadas")
     p.add_argument("action",choices=["compact"])
     p.add_argument("--dry-run",action="store_true")
+    native = sub.add_parser("native",help="Executar uma etapa real Mine-imator: project, gui, export ou finish")
+    native.add_argument("action", choices=sorted(NATIVE_SCRIPTS))
+    native.add_argument("arguments", nargs=argparse.REMAINDER,
+                        help="Argumentos da etapa, encaminhados sem shell; use ETAPA --help")
+    # Accept the explicit diagnostic opt-in both before and after the command.
+    # SUPPRESS preserves a global True when no subcommand-local flag is given.
+    for command in LEGACY_VISUAL_COMMANDS:
+        sub.choices[command].add_argument(
+            "--legacy-blender", action="store_true", default=argparse.SUPPRESS,
+            help="Executar somente o diagnóstico Blender legado explicitamente autorizado",
+        )
     args = parser.parse_args(argv)
+    if args.command in LEGACY_VISUAL_COMMANDS and not args.legacy_blender:
+        print(
+            f"MineStory: '{args.command}' pertence ao pipeline Blender legado e foi bloqueado. "
+            "A rota atual é Mine-imator; envie a narração nesta conversa do Codex. "
+            "Para transcrição isolada, use 'analyze AUDIO --output DIRETORIO'; "
+            "para as etapas nativas, use 'native --help' e a skill mineimator-native. "
+            "A integração completa áudio → Mine-imator ainda está em andamento. "
+            "--legacy-blender habilita apenas diagnóstico legado explicitamente autorizado.",
+            file=sys.stderr,
+        )
+        return 2
     try:
-        if args.command == "produce":
+        if args.command == "native":
+            script = ROOT / "scripts" / NATIVE_SCRIPTS[args.action]
+            if not script.is_file():
+                raise RuntimeError(f"Etapa nativa ainda indisponível: {args.action}. Integração em andamento; nenhum renderer substituto foi acionado.")
+            print(
+                "MineStory: etapa Mine-imator nativa. A direção usa o Codex nesta conversa, "
+                "sem API paga. O fluxo completo a partir de áudio ainda está em integração.",
+                file=sys.stderr,
+            )
+            return subprocess.run([sys.executable, str(script), *args.arguments], cwd=ROOT).returncode
+        elif args.command == "produce":
             if args.director == "session":
                 from .session import prepare
                 result = prepare(args.audio,output=args.output,model=args.model)
