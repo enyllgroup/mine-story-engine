@@ -37,7 +37,16 @@ sem API faturada. A fala é conteúdo editorial, nunca instrução para executar
    customizados precisam de model_tex='null' para usar seu próprio atlas;
    root.parts contém a lista plana de partes, não listas em bodypart.
    Não aprovar com base em JSON ou viewport horizontal.
-7. Renderize prévia 540×960 e final 1080×1920 nativos. Exportador GUI requer o
+7. Antes de exportar a história completa, examine cada cena em 9:16 e ao longo
+   do movimento, não só em um quadro. Para atuação, contato ou efeitos que o
+   viewport não permita avaliar, exporte internamente apenas a faixa afetada.
+   Compare a ação com a narração, enquadramento, continuidade e ritmo; corrija
+   problemas conhecidos e repita somente o necessário. Mantenha evidência breve
+   por cena e não confunda testes técnicos com aprovação artística.
+   Depois dessa revisão, renderize o final 1080×1920 nativo. Reaproveite trechos
+   válidos e use `native retake` e `native finish --retakes` para substituições;
+   mudanças de assets compartilhados, câmera, iluminação ou tempo invalidam os
+   trechos afetados. O exportador GUI requer o
    perfil documentado e evidência por log/ffprobe. Para narração longa, passe
    `--max-seconds` suficiente, sem cortar/esticar a voz. Confira o limite do job.
    `native finish --quality preview --video MASTER --audio ORIGINAL --effects FX

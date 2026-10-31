@@ -4,6 +4,13 @@ Para cada narração enviada na conversa, o objetivo é entregar somente o víde
 final completo, após renderização e revisão reais. Não apresentar prévias ao
 usuário como entrega; prévias internas de diagnóstico são permitidas. Não
 presumir que o pipeline esteja pronto ou que a qualidade tenha sido aprovada.
+Antes de uma renderização completa, avalie cada cena no enquadramento final e
+em movimento, usando trechos curtos nativos quando o editor não bastar. Corrija
+atuação, composição, continuidade e sentido em relação à narração. Só exporte o
+vídeo completo quando essa revisão interna não revelar problemas conhecidos.
+Preserve trechos aprovados e use retakes por faixa de quadros quando aplicável;
+invalide-os se mudanças de assets, câmera, luz ou duração os afetarem. A revisão
+do arquivo final continua necessária para detectar erros de montagem e áudio.
 Usar sempre o Site privado já existente para disponibilizar o vídeo, sem criar
 um novo Site por produção. Preservar versões anteriores e a narração original.
 
