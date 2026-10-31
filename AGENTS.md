@@ -9,8 +9,15 @@ em movimento, usando trechos curtos nativos quando o editor não bastar. Corrija
 atuação, composição, continuidade e sentido em relação à narração. Só exporte o
 vídeo completo quando essa revisão interna não revelar problemas conhecidos.
 Preserve trechos aprovados e use retakes por faixa de quadros quando aplicável;
-invalide-os se mudanças de assets, câmera, luz ou duração os afetarem. A revisão
-do arquivo final continua necessária para detectar erros de montagem e áudio.
+invalide-os se mudanças de assets, câmera, luz ou duração os afetarem.
+
+Ordem definida pelo usuário: monte o vídeo inteiro (cenas, atuação, câmeras,
+efeitos, áudio e legendas), aplique `docs/PRE-EXPORT-CHECKLIST.md` antes da
+exportação e corrija qualquer item reprovado. Não inicie renderização final com
+item obrigatório pendente. Quando estiver renderizando e nada útil restar a
+fazer, encerre a resposta; o usuário voltará para solicitar a publicação. Não
+planeje uma nova revisão criativa depois do render. Confirmações automáticas de
+conclusão, arquivo e integridade continuam necessárias antes de publicar.
 Usar sempre o Site privado já existente para disponibilizar o vídeo, sem criar
 um novo Site por produção. Preservar versões anteriores e a narração original.
 
