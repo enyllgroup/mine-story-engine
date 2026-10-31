@@ -7,11 +7,20 @@ presumir que o pipeline esteja pronto ou que a qualidade tenha sido aprovada.
 Usar sempre o Site privado já existente para disponibilizar o vídeo, sem criar
 um novo Site por produção. Preservar versões anteriores e a narração original.
 
+Quando uma renderização demorada estiver em andamento e não houver trabalho
+independente útil, informe o progresso e a estimativa disponível, encerre a
+resposta e deixe os processos já iniciados rodando quando o ambiente permitir.
+Explique que a execução pode ser interrompida pelo ambiente e que, ao retorno do
+usuário, será necessário conferir o resultado, finalizá-lo e publicá-lo.
+Não declare conclusão ou publicação sem confirmação real.
+
 Preferência permanente de aparência confirmada: o personagem usa os óculos
 esportivos espelhados durante as histórias e prévias. Não levantá-los, removê-los
 nem revelar os olhos automaticamente. A foto posterior sem óculos serve apenas
 como referência facial. Consultar `library/characters/channel_host/selection.json`
 e a política da versão selecionada antes de compor animações.
+O cabelo do personagem deve ser cheio na frente e penteado para trás, sem
+entradas; preservar a versão anterior e revisar o resultado no Mine-imator.
 
 ## Personagem, privacidade e produção
 
